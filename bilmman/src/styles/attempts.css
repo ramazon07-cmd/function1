@@ -1,0 +1,14 @@
+.attempts-page {
+  min-height: 70vh;
+  padding: 80px max(24px, calc((100vw - 1200px) / 2));
+  background: #f7f8fb;
+}
+
+.attempts-header { margin-bottom: 32px; }
+.attempts-header span { color: #2563eb; font-weight: 800; letter-spacing: .12em; }
+.attempts-header h1 { margin: 8px 0; font-size: clamp(32px, 5vw, 56px); }
+.attempts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.attempt-card { display: grid; gap: 10px; padding: 24px; border: 1px solid #e5e7eb; border-radius: 18px; background: white; }
+.attempt-card h2, .attempt-card h3, .attempt-card p { margin: 0; }
+.attempt-card strong { color: #16a34a; font-size: 24px; }
+.attempt-card small { color: #64748b; }

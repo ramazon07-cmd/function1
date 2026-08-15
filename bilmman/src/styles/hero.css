@@ -1,0 +1,277 @@
+.hero-container {
+  padding: 80px 20px;
+  margin-top: 120px;
+  animation: zoomBg 4s ease-in-out infinite alternate;
+}
+
+@keyframes zoomBg {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
+}
+
+.hero {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1.5s ease forwards;
+  margin-left: 70px;
+}
+
+.typing {
+  color: white;
+  font-size: 32px;
+  width: 700px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: -70px;
+   font-family: "Bungee", sans-serif;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1.5s ease forwards;
+  font-family: "Eraser";
+    letter-spacing: 3px;
+}
+
+.hero p {
+  color: #e5e7eb;
+  font-size: 19px;
+   color: gainsboro;
+  width: 600px;
+   margin-left: -70px;
+margin-bottom: 10px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1.5s ease forwards;
+  animation-delay: 0.3s;
+  
+}
+
+.btnn  {
+  background: #1e40af;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+font-weight: 600;
+ margin-left: -20px;
+font-size: 21px;
+}
+.btnnn{
+    background: #1e40af;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+font-weight: 600;
+ margin-left: -70px;
+font-size: 21px;
+}
+.btnnn:hover{
+      transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(65, 105, 225, 0.35);
+    background: #1d4ed8;
+}
+.btnn:hover{
+      transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(65, 105, 225, 0.35);
+    background: #1d4ed8;
+}
+.butn{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-top: 20px  ;
+}
+
+.btnn:hover{
+    background: white;
+  color: #1e40af;
+}
+
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@font-face {
+    font-family: 'Eraser';
+    src: url('/public/EraserRegular.ttf') format('truetype');
+}
+
+
+.sat {
+   color: #fff;
+   font-size: 42px;
+font-family: "Eraser";
+}
+
+
+@media (max-width: 1200px) {
+  .hero-container {
+    padding: 70px 20px;
+    margin-top: 110px;
+    background-size: cover !important;
+    background-position: center !important;
+    animation: none;
+  }
+
+  .hero {
+    margin-left: 40px;
+  }
+
+  .typing {
+    width: min(680px, 90vw);
+    margin-left: -40px;
+    font-size: 30px;
+  }
+
+  .hero p {
+    width: min(580px, 88vw);
+    margin-left: -40px;
+  }
+
+  .btnnn {
+    margin-left: -40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    padding: 64px 18px;
+    margin-top: 100px;
+  }
+
+  .hero {
+    margin-left: 20px;
+  }
+
+  .typing {
+    width: min(620px, 88vw);
+    margin-top: 80px;
+    margin-left: -20px;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .sat {
+    font-size: 38px;
+  }
+
+  .hero p {
+    width: min(560px, 88vw);
+    margin-left: -20px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .btnnn {
+    margin-left: -20px;
+  }
+
+  .btnn,
+  .btnnn {
+    font-size: 19px;
+    padding: 12px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    min-height: auto;
+    padding: 54px 16px 46px;
+    margin-top: 88px;
+  }
+
+  .hero {
+    margin-left: 0;
+  }
+
+  .typing {
+    width: 100%;
+    margin-top: 42px;
+    margin-left: 0;
+    margin-bottom: 16px;
+    font-size: 25px;
+    line-height: 1.35;
+    letter-spacing: 2px;
+  }
+
+  .sat {
+    font-size: 34px;
+  }
+
+  .hero p {
+    width: 100%;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .butn {
+    margin-top: 24px;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btnn,
+  .btnnn {
+    margin-left: 0;
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-container {
+    padding: 42px 14px 38px;
+    margin-top: 76px;
+  }
+
+  .typing {
+    margin-top: 28px;
+    font-size: 22px;
+    line-height: 1.35;
+    letter-spacing: 1px;
+  }
+
+  .sat {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+
+  .hero p {
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+
+  .butn {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .butn a {
+    width: 100%;
+  }
+
+  .btnn,
+  .btnnn {
+    width: 100%;
+    margin-left: 0;
+    font-size: 17px;
+    padding: 12px 18px;
+  }
+}

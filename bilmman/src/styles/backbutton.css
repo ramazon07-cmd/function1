@@ -1,0 +1,33 @@
+/* Back button placed top-left */
+.back-button {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.2);
+    z-index: 10;
+    transition: transform .15s ease, background .15s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 900px) {
+    .back-button {
+        top: 18px;
+        left: 18px;
+        width: 44px;
+        height: 44px;
+    }
+}

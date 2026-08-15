@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  border-bottom: 1px solid #e5e7eb;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  z-index: 20;
+  background-color: white;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-right: solid rgb(1, 1, 253) 3px;
+  padding: 0px 20px 0px 0px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0 12px;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.nav li {
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.kirish {
+  background-color: #fff;
+  color: #1e40af;
+  background: linear-gradient(90deg, #ffffff, #e0e7ff);
+  border: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  border: 1px solid #1e40af;
+}
+
+.kirish:hover {
+  background: #1e40af;
+  color: white;
+}
+
+.btn {
+  background: #1e40af;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  border: 1px solid #1e40af;
+}
+
+.btn:hover {
+  background: white;
+  color: #1e40af;
+
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+}
+
+.blue {
+  background: #f0f7ff;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+  color: #64748b;
+}
+
+.hero-container {
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.butoon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,218 @@
+/* Umumiy Bo'lim */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Konteyner */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Chap Tomon: Rasm Kard */
+.profile-image-card {
+  flex: 1;
+  background: linear-gradient(180deg, #1e3c72 0%, #2a5298 100%);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+.profile-status-badge {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff9f43;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(255, 159, 67, 0.4);
+  white-space: nowrap;
+}
+
+.founder-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px 0 5px 0;
+  letter-spacing: 0.5px;
+}
+
+.founder-title {
+  font-size: 14px;
+  color: #e0e6ed;
+  font-weight: 300;
+}
+
+/* O'ng Tomon: Tafsilotlar */
+.profile-details {
+  flex: 1.5;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #1e3c72;
+  margin-bottom: 20px;
+  font-weight: 800;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #ff9f43;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.bio-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 25px;
+}
+
+.bio-text strong {
+  color: #1e3c72;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #e2e8f0;
+  margin-bottom: 25px;
+}
+
+/* Iqtibos Bloki */
+.quote-box {
+  background-color: #f7fafc;
+  border-left: 4px solid #1e3c72;
+  padding: 20px;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 30px;
+}
+
+.quote-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1e3c72;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+blockquote {
+  font-size: 15px;
+  font-style: italic;
+  color: #4a5568;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tugmalar */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #1e3c72;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #2a5298;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #1e3c72;
+  border: 2px solid #1e3c72;
+}
+
+.btn-secondary:hover {
+  background-color: #1e3c72;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Mobil Moslashuvchanlik (Responsive) */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+  
+  .profile-image-card {
+    padding: 30px;
+  }
+  
+  .profile-details {
+    padding: 30px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}

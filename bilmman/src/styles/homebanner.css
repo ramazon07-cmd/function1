@@ -1,0 +1,323 @@
+/* Fully responsive HomeBanner CSS */
+.homeBanner {
+  --banner-x: clamp(18px, 5vw, 72px);
+  --banner-max: 1350px;
+  --title-size: clamp(2rem, 4.2vw, 4.4rem);
+  --title-line: 1.08;
+  --text-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  --card-radius: clamp(20px, 2vw, 34px);
+
+  width: 100%;
+  min-height: clamp(620px, 88vh, 980px);
+  margin-top: clamp(68px, 8vw, 120px);
+  padding: clamp(42px, 7vw, 92px) 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  font-family: Manrope, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  isolation: isolate;
+}
+
+.homeBanner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(5, 9, 28, 0.92) 0%, rgba(5, 9, 28, 0.74) 42%, rgba(5, 9, 28, 0.34) 100%);
+}
+
+.bannerContainer {
+  width: min(calc(100% - (var(--banner-x) * 2)), var(--banner-max));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 56px);
+}
+
+.bannerLeft {
+  width: min(100%, 680px);
+  flex: 0 1 680px;
+}
+
+.topBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: clamp(8px, 1vw, 11px) clamp(14px, 1.8vw, 22px);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  margin-bottom: clamp(18px, 2vw, 28px);
+  font-size: clamp(0.92rem, 1.55vw, 1.5rem);
+  font-weight: 700;
+  backdrop-filter: blur(12px);
+}
+
+.bannerLeft h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: var(--title-size);
+  line-height: var(--title-line);
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.bannerLeft h1 span {
+  color: #4b83ff;
+}
+
+.bannerLeft p {
+  width: min(100%, 620px);
+  margin: clamp(16px, 2vw, 24px) 0 0;
+  font-size: var(--text-size);
+  line-height: 1.75;
+  color: #d8dff0;
+}
+
+.bannerButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: clamp(26px, 3vw, 40px);
+  min-height: 58px;
+  padding: 0 clamp(26px, 3vw, 44px);
+  border-radius: 18px;
+  border: 0;
+  font-size: clamp(1.08rem, 1.8vw, 1.6rem);
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, #4b83ff 0%, #2563eb 100%);
+  text-decoration: none;
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.bannerButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px rgba(37, 99, 235, 0.38);
+  background: linear-gradient(135deg, #5b91ff 0%, #2f6ff0 100%);
+}
+
+.bannerButton span {
+  transition: transform 0.25s ease;
+}
+
+.bannerButton:hover span {
+  transform: translateX(5px);
+}
+
+.features {
+  width: min(100%, 720px);
+  margin-top: clamp(34px, 5vw, 72px);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 1.4vw, 18px);
+}
+
+.featureCard {
+  min-width: 0;
+  text-align: center;
+  padding: clamp(13px, 1.4vw, 18px) 10px;
+  border-radius: var(--card-radius);
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  animation: featureFloat 3s ease-in-out infinite;
+}
+
+.featureCard:nth-child(2) { animation-delay: 0.4s; }
+.featureCard:nth-child(3) { animation-delay: 0.8s; }
+.featureCard:nth-child(4) { animation-delay: 1.2s; }
+
+.iconBox {
+  width: clamp(52px, 5vw, 64px);
+  height: clamp(52px, 5vw, 64px);
+  margin: 0 auto;
+  border-radius: 20px;
+  background: rgba(45, 111, 255, 0.14);
+  border: 1px solid rgba(75, 131, 255, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBox svg {
+  width: clamp(24px, 2.4vw, 30px);
+  height: clamp(24px, 2.4vw, 30px);
+  color: #fff;
+  display: block;
+}
+
+.iconBox svg * {
+  stroke: currentColor !important;
+  fill: currentColor !important;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.2);
+}
+
+.featureCard:hover .iconBox {
+  background: #4b83ff;
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 22px rgba(75, 131, 255, 0.3);
+}
+
+.featureCard h4 {
+  margin: 16px 0 0;
+  font-size: clamp(0.88rem, 1.15vw, 1.06rem);
+  line-height: 1.35;
+  font-weight: 800;
+  color: #f4f7ff;
+}
+
+.featureCard p {
+  display: none;
+}
+
+@keyframes featureFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@media (min-width: 1600px) {
+  .homeBanner {
+    --banner-max: 1500px;
+    min-height: 920px;
+    background-position: center 28%;
+  }
+
+  .bannerLeft {
+    width: min(100%, 760px);
+    flex-basis: 760px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .homeBanner {
+    background-position: 58% center;
+  }
+
+  .bannerLeft {
+    flex-basis: 620px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 560px);
+  }
+}
+
+@media (max-width: 900px) {
+  .homeBanner {
+    min-height: auto;
+    background-position: 64% center;
+  }
+
+  .homeBanner::before {
+    background: linear-gradient(90deg, rgba(5, 9, 28, 0.94) 0%, rgba(5, 9, 28, 0.82) 58%, rgba(5, 9, 28, 0.56) 100%);
+  }
+
+  .bannerContainer {
+    justify-content: center;
+  }
+
+  .bannerLeft {
+    width: min(100%, 680px);
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .homeBanner {
+    --banner-x: 16px;
+    margin-top: 64px;
+    padding: 38px 0 34px;
+    background-position: 68% center;
+  }
+
+  .homeBanner::before {
+    background: linear-gradient(90deg, rgba(5, 9, 28, 0.96) 0%, rgba(5, 9, 28, 0.88) 72%, rgba(5, 9, 28, 0.7) 100%);
+  }
+
+  .topBadge {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .bannerLeft h1 {
+    font-size: clamp(1.8rem, 8.4vw, 2.45rem);
+    line-height: 1.13;
+  }
+
+  .bannerLeft p {
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  .bannerButton {
+    width: 100%;
+    min-height: 54px;
+    border-radius: 17px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .featureCard {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    padding: 14px 16px;
+    border-radius: 22px;
+    animation: none;
+  }
+
+  .iconBox {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    margin: 0;
+  }
+
+  .featureCard h4 {
+    margin: 0;
+    font-size: 0.96rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .homeBanner {
+    --banner-x: 14px;
+    margin-top: 58px;
+    padding-top: 30px;
+  }
+
+  .bannerLeft h1 {
+    font-size: 1.62rem;
+  }
+
+  .bannerLeft p {
+    font-size: 0.88rem;
+  }
+
+  .bannerButton {
+    min-height: 50px;
+    font-size: 1rem;
+  }
+}

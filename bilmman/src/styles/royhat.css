@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.register_section {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.register_container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+
+
+.register_left {
+    flex: 1;
+    background:
+        linear-gradient(135deg,
+            #2563eb,
+            #3b82f6);
+
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.register_left span {
+    width: fit-content;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, .15);
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.register_left h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.register_left p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .85);
+    max-width: 450px;
+}
+
+.register_right {
+    flex: 1;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register_right h2 {
+    font-size: 42px;
+    color: #0f172a;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+form input {
+    width: 100%;
+    height: 62px;
+    border-radius: 16px;
+    border: 1px solid #dbe3ef;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+    background: #f8fafc;
+    transition: .3s;
+}
+
+form input:focus {
+    border-color: #2563eb;
+    background: white;
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, .08);
+}
+
+form button {
+    width: 100%;
+    height: 62px;
+    border: none;
+    border-radius: 16px;
+    background:
+        linear-gradient(135deg,
+            #2563eb,
+            #3b82f6);
+
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form button:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 25px rgba(37, 99, 235, .25);
+}
+
+@media(max-width: 900px) {
+
+    .register_container {
+        flex-direction: column;
+    }
+
+    .register_left,
+    .register_right {
+        padding: 40px;
+    }
+
+    .register_left h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+
+.register_right {
+    flex: 1;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.register_right::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(37, 99, 235, .08);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    filter: blur(40px);
+}
+
+.register_right::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(59, 130, 246, .06);
+    border-radius: 50%;
+    bottom: -80px;
+    left: -80px;
+    filter: blur(40px);
+}
+
+.register_right h2 {
+    font-size: 42px;
+    color: #0f172a;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+form input {
+    width: 100%;
+    height: 62px;
+    border-radius: 18px;
+    border: 1px solid #dbe3ef;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, .9);
+    transition: .3s;
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, .03);
+}
+
+form input:focus {
+    border-color: #2563eb;
+    background: white;
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, .08);
+}
+
+form button {
+    width: 100%;
+    height: 62px;
+    border: none;
+    border-radius: 18px;
+    background:
+        linear-gradient(135deg,
+            #2563eb,
+            #3b82f6);
+
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, .25);
+}
+
+form button:hover {
+    transform: translateY(-4px);
+}

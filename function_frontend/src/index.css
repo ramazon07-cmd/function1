@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    
+    
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ .box{
+    max-width: 1402px;
+    width: 100%;
+    margin: 0 auto;
+ }
+ :root {
+	--blackish-green: #121;
+	--mint-green: #8dd3bb;
+	--slamon: #ff8682;
+	--neutrals: #fff;
+}
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Mulish", sans-serif;
+}

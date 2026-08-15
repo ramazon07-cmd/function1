@@ -1,0 +1,156 @@
+.heroo {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  background:
+  radial-gradient(circle at top,#1e3a8a,#0f172a);
+
+  color: white;
+}
+
+.heroo_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.heroo_left {
+  flex: 1;
+}
+
+.heroo_badge {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  border-radius: 50px;
+
+  background: rgba(255,255,255,0.08);
+
+  margin-bottom: 30px;
+}
+
+.heroo_left h1 {
+  font-size: 82px;
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+.heroo_left p {
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  max-width: 600px;
+
+  margin-bottom: 35px;
+}
+
+.heroo_buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.startt_btn,
+.demoo_btn {
+  padding: 16px 34px;
+
+  border-radius: 16px;
+
+  border: none;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  transition: 0.4s;
+}
+
+.startt_btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.demoo_btn {
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+.startt_btn:hover,
+.demoo_btn:hover {
+  transform: translateY(-5px);
+}
+
+.heroo_right {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.heroo_card {
+  width: 420px;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.heroo_card h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.heroo_progress {
+  width: 100%;
+  height: 20px;
+
+  border-radius: 50px;
+
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.08);
+
+  margin-bottom: 20px;
+}
+
+.heroo_fill {
+  width: 60%;
+  height: 100%;
+
+  background: linear-gradient(90deg,#3b82f6,#60a5fa);
+
+  border-radius: 50px;
+}
+
+.heroo_card p {
+  color: #cbd5e1;
+}
+
+@media(max-width: 992px){
+
+  .heroo_wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroo_left h1 {
+    font-size: 54px;
+  }
+
+  .heroo_buttons {
+    justify-content: center;
+  }
+
+}
