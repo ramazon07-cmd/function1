@@ -46,41 +46,64 @@ async function parseResponse(response) {
   return data;
 }
 
-export async function apiFetch(path, options = {}) {
+async function refreshAccessToken() {
+  const refresh = getRefreshToken();
+  if (!refresh) return null;
+
+  const response = await fetch(`${API_BASE_URL}/auth/token/refresh/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ refresh }),
+  });
+
+  if (!response.ok) {
+    clearTokens();
+    return null;
+  }
+
+  const data = await response.json();
+  if (data?.access) {
+    saveTokens({ access: data.access, refresh });
+    return data.access;
+  }
+  return null;
+}
+
+export async function apiFetch(path, options = {}, retry = true) {
+  const { skipAuth = false, ...fetchOptions } = options;
+  const isFormData = typeof FormData !== "undefined" && fetchOptions.body instanceof FormData;
+
   async function request(accessToken) {
     const headers = {
-      "Content-Type": "application/json",
-      ...(options.headers || {}),
+      ...(isFormData ? {} : { "Content-Type": "application/json" }),
+      ...(fetchOptions.headers || {}),
     };
-
-    if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+    if (!skipAuth && accessToken) headers.Authorization = `Bearer ${accessToken}`;
 
     return fetch(`${API_BASE_URL}${path}`, {
-      ...options,
+      ...fetchOptions,
       headers,
     });
   }
 
-  let response = await request(getAccessToken());
-  const refreshToken = getRefreshToken();
+  let response = await request(skipAuth ? null : getAccessToken());
 
-  if (response.status === 401 && refreshToken && path !== "/auth/token/refresh/") {
-    const refreshResponse = await fetch(`${API_BASE_URL}/auth/token/refresh/`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ refresh: refreshToken }),
-    });
-
-    if (refreshResponse.ok) {
-      const refreshedTokens = await refreshResponse.json();
-      saveTokens({ ...refreshedTokens, refresh: refreshToken });
-      response = await request(refreshedTokens.access);
-    } else {
-      clearTokens();
+  if (!skipAuth && response.status === 401 && retry && getRefreshToken() && path !== "/auth/token/refresh/") {
+    const refreshedAccess = await refreshAccessToken();
+    if (refreshedAccess) {
+      response = await request(refreshedAccess);
     }
   }
 
   return parseResponse(response);
+}
+
+// FUNCTION1_RESULTS_SAVE_V13
+export function recordVerifiedLocalAttemptV13(testId, payload) {
+  return apiFetch(`/tests/${testId}/record-verified-local-attempt-v13/`, {
+    method: "POST",
+    body: JSON.stringify(payload || {}),
+  });
 }
 
 export const api = {
@@ -122,17 +145,66 @@ export const api = {
       body: JSON.stringify({ answers }),
     }),
 
-  recordLocalAttempt: (id, { score, total_questions, duration_seconds }) =>
+  // FUNCTION1_RELIABLE_RESULTS_V5: backend recomputes score from answers.
+
+  // FUNCTION1_RELIABLE_RESULTS_V11: backend recomputes score from selected answers.
+  // FUNCTION1_RELIABLE_RESULTS_V11: backend recomputes score from selected answers.
+  recordLocalAttempt: (id, payload = {}) =>
     apiFetch(`/tests/${id}/record-local-attempt/`, {
       method: "POST",
-      body: JSON.stringify({ score, total_questions, duration_seconds }),
+      body: JSON.stringify({
+        answers: payload.answers || [],
+        duration_seconds: payload.duration_seconds ?? 0,
+        question_bank_version: payload.question_bank_version || "",
+        client_attempt_id: payload.client_attempt_id || "",
+      }),
     }),
 
+  attempts: () => apiFetch("/attempts/", { cache: "no-store" }),
   attempts: () => apiFetch("/attempts/"),
 
-  premiumMockPurchase: ({ test_id, subject_id, amount = 5000 }) =>
-    apiFetch("/premium/mock-purchase/", {
+  feedbacks: () => apiFetch("/feedback/", { skipAuth: true }),
+
+  submitFeedback: ({ name, direction = "", message, profile_image }) => {
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("direction", direction);
+    formData.append("message", message);
+    if (profile_image) formData.append("profile_image", profile_image);
+    return apiFetch("/feedback/", {
       method: "POST",
-      body: JSON.stringify({ test_id, subject_id, amount }),
+      body: formData,
+      // Public endpoint: a stale local JWT must not block anonymous feedback.
+      skipAuth: true,
+    });
+  },
+
+  paymentCardInfo: () => apiFetch("/payments/card-info/"),
+
+  submitPayment: ({ test_id, transaction_id = "", receipt = null }) => {
+    const formData = new FormData();
+    formData.append("test_id", String(test_id));
+    if (transaction_id) formData.append("transaction_id", transaction_id);
+    if (receipt) formData.append("receipt", receipt);
+
+    return apiFetch("/payments/submit/", {
+      method: "POST",
+      body: formData,
+    });
+  },
+
+  myPayments: () => apiFetch("/payments/mine/"),
+
+  adminPayments: ({ status = "" } = {}) => {
+    const params = new URLSearchParams();
+    if (status) params.set("status", status);
+    const qs = params.toString();
+    return apiFetch(`/admin/payments/${qs ? `?${qs}` : ""}`);
+  },
+
+  adminPaymentDecision: (id, { action, admin_note = "" }) =>
+    apiFetch(`/admin/payments/${id}/decision/`, {
+      method: "POST",
+      body: JSON.stringify({ action, admin_note }),
     }),
 };

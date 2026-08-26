@@ -1,5 +1,31 @@
+from django.db.models import Q
 from rest_framework import serializers
-from .models import Subject, Course, Test, Question, Option, TestAttempt, Answer, PremiumAccess
+from .models import (
+    Subject,
+    Course,
+    Test,
+    Question,
+    Option,
+    TestAttempt,
+    Answer,
+    PremiumAccess,
+    PaymentRequest,
+    LocalAttemptAnswer,
+    Feedback,
+)
+
+
+def user_has_test_access(user, test):
+    if not test.is_premium:
+        return True
+    if not user or not user.is_authenticated:
+        return False
+    return PremiumAccess.objects.filter(
+        user=user,
+        status=PremiumAccess.STATUS_PAID,
+    ).filter(
+        Q(test=test) | Q(subject=test.subject)
+    ).exists()
 
 
 class SubjectSerializer(serializers.ModelSerializer):
@@ -45,16 +71,43 @@ class QuestionPublicSerializer(serializers.ModelSerializer):
 class TestListSerializer(serializers.ModelSerializer):
     subject = SubjectSerializer(read_only=True)
     questions_count = serializers.SerializerMethodField()
+    has_access = serializers.SerializerMethodField()
+    payment_status = serializers.SerializerMethodField()
 
     class Meta:
         model = Test
         fields = (
             'id', 'subject', 'title', 'description', 'duration_minutes',
-            'is_premium', 'price', 'is_active', 'order', 'questions_count'
+            'is_premium', 'price', 'is_active', 'order', 'questions_count',
+            'has_access', 'payment_status',
         )
 
     def get_questions_count(self, obj):
         return obj.questions.count()
+
+    def get_has_access(self, obj):
+        if not obj.is_premium:
+            return True
+        request = self.context.get('request')
+        user = getattr(request, 'user', None)
+        if not user or not user.is_authenticated:
+            return False
+        return PremiumAccess.objects.filter(
+            user=user,
+            status=PremiumAccess.STATUS_PAID,
+        ).filter(test=obj).exists() or PremiumAccess.objects.filter(
+            user=user,
+            subject=obj.subject,
+            status=PremiumAccess.STATUS_PAID,
+        ).exists()
+
+    def get_payment_status(self, obj):
+        request = self.context.get('request')
+        user = getattr(request, 'user', None)
+        if not obj.is_premium or not user or not user.is_authenticated:
+            return None
+        latest = PaymentRequest.objects.filter(user=user, test=obj).order_by('-created_at').first()
+        return latest.status if latest else None
 
 
 class TestDetailSerializer(TestListSerializer):
@@ -73,15 +126,41 @@ class SubmitTestSerializer(serializers.Serializer):
     answers = SubmitAnswerItemSerializer(many=True)
 
 
-class LocalTestAttemptSerializer(serializers.Serializer):
-    score = serializers.IntegerField(min_value=0)
-    total_questions = serializers.IntegerField(min_value=1)
-    duration_seconds = serializers.IntegerField(min_value=0, required=False, default=0)
+class LocalAnswerSubmissionSerializer(serializers.Serializer):
+    question_index = serializers.IntegerField(min_value=0)
+    selected_answer = serializers.CharField(
+        required=False,
+        allow_blank=True,
+        allow_null=True,
+        max_length=2000,
+    )
 
-    def validate(self, attrs):
-        if attrs['score'] > attrs['total_questions']:
-            raise serializers.ValidationError({'score': 'Score cannot exceed total_questions.'})
-        return attrs
+
+class LocalTestAttemptSerializer(serializers.Serializer):
+    # FUNCTION1_RELIABLE_RESULTS_V5: score/total are intentionally NOT accepted.
+    # The backend recomputes them from the synchronized local question-bank manifest.
+    answers = LocalAnswerSubmissionSerializer(many=True)
+    duration_seconds = serializers.IntegerField(min_value=0, required=False, default=0)
+    question_bank_version = serializers.CharField(max_length=64)
+    client_attempt_id = serializers.CharField(max_length=80)
+
+    def validate_answers(self, answers):
+        seen = set()
+        for item in answers:
+            idx = item['question_index']
+            if idx in seen:
+                raise serializers.ValidationError(f'Duplicate question_index: {idx}')
+            seen.add(idx)
+        return answers
+
+
+class LocalAttemptAnswerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LocalAttemptAnswer
+        fields = (
+            'question_index', 'question_text', 'selected_answer',
+            'correct_answer', 'is_correct',
+        )
 
 
 class AnswerReviewSerializer(serializers.ModelSerializer):
@@ -103,27 +182,151 @@ class TestAttemptSerializer(serializers.ModelSerializer):
     subject_slug = serializers.CharField(source='test.subject.slug', read_only=True)
     percentage = serializers.FloatField(read_only=True)
     answers = AnswerReviewSerializer(many=True, read_only=True)
+    local_answers = LocalAttemptAnswerSerializer(many=True, read_only=True)
 
     class Meta:
         model = TestAttempt
         fields = (
             'id', 'test', 'test_title', 'subject_slug', 'score', 'total_questions',
-            'percentage', 'started_at', 'finished_at', 'duration_seconds', 'answers'
+            'percentage', 'started_at', 'finished_at', 'duration_seconds',
+            'question_bank_version', 'client_attempt_id', 'answers', 'local_answers',
         )
-
-
-class PremiumPurchaseSerializer(serializers.Serializer):
-    test_id = serializers.IntegerField(required=False)
-    subject_id = serializers.IntegerField(required=False)
-    amount = serializers.DecimalField(max_digits=10, decimal_places=2, default=5000)
-
-    def validate(self, attrs):
-        if not attrs.get('test_id') and not attrs.get('subject_id'):
-            raise serializers.ValidationError('test_id or subject_id is required.')
-        return attrs
 
 
 class PremiumAccessSerializer(serializers.ModelSerializer):
     class Meta:
         model = PremiumAccess
         fields = ('id', 'subject', 'test', 'amount', 'status', 'created_at')
+
+
+class PaymentRequestCreateSerializer(serializers.Serializer):
+    test_id = serializers.IntegerField()
+    transaction_id = serializers.CharField(max_length=120, required=False, allow_blank=True)
+    receipt = serializers.FileField(required=False, allow_null=True)
+
+    def validate(self, attrs):
+        transaction_id = (attrs.get('transaction_id') or '').strip()
+        receipt = attrs.get('receipt')
+        if not transaction_id and not receipt:
+            raise serializers.ValidationError('Transaction ID yoki chek faylini yuboring.')
+
+        if receipt:
+            if receipt.size > 5 * 1024 * 1024:
+                raise serializers.ValidationError({'receipt': 'Chek fayli 5 MB dan katta bo‘lmasin.'})
+            content_type = getattr(receipt, 'content_type', '')
+            allowed = {'image/jpeg', 'image/png', 'image/webp', 'application/pdf'}
+            if content_type and content_type not in allowed:
+                raise serializers.ValidationError({'receipt': 'Faqat JPG, PNG, WEBP yoki PDF yuboring.'})
+
+        attrs['transaction_id'] = transaction_id
+        return attrs
+
+
+class PaymentRequestSerializer(serializers.ModelSerializer):
+    test_title = serializers.CharField(source='test.title', read_only=True)
+    receipt_url = serializers.SerializerMethodField()
+
+    class Meta:
+        model = PaymentRequest
+        fields = (
+            'id', 'test', 'test_title', 'amount', 'transaction_id', 'receipt_url',
+            'status', 'admin_note', 'created_at', 'updated_at', 'reviewed_at',
+        )
+
+    def get_receipt_url(self, obj):
+        if not obj.receipt:
+            return None
+        request = self.context.get('request')
+        url = obj.receipt.url
+        return request.build_absolute_uri(url) if request else url
+
+
+class FeedbackSerializer(serializers.ModelSerializer):
+    profile_image = serializers.FileField(write_only=True, required=False, allow_null=True)
+    profile_image_url = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Feedback
+        fields = (
+            'id', 'name', 'direction', 'message',
+            'profile_image', 'profile_image_url', 'created_at',
+        )
+        read_only_fields = ('id', 'profile_image_url', 'created_at')
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # New public submissions must include a portfolio/profile image.
+        # Existing DB rows from V5 may still have no image and can be serialized safely.
+        if self.instance is None:
+            self.fields['profile_image'].required = True
+
+    def get_profile_image_url(self, obj):
+        if not obj.profile_image:
+            return None
+        request = self.context.get('request')
+        url = obj.profile_image.url
+        return request.build_absolute_uri(url) if request else url
+
+    def validate_profile_image(self, value):
+        if value is None:
+            raise serializers.ValidationError('Portfolio/profil rasmini yuklang.')
+        if value.size > 3 * 1024 * 1024:
+            raise serializers.ValidationError('Rasm 3 MB dan katta bo‘lmasin.')
+        content_type = (getattr(value, 'content_type', '') or '').lower()
+        allowed_types = {'image/jpeg', 'image/png', 'image/webp'}
+        if content_type and content_type not in allowed_types:
+            raise serializers.ValidationError('Faqat JPG, PNG yoki WEBP rasm yuboring.')
+        name = (getattr(value, 'name', '') or '').lower()
+        if name and not name.endswith(('.jpg', '.jpeg', '.png', '.webp')):
+            raise serializers.ValidationError('Rasm formati JPG, PNG yoki WEBP bo‘lishi kerak.')
+        return value
+
+    def validate_name(self, value):
+        value = ' '.join(value.strip().split())
+        if len(value) < 2:
+            raise serializers.ValidationError('Ism kamida 2 ta belgidan iborat bo‘lsin.')
+        return value
+
+    def validate_direction(self, value):
+        return ' '.join((value or '').strip().split())
+
+    def validate_message(self, value):
+        value = value.strip()
+        if len(value) < 3:
+            raise serializers.ValidationError('Fikr kamida 3 ta belgidan iborat bo‘lsin.')
+        if len(value) > 3000:
+            raise serializers.ValidationError('Fikr 3000 belgidan oshmasin.')
+        return value
+
+
+class AdminPaymentRequestSerializer(serializers.ModelSerializer):
+    username = serializers.CharField(source='user.username', read_only=True)
+    user_email = serializers.CharField(source='user.email', read_only=True)
+    test_title = serializers.CharField(source='test.title', read_only=True)
+    subject_name = serializers.CharField(source='test.subject.name', read_only=True)
+    subject_slug = serializers.CharField(source='test.subject.slug', read_only=True)
+    reviewed_by_username = serializers.CharField(source='reviewed_by.username', read_only=True)
+    receipt_url = serializers.SerializerMethodField()
+    receipt_kind = serializers.SerializerMethodField()
+
+    class Meta:
+        model = PaymentRequest
+        fields = (
+            'id', 'username', 'user_email', 'test', 'test_title',
+            'subject_name', 'subject_slug', 'amount', 'transaction_id',
+            'receipt_url', 'receipt_kind', 'status', 'admin_note',
+            'created_at', 'updated_at', 'reviewed_at', 'reviewed_by_username',
+        )
+
+    def get_receipt_url(self, obj):
+        if not obj.receipt:
+            return None
+        request = self.context.get('request')
+        url = obj.receipt.url
+        return request.build_absolute_uri(url) if request else url
+
+    def get_receipt_kind(self, obj):
+        if not obj.receipt:
+            return None
+        name = obj.receipt.name.lower()
+        return 'pdf' if name.endswith('.pdf') else 'image'

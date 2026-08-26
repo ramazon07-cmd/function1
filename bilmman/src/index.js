@@ -12,6 +12,7 @@ import KirishHeader from './pages/KirishHeader';
 import Saythaqida from './pages/Saythaqida';
 import Matematika from './pages/Matematika';
 import Attempts from './pages/Attempts';
+import AdminPayments from './pages/AdminPayments';
 import { AuthProvider } from './context/AuthContext';
 
 const appRouter = createBrowserRouter([{
@@ -59,6 +60,10 @@ const appRouter = createBrowserRouter([{
     {
       element: <Attempts />,
       path: "/attempts"
+    },
+    {
+      element: <AdminPayments />,
+      path: "/admin/payments"
     }
 
 

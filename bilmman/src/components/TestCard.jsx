@@ -111,6 +111,7 @@ import kordinata8 from "../images/ko8.png";
 import kordinata9 from "../images/ko9.png";
 import kordinata10 from "../images/ko10.png";
 
+import { recordVerifiedLocalAttemptV13 } from "../api/client";
 const questionSets = [
   {
     category: "math",
@@ -4871,14 +4872,32 @@ const prepareQuestionsForTopic = (questions, topic) =>
 
 export default function TestCard() {
   const location = useLocation();
+  // FUNCTION1_FREE_ACCESS_V15: false = definitely free, so premium gate must not block.
+  const routePremiumFlag = location.state?.isPremium;
   const navigate = useNavigate();
   const { testId } = useParams();
   const { isAuthenticated } = useAuth();
-  const category = location.state?.category;
-  const topic = location.state?.title;
+  // FUNCTION1_TESTCARD_ROUTE_FALLBACK_V3:
+  // React Router location.state disappears on refresh/direct URL. Keep backend test
+  // metadata as a fallback so the legacy local question bank still resolves correctly.
+  const [backendTestMeta, setBackendTestMeta] = useState(null);
+  const category = location.state?.category || backendTestMeta?.subject?.slug;
+  const topic = location.state?.title || backendTestMeta?.title;
 
+  // FUNCTION1_TESTBANK_NORMALIZE_V4:
+  // Backend/admin data may use visually identical apostrophe characters
+  // (', ’, ʻ, ʼ, `). Normalize them before matching the legacy local bank.
+  const normalizeTestBankKey = (value) =>
+    String(value || "")
+      .normalize("NFKC")
+      .replace(/[ʻʼ’‘`´]/g, "'")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
   const questionSet = questionSets.find(
-    (item) => item.category === category && item.topic === topic
+    (item) =>
+      normalizeTestBankKey(item.category) === normalizeTestBankKey(category) &&
+      normalizeTestBankKey(item.topic) === normalizeTestBankKey(topic)
   );
   const normalizedTopic = topic?.toLowerCase() || "";
   const shouldUseFunctionGraphTest =
@@ -4906,33 +4925,50 @@ export default function TestCard() {
   const [savingResult, setSavingResult] = useState(false);
   const [savedAttempt, setSavedAttempt] = useState(null);
   const [saveError, setSaveError] = useState("");
+  const resultAttemptIdRef = useRef(`result-${testId || "test"}-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`);
+  // FUNCTION1_P2P_ACCESS_GUARD: server-side premium access gate for the local bilmman test UI.
+  const [accessChecking, setAccessChecking] = useState(Boolean(testId) && routePremiumFlag !== false);
+  const [accessDenied, setAccessDenied] = useState(false);
+  const [accessError, setAccessError] = useState("");
+  // FUNCTION1_FREE_ACCESS_V15_RELEASE
+  useEffect(() => {
+    if (routePremiumFlag === false) {
+      setAccessChecking(false);
+      if (typeof setAccessDenied === "function") setAccessDenied(false);
+      if (typeof setAccessError === "function") setAccessError("");
+    }
+  }, [routePremiumFlag]);
   const recordedRef = useRef(false);
 
-  const recordResult = useCallback(async (finalScore) => {
+  // FUNCTION1_RESULTS_SAVE_V13: server-verified save, variable question counts supported.
+  const recordResult = useCallback(async (finalAnswers = []) => {
     if (recordedRef.current || !testId) return;
     if (!isAuthenticated) {
-      setSaveError("Natijani backendda saqlash uchun tizimga kiring.");
+      setSaveError("Natijani saqlash uchun tizimga kiring.");
       return;
     }
-
     recordedRef.current = true;
     setSavingResult(true);
     setSaveError("");
     try {
-      const attempt = await api.recordLocalAttempt(testId, {
-        score: finalScore,
-        total_questions: filteredQuestions.length,
-        duration_seconds: 1800 - time,
+      const attempt = await recordVerifiedLocalAttemptV13(testId, {
+        answers: (finalAnswers || []).map((item, index) => ({
+          question_index: Number.isInteger(item.questionIndex) ? item.questionIndex : index,
+          selected_answer: item.userAnswer ?? "",
+        })),
+        duration_seconds: Math.max(0, 1800 - time),
+        client_attempt_id: resultAttemptIdRef.current,
       });
       setSavedAttempt(attempt);
+      setScore(attempt.score);
     } catch (error) {
       recordedRef.current = false;
       setSaveError(error.message || "Natijani saqlashda xatolik yuz berdi.");
     } finally {
       setSavingResult(false);
     }
-  }, [filteredQuestions.length, isAuthenticated, testId, time]);
-// Mana shu funksiyani shundoq qo'shib qo'ying:
+  }, [isAuthenticated, testId, time]);
+
 const handleBack = () => {
   const confirmLeave = window.confirm(
     "Haqiqatan ham testni tark etmoqchimisiz? Hozirgi natijalaringiz saqlanmaydi!"
@@ -4946,12 +4982,11 @@ const handleBack = () => {
       const timer = setInterval(() => setTime((prev) => prev - 1), 1000);
       return () => clearInterval(timer);
     }
-
-    if (time === 0) {
+    if (time === 0 && !finished) {
       setFinished(true);
-      recordResult(score);
+      recordResult(answers);
     }
-  }, [time, finished, showModal, recordResult, score]);
+  }, [time, finished, showModal, recordResult, answers]);
 
   const getOptionValue = (option) => {
     if (typeof option !== "string") return option.label;
@@ -4986,38 +5021,62 @@ const handleBack = () => {
 
     const activeQuestion = filteredQuestions[current];
     const isCorrect = selected === activeQuestion.answer;
-    if (isCorrect) {
-      setScore((prev) => prev + 1);
-    }
     const finalScore = score + (isCorrect ? 1 : 0);
+    if (isCorrect) setScore(finalScore);
 
-    setAnswers((prev) => [
-      ...prev,
-      {
-        question: activeQuestion.question,
-        questionImage: activeQuestion.questionImage,
-        userAnswer: selected,
-        correctAnswer: activeQuestion.answer,
-        explanation: activeQuestion.explanation,
-        isCorrect,
-      },
-    ]);
-
+    const answerRecord = {
+      questionIndex: current,
+      question: activeQuestion.question,
+      questionImage: activeQuestion.questionImage,
+      userAnswer: selected,
+      correctAnswer: activeQuestion.answer,
+      explanation: activeQuestion.explanation,
+      isCorrect,
+    };
+    const finalAnswers = [...answers, answerRecord];
+    setAnswers(finalAnswers);
     setSelected(null);
 
     if (current < filteredQuestions.length - 1) {
       setCurrent((prev) => prev + 1);
     } else {
       setFinished(true);
-      recordResult(finalScore);
+      recordResult(finalAnswers);
     }
   };
-
   const formatTime = () => {
     const min = Math.floor(time / 60);
     const sec = time % 60;
     return `${min}:${sec < 10 ? "0" : ""}${sec}`;
   };
+
+  if (accessChecking && routePremiumFlag !== false) {
+    return (
+      <div className="test-container">
+        <p>Premium access tekshirilmoqda...</p>
+      </div>
+    );
+  }
+
+  if (accessDenied && routePremiumFlag !== false) {
+    return (
+      <div className="test-container">
+        <h2>Premium test yopiq</h2>
+        <p>Bu testni boshlash uchun avval to'lovingiz admin tomonidan tasdiqlanishi kerak.</p>
+        <button className="next-btn" onClick={() => navigate("/test")}>Testlarga qaytish</button>
+      </div>
+    );
+  }
+
+  if (accessError && routePremiumFlag !== false) {
+    return (
+      <div className="test-container">
+        <h2>Testni ochib bo'lmadi</h2>
+        <p>{accessError}</p>
+        <button className="next-btn" onClick={() => navigate("/test")}>Testlarga qaytish</button>
+      </div>
+    );
+  }
 
   if (!category || !topic || filteredQuestions.length === 0) {
     return (

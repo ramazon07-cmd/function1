@@ -1,0 +1,6774 @@
+{
+  "version": "69c0c00f13ef2a48868af7026f7c0aa9da55895c6ff453feec6c434e1957e1d3",
+  "set_count": 40,
+  "question_count": 593,
+  "question_count_distribution": {
+    "8": 1,
+    "15": 39
+  },
+  "sets": [
+    {
+      "category": "math",
+      "topic": "Natural sonlar va amallar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "(24 + 18) ÷ 6 = ?",
+          "answer": "7",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "15 × 4 − 18 = ?",
+          "answer": "42",
+          "options": [
+            "38",
+            "40",
+            "42",
+            "44"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "84 ÷ 7 + 16 = ?",
+          "answer": "28",
+          "options": [
+            "26",
+            "27",
+            "28",
+            "29"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "9 × (12 − 5) = ?",
+          "answer": "63",
+          "options": [
+            "54",
+            "63",
+            "72",
+            "81"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "48 + 36 ÷ 6 = ?",
+          "answer": "54",
+          "options": [
+            "52",
+            "54",
+            "56",
+            "58"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "(25 × 8) − 75 = ?",
+          "answer": "125",
+          "options": [
+            "115",
+            "120",
+            "125",
+            "130"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "144 ÷ 12 + 19 = ?",
+          "answer": "31",
+          "options": [
+            "29",
+            "30",
+            "31",
+            "32"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "17 × 5 − 28 = ?",
+          "answer": "57",
+          "options": [
+            "55",
+            "57",
+            "59",
+            "61"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "96 ÷ (8 × 2) = ?",
+          "answer": "6",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "125 + 75 − 48 = ?",
+          "answer": "152",
+          "options": [
+            "150",
+            "152",
+            "154",
+            "156"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "18² ÷ 6 = ?",
+          "answer": "54",
+          "options": [
+            "48",
+            "52",
+            "54",
+            "56"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "13 × 13 − 25 = ?",
+          "answer": "144",
+          "options": [
+            "142",
+            "144",
+            "146",
+            "148"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "(240 ÷ 15) × 7 = ?",
+          "answer": "112",
+          "options": [
+            "98",
+            "105",
+            "112",
+            "119"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "320 − (48 × 5) = ?",
+          "answer": "80",
+          "options": [
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "(99 + 51) ÷ 5 = ?",
+          "answer": "30",
+          "options": [
+            "28",
+            "29",
+            "30",
+            "31"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Matnli Masalalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Ikkita sonning yig'indisi 56 ga, 1-sonning 3 baravari bilan 2-sonning 2 baravarining yig'indisi 136 ga teng. Bu sonlarni toping.",
+          "answer": "24 va 32",
+          "options": [
+            "24 va 32",
+            "28 va 28",
+            "30 va 26",
+            "34 va 22"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Ikki ishchi birgalikda ishni 12 kunda bitiradi. Agar birinchi ishchi 3 kunga kam, ikkinchi ishchi 6 kunga ko'p ishlasa, ish 10 kunda bitadi. Har bir ishchining alohida-alohida ishni tugatish vaqti necha kunga teng?",
+          "answer": "24 va 36",
+          "options": [
+            "18 va 24",
+            "20 va 30",
+            "24 va 36",
+            "15 va 20"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Bir savatda olma va noklar bor. Agar savatchadan 6 ta olma olib, o'rniga 8 ta nok qo'yilsa, undagi olma va noklar soni tenglashadi. Agar 4 ta nok olib, o'rniga 6 ta olma qo'yilsa, undagi olma soni noklar sonidan 10 taga ko'p bo'ladi. Boshlang'ich savatda nechta olma va nechta nok bor edi?",
+          "answer": "16 ta olma, 22 ta nok",
+          "options": [
+            "14 ta olma, 20 ta nok",
+            "16 ta olma, 22 ta nok",
+            "18 ta olma, 24 ta nok",
+            "20 ta olma, 26 ta nok"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Poyezd 360 km masofani belgilangan vaqtdan 1 soat erkini yetib bordi. Agar tezligi soatiga 10 km ga kam bo'lganida, 2 soat kechikib yetib borardi. Poyezdning tezligi (km/soat) ni toping.",
+          "answer": "80",
+          "options": [
+            "60",
+            "70",
+            "80",
+            "90"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Suv havzasining ikkita krani bor. Birinchi kran ochiq bo'lsa, havza 6 soatda to'ladi, ikkinchi kran ochiq bo'lsa, 9 soatda to'ladi. Ikkala kran bir vaqtda ochiq bo'lsa, havza nechada to'ladi?",
+          "answer": "3,6 soat",
+          "options": [
+            "3,2 soat",
+            "3,6 soat",
+            "3,75 soat",
+            "4 soat"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Uchburchakning bir tomoni 7 cm ga oshirilsa, perimetri 16 cm ga ortadi. Agar shu tomoni 5 cm ga kamaytirilsa, perimetri 4 cm ga kamayadi. Uchburchak perimetrini toping.",
+          "answer": "48 cm",
+          "options": [
+            "36 cm",
+            "40 cm",
+            "48 cm",
+            "52 cm"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Bir sonning 40% i 24 ga teng. Agar shu sonning 25% iga 15 qo'shilsa, qancha hosil bo'ladi?",
+          "answer": "30",
+          "options": [
+            "30",
+            "35",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Bir savdogar tovarni 20% foyda bilan sotdi. Agar u tovarning narxini yana 10% ga oshirsa, dastlabki narxga nisbatan umumiy foyda foizi necha bo'ladi?",
+          "answer": "32%",
+          "options": [
+            "28%",
+            "30%",
+            "32%",
+            "33%"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Ikki qishloq orasidagi masofa 48 km. Bir velosipedchi va bir piyoda qarama-qarshi yo'nalishda harakat qilishdi va ular 2 soatda uchrashdi. Velosipedchining tezligi piyoda tezligidan 12 km/soat ga katta. Ularning tezliklarini toping.",
+          "answer": "18 km/soat va 6 km/soat",
+          "options": [
+            "18 km/soat va 6 km/soat",
+            "20 km/soat va 8 km/soat",
+            "24 km/soat va 12 km/soat",
+            "16 km/soat va 4 km/soat"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Agar bir sonning kvadratidan 25 ayirilsa, 2 baravar 7 ortadi. Agar shu songa 5 qo'shilsa, uning kvadrati 4 baravar 21 kamayadi. Shu sonni toping.",
+          "answer": "5",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Bir sinfda o'g'il bolalar soni qizlar sonidan 8 taga ko'p. Agar sinfga 2 ta qiz kelib qo'shilsa, o'g'il bolalar soni qizlar sonidan 2 marta ko'p bo'ladi. Sinfda nechta o'g'il va nechta qiz bor?",
+          "answer": "20 ta o'g'il, 12 ta qiz",
+          "options": [
+            "18 ta o'g'il, 10 ta qiz",
+            "20 ta o'g'il, 12 ta qiz",
+            "16 ta o'g'il, 8 ta qiz",
+            "22 ta o'g'il, 14 ta qiz"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "A va B punktlardan bir-biriga tomon turli vaqtlarda ikki avtomobil yo'lga chiqdi va ular 180 km masofada uchrashgan. Agar ikkinchi avtomobil 1 soat kech chiqqanida, ular 150 km masofada uchrashgan bo'lardi. Avtomobillarning tezliklari yig'indisi necha km/soat?",
+          "answer": "90",
+          "options": [
+            "90",
+            "100",
+            "110",
+            "120"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Bir ishni bajarish uchun zarur vaqt mehnatkashlar soniga teskari proporsional bo'lib, agar 6 ta ishchi 12 kunda bajarsa, shu ishni 8 ta ishchi necha kunda bajaradi?",
+          "answer": "9 kunda",
+          "options": [
+            "6 kunda",
+            "7 kunda",
+            "8 kunda",
+            "9 kunda"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Agar uch xonali sonning yuzlar xonasidagi raqami ikkilar xonasiga, birliklar xonasidagi raqami o'nlar xonasiga ko'chirilib, o'nlar xonasidagi raqam o'z joyida qolsa, hosil bo'lgan yangi son dastlabki sondan 198 marta katta bo'ladi. Dastlabki sonni toping.",
+          "answer": "132",
+          "options": [
+            "132",
+            "213",
+            "231",
+            "312"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "To'g'ri to'rtburchakning bo'yi enidan 8 cm katta, diagonali 10 cm ga teng bo'lsa, to'g'ri to'rtburchak yuzini toping.",
+          "answer": "24 cm²",
+          "options": [
+            "24 cm²",
+            "32 cm²",
+            "40 cm²",
+            "48 cm²"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Ko'phadlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Ko'phad P(x) = 2x³ − 5x² + 3x − 7 ko'phadning darajasi va yetakchi hadini aniqlang.",
+          "answer": "3; 2x³",
+          "options": [
+            "3; 2x³",
+            "2; −5x²",
+            "3; −5x²",
+            "1; 3x"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "P(x) = x⁴ − 2x³ + 3x² − 4x + 5 ko'phadning P(−1) qiymatini toping.",
+          "answer": "15",
+          "options": [
+            "3",
+            "5",
+            "−3",
+            "−7"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "P(x) = x³ − 3x² + 2x − 1 ko'phadni (x − 1) ga bo'lganda hosil bo'ladigan qoldiqni toping.",
+          "answer": "−1",
+          "options": [
+            "−1",
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "P(x) = x³ + ax² + bx + 8 ko'phad (x − 2) ga bo'linishida qoldiq 0 ga teng bo'lsa, a + 2b ni toping.",
+          "answer": "0",
+          "options": [
+            "0",
+            "2",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "P(x) = 2x³ − x² + ax − 5 ko'phad (x + 1) ga bo'linishida qoldiq 7 ga teng bo'lsa, a ni toping.",
+          "answer": "5",
+          "options": [
+            "6",
+            "5",
+            "4",
+            "3"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "P(x) = x³ − 4x² + 5x − 2 ko'phadni (x² − x + 1) ga bo'ling. Bo'linmaning natijasini toping.",
+          "answer": "x − 3",
+          "options": [
+            "x − 3",
+            "x − 2",
+            "x + 1",
+            "x + 2"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "P(x) = x⁴ − 3x³ + 2x² + ax + 6 ko'phad (x² − x + 2) ga bo'linganda qoldiq 3x + 1 ga teng bo'lsa, a ni toping.",
+          "answer": "2",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "−1"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "P(x) = 2x⁴ − kx² + 3 ko'phad x² − 1 ga bo'linishida qoldiq 0 bo'lsa, k ni toping.",
+          "answer": "5",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "P(x) = x³ + px² + qx + r ko'phad x − 1, x + 2 va x − 3 ga qoldiqsiz bo'linadi. Agar P(0) = 6 bo'lsa, p + q + r ni toping.",
+          "answer": "6",
+          "options": [
+            "0",
+            "3",
+            "6",
+            "9"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "P(x) = 2x³ + mx² − 11x − 5 ko'phad (x − 2) ga bo'linishida qoldiq 7 ga teng. m ni toping.",
+          "answer": "3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "P(x) = x⁴ + ax³ + bx² + cx + d ko'phad x² + 1 ga bo'linishida qoldiq 2x + 3 ga teng. Agar P(0) = 5 bo'lsa, a − b + c − d ni toping.",
+          "answer": "0",
+          "options": [
+            "−2",
+            "−1",
+            "0",
+            "1"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "P(x) = x³ + 3x² + mx + n ko'phad (x + 1) ga bo'linishida qoldiq 4 ga teng, (x − 2) ga bo'linishida qoldiq −1 ga teng. m + n ni toping.",
+          "answer": "−2",
+          "options": [
+            "−3",
+            "−2",
+            "−1",
+            "0"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "P(x) = x⁴ − 2x³ − 7x² + ax + b ko'phad x² − x − 2 ga qoldiqsiz bo'linadi. a + 2b ni toping.",
+          "answer": "−2",
+          "options": [
+            "−2",
+            "−4",
+            "0",
+            "2"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "P(x) = x⁴ + 2x³ + 3x² + 2x + 1 ko'phadni x² + 1 ga bo'ling. Bo'linmaning va qoldiqning yig'indisini toping.",
+          "answer": "x² + 2x + 2",
+          "options": [
+            "x² + 2x + 2",
+            "x² + 2x + 3",
+            "x² + 3x + 2",
+            "x² + 3x + 3"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "P(x) = kx⁴ − 4x³ + 6x² − 4x + 1 ko'phad (x − 1)² ga qoldiqsiz bo'linadi. k ni toping.",
+          "answer": "1",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Proporsiyalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "12 : 18 = 20 : x. x = ?",
+          "answer": "30",
+          "options": [
+            "28",
+            "30",
+            "32",
+            "34"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "7 : 9 = 35 : x. x = ?",
+          "answer": "45",
+          "options": [
+            "42",
+            "45",
+            "48",
+            "50"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "15 : 25 = x : 40. x = ?",
+          "answer": "24",
+          "options": [
+            "22",
+            "24",
+            "26",
+            "28"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "18 : x = 27 : 36. x = ?",
+          "answer": "24",
+          "options": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "14 : 21 = x : 42. x = ?",
+          "answer": "28",
+          "options": [
+            "24",
+            "26",
+            "28",
+            "30"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "16 : 24 = 18 : x. x = ?",
+          "answer": "27",
+          "options": [
+            "25",
+            "26",
+            "27",
+            "28"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "25 : 40 = x : 64. x = ?",
+          "answer": "40",
+          "options": [
+            "36",
+            "38",
+            "40",
+            "42"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "9 : 15 = 24 : x. x = ?",
+          "answer": "40",
+          "options": [
+            "38",
+            "39",
+            "40",
+            "41"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "22 : x = 11 : 18. x = ?",
+          "answer": "36",
+          "options": [
+            "34",
+            "36",
+            "38",
+            "40"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "27 : 45 = x : 60. x = ?",
+          "answer": "36",
+          "options": [
+            "34",
+            "36",
+            "38",
+            "40"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "32 : 48 = 18 : x. x = ?",
+          "answer": "27",
+          "options": [
+            "24",
+            "26",
+            "27",
+            "28"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "45 : 54 = x : 72. x = ?",
+          "answer": "60",
+          "options": [
+            "58",
+            "60",
+            "62",
+            "64"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "28 : 35 = 40 : x. x = ?",
+          "answer": "50",
+          "options": [
+            "48",
+            "50",
+            "52",
+            "54"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "36 : x = 18 : 30. x = ?",
+          "answer": "60",
+          "options": [
+            "56",
+            "58",
+            "60",
+            "62"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "42 : 63 = x : 84. x = ?",
+          "answer": "56",
+          "options": [
+            "52",
+            "54",
+            "56",
+            "58"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Ketma-ketliklar va Progressiyalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Arifmetik progressiyaning birinchi hadi a₁ = 7, ayirmasi d = −3. Uning 20-hadini toping.",
+          "answer": "-50",
+          "options": [
+            "-50",
+            "-49",
+            "-46",
+            "-47"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Geometrik progressiyaning birinchi hadi b₁ = 3, maxraji q = 2. Uning 8-hadini toping.",
+          "answer": "384",
+          "options": [
+            "384",
+            "256",
+            "128",
+            "192"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Arifmetik progressiyada a₅ = 19, a₁₀ = 34. Uning ayirmasini d toping.",
+          "answer": "3",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Geometrik progressiyada b₃ = 12, b₆ = 96. Uning maxrajini q toping.",
+          "answer": "2",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Arifmetik progressiyaning birinchi hadi a₁ = −2, 10-hadi a₁₀ = 25. Uning ayirmasini d toping.",
+          "answer": "3",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Geometrik progressiyada b₁ = 5, b₄ = 40. Uning 7-hadini toping.",
+          "answer": "320",
+          "options": [
+            "320",
+            "640",
+            "1280",
+            "2560"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Arifmetik progressiyaning dastlabki n ta hadining yig'indisi formulasi Sₙ = 2n² + 3n. Uning birinchi hadini a₁ va ayirmasini d toping.",
+          "answer": "a₁ = 2, d = 3",
+          "options": [
+            "a₁ = 2, d = 4",
+            "a₁ = 2, d = 3",
+            "a₁ = 5, d = 4",
+            "a₁ = 3, d = 2"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Geometrik progressiyaning dastlabki n ta hadining yig'indisi Sₙ = 3(2ⁿ − 1). Uning birinchi hadini va maxrajini toping.",
+          "answer": "b₁ = 3, q = 2",
+          "options": [
+            "b₁ = 3, q = 2",
+            "b₁ = 3, q = 3",
+            "b₁ = 1, q = 2",
+            "b₁ = 1, q = 3"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Arifmetik progressiyada a₇ = 17, a₁₅ = 45. Uning birinchi hadini a₁ toping.",
+          "answer": "-7",
+          "options": [
+            "-5",
+            "-7",
+            "-9",
+            "-11"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Geometrik progressiyada b₂ = 6, b₅ = 162. Uning birinchi hadini b₁ toping.",
+          "answer": "2",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Arifmetik progressiyaning dastlabki 10 ta hadining yig'indisi 145 ga teng. Agar a₁ = 5 bo'lsa, ayirmani d toping.",
+          "answer": "2",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Geometrik progressiyaning dastlabki 5 ta hadining yig'indisi 31 ga teng. Agar b₁ = 1, q = 2 bo'lsa, to'g'rimi?",
+          "answer": "Ha, to'g'ri",
+          "options": [
+            "Ha, to'g'ri",
+            "Yo'q, noto'g'ri",
+            "Ha, agar q = 3 bo'lsa",
+            "Ma'lumot yetarli emas"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Arifmetik progressiyaning uchta ketma-ket hadi a − 4, a, a + 4 ko'rinishda berilgan. Agar a₁ = −11 bo'lsa, d ni toping.",
+          "answer": "4",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Geometrik progressiyaning uchta ketma-ket hadi 2, 6, 18 ga teng. Uning 10-hadini toping.",
+          "answer": "39366",
+          "options": [
+            "1536",
+            "3072",
+            "4096",
+            "6144"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Arifmetik progressiyaning 7-hadigacha bo'lgan hadlari yig'indisi va 14-hadigacha bo'lgan hadlari yig'indisi mos ravishda 63 va 189 ga teng. Uning ayirmasini d toping.",
+          "answer": "2",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Tengsizliklar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "3x - 7 > 20 bo'lsa, x ning eng kichik butun qiymati qaysi?",
+          "answer": "10",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2x + 5 ≤ 17 bo'lsa, x uchun eng katta butun sonni toping.",
+          "answer": "6",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "5 < 2x + 1 < 13 bo'lsa, quyidagilardan qaysi biri x bo'lishi mumkin?",
+          "answer": "3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "7"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "|x - 4| < 3 bo'lsa, qaysi son mos keladi?",
+          "answer": "2",
+          "options": [
+            "1",
+            "2",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "|2x| ≤ 8 bo'lsa, quyidagilardan qaysi biri mos kelmaydi?",
+          "answer": "5",
+          "options": [
+            "-4",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "4x - 9 ≥ 11 bo'lsa, x ning eng kichik butun qiymati?",
+          "answer": "5",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7 - x > 2 bo'lsa, x uchun qaysi qiymat mos emas?",
+          "answer": "5",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "3(x - 2) < 15 bo'lsa, x ning eng katta butun qiymati?",
+          "answer": "6",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "2 ≤ x < 8 bo'lsa, quyidagilardan qaysi biri mos emas?",
+          "answer": "8",
+          "options": [
+            "2",
+            "5",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "5x + 2 > 27 bo'lsa, x ning eng kichik butun qiymati?",
+          "answer": "6",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "x² < 25 bo'lsa, quyidagilardan qaysi biri mos emas?",
+          "answer": "5",
+          "options": [
+            "-4",
+            "-2",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "|x + 1| = 4 bo'lsa, quyidagilardan qaysi biri yechim?",
+          "answer": "B va C",
+          "options": [
+            "2",
+            "3",
+            "-5",
+            "B va C"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "6x - 5 < 31 bo'lsa, x ning eng katta butun qiymati?",
+          "answer": "5",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "x/3 ≥ 4 bo'lsa, x uchun eng kichik butun son?",
+          "answer": "12",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "2 < (x - 1)/2 ≤ 5 bo'lsa, qaysi qiymat mos keladi?",
+          "answer": "10",
+          "options": [
+            "4",
+            "6",
+            "10",
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Foizlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Bir mahsulot narxi 800 000 so'm. Avval 15% chegirma, keyin yana 10% chegirma berildi. Yakuniy narx qancha bo'ladi?",
+          "answer": "612 000",
+          "options": [
+            "612 000",
+            "620 000",
+            "640 000",
+            "680 000"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "240 sonining necha foizi 72 ga teng?",
+          "answer": "30%",
+          "options": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Bir son 20% ga oshirilgach 480 bo'ldi. Dastlabki sonni toping.",
+          "answer": "400",
+          "options": [
+            "360",
+            "380",
+            "400",
+            "420"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Bir son 25% ga kamaytirilgach 180 bo'ldi. Dastlabki son qancha edi?",
+          "answer": "240",
+          "options": [
+            "220",
+            "230",
+            "240",
+            "250"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "750 ning 18% i nechaga teng?",
+          "answer": "135",
+          "options": [
+            "125",
+            "130",
+            "135",
+            "140"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "320 ning 12.5% i nechaga teng?",
+          "answer": "40",
+          "options": [
+            "35",
+            "40",
+            "45",
+            "50"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Narxi 500 000 so'm bo'lgan telefon 8% ga qimmatlashdi. Yangi narxni toping.",
+          "answer": "540 000",
+          "options": [
+            "530 000",
+            "535 000",
+            "540 000",
+            "545 000"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Bir sinfdagi 40 o'quvchining 65% i qizlar. Qizlar sonini toping.",
+          "answer": "26",
+          "options": [
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "480 soni 600 sonining necha foizini tashkil qiladi?",
+          "answer": "80%",
+          "options": [
+            "75%",
+            "80%",
+            "85%",
+            "90%"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "1000 000 so'm omonatga yiliga 12% oddiy foiz qo'shilsa, 1 yildan keyin qancha bo'ladi?",
+          "answer": "1 120 000",
+          "options": [
+            "1 100 000",
+            "1 120 000",
+            "1 150 000",
+            "1 200 000"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Bir mahsulot narxi avval 20% ga oshdi, keyin yangi narxdan 20% ga kamaydi. Boshlang'ich narx 100 000 so'm bo'lsa, oxirgi narx qancha bo'ladi?",
+          "answer": "96 000",
+          "options": [
+            "96 000",
+            "98 000",
+            "100 000",
+            "104 000"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "450 ning 22% i nechaga teng?",
+          "answer": "99",
+          "options": [
+            "95",
+            "98",
+            "99",
+            "102"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Bir sonning 35% i 84 ga teng. Shu sonni toping.",
+          "answer": "240",
+          "options": [
+            "220",
+            "230",
+            "240",
+            "250"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Narxi 960 000 so'm bo'lgan noutbukka 25% ustama qo'yildi. Sotuv narxi qancha bo'ladi?",
+          "answer": "1 200 000",
+          "options": [
+            "1 120 000",
+            "1 180 000",
+            "1 200 000",
+            "1 250 000"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "800 ning avval 15% i, so'ng qolgan qismining 25% i olindi. Jami necha birlik olindi?",
+          "answer": "290",
+          "options": [
+            "260",
+            "270",
+            "290",
+            "300"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Kasrlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "5/6 + 7/12 = ?",
+          "answer": "17/12",
+          "options": [
+            "17/12",
+            "15/12",
+            "13/12",
+            "19/12"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "7/8 - 5/12 = ?",
+          "answer": "11/24",
+          "options": [
+            "11/24",
+            "13/24",
+            "7/24",
+            "5/12"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3/5 × 15/8 = ?",
+          "answer": "9/8",
+          "options": [
+            "9/8",
+            "45/40",
+            "15/8",
+            "5/2"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4/9 ÷ 2/3 = ?",
+          "answer": "2/3",
+          "options": [
+            "1/2",
+            "2/3",
+            "3/4",
+            "4/3"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "2/7 + 5/14 = ?",
+          "answer": "9/14",
+          "options": [
+            "9/14",
+            "11/14",
+            "13/14",
+            "15/14"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "11/15 - 2/5 = ?",
+          "answer": "1/3",
+          "options": [
+            "1/3",
+            "2/15",
+            "1/5",
+            "3/10"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "5/12 × 18 = ?",
+          "answer": "7.5",
+          "options": [
+            "6",
+            "7",
+            "7.5",
+            "8"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "3 1/2 + 2 2/3 = ?",
+          "answer": "6 1/6",
+          "options": [
+            "6 1/6",
+            "6",
+            "5 5/6",
+            "5 1/3"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "7/9 ÷ 14/27 = ?",
+          "answer": "3/2",
+          "options": [
+            "1",
+            "3/2",
+            "5/4",
+            "2"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "15/20 qisqartirilsa nima bo'ladi?",
+          "answer": "3/4",
+          "options": [
+            "2/3",
+            "3/4",
+            "4/5",
+            "5/6"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "8/15 + 7/10 = ?",
+          "answer": "37/30",
+          "options": [
+            "37/30",
+            "31/30",
+            "29/30",
+            "41/30"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "9/10 - 11/20 = ?",
+          "answer": "7/20",
+          "options": [
+            "7/20",
+            "9/20",
+            "1/2",
+            "3/10"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "(2/3 + 5/6) × 2 = ?",
+          "answer": "3",
+          "options": [
+            "3",
+            "2",
+            "5/2",
+            "7/3"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "1/2 + 1/3 + 1/6 = ?",
+          "answer": "1",
+          "options": [
+            "5/6",
+            "7/6",
+            "1",
+            "4/3"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "4/5 ÷ (2/3) = ?",
+          "answer": "6/5",
+          "options": [
+            "5/6",
+            "6/5",
+            "4/3",
+            "3/2"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "O'nli kasrlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "3.75 + 2.48 = ?",
+          "answer": "6.23",
+          "options": [
+            "6.13",
+            "6.23",
+            "6.33",
+            "6.43"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "8.6 - 3.79 = ?",
+          "answer": "4.81",
+          "options": [
+            "4.71",
+            "4.81",
+            "4.91",
+            "5.01"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "2.4 × 3.5 = ?",
+          "answer": "8.4",
+          "options": [
+            "7.4",
+            "8.2",
+            "8.4",
+            "8.6"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "7.56 ÷ 1.2 = ?",
+          "answer": "6.3",
+          "options": [
+            "6.2",
+            "6.3",
+            "6.4",
+            "6.5"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "1.25 + 2.75 - 0.8 = ?",
+          "answer": "3.2",
+          "options": [
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "0.48 × 25 = ?",
+          "answer": "12",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "12.8 ÷ 0.4 = ?",
+          "answer": "32",
+          "options": [
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "5.5 + 3.25 - 1.75 = ?",
+          "answer": "7",
+          "options": [
+            "6.5",
+            "7",
+            "7.25",
+            "7.5"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9.45 - 4.68 = ?",
+          "answer": "4.77",
+          "options": [
+            "4.67",
+            "4.77",
+            "4.87",
+            "4.97"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "1.6 × 2.5 = ?",
+          "answer": "4",
+          "options": [
+            "3.5",
+            "3.8",
+            "4",
+            "4.2"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "15.75 ÷ 2.5 = ?",
+          "answer": "6.3",
+          "options": [
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "0.375 + 1.625 = ?",
+          "answer": "2",
+          "options": [
+            "1.9",
+            "2",
+            "2.1",
+            "2.2"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "4.2 × 1.5 = ?",
+          "answer": "6.3",
+          "options": [
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "10.08 ÷ 0.8 = ?",
+          "answer": "12.6",
+          "options": [
+            "12.4",
+            "12.5",
+            "12.6",
+            "12.7"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "2.75 + 3.125 = ?",
+          "answer": "5.875",
+          "options": [
+            "5.775",
+            "5.875",
+            "5.975",
+            "6.075"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Darajalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "2⁵ + 2³ = ?",
+          "answer": "40",
+          "options": [
+            "36",
+            "38",
+            "40",
+            "42"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "3⁴ - 2⁵ = ?",
+          "answer": "49",
+          "options": [
+            "47",
+            "49",
+            "51",
+            "53"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "5² × 2 = ?",
+          "answer": "50",
+          "options": [
+            "40",
+            "45",
+            "50",
+            "55"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4³ ÷ 2² = ?",
+          "answer": "16",
+          "options": [
+            "14",
+            "16",
+            "18",
+            "20"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "10² - 7² = ?",
+          "answer": "51",
+          "options": [
+            "49",
+            "50",
+            "51",
+            "52"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "(3²)² = ?",
+          "answer": "81",
+          "options": [
+            "27",
+            "54",
+            "81",
+            "243"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "2⁶ ÷ 2³ = ?",
+          "answer": "8",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "16"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "5³ - 3³ = ?",
+          "answer": "98",
+          "options": [
+            "96",
+            "97",
+            "98",
+            "99"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "2⁴ × 3 = ?",
+          "answer": "48",
+          "options": [
+            "42",
+            "44",
+            "48",
+            "52"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "9² ÷ 3² = ?",
+          "answer": "9",
+          "options": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "6² + 4² = ?",
+          "answer": "52",
+          "options": [
+            "48",
+            "50",
+            "52",
+            "54"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "7² - 5² = ?",
+          "answer": "24",
+          "options": [
+            "22",
+            "24",
+            "26",
+            "28"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "2³ × 2⁴ = ?",
+          "answer": "128",
+          "options": [
+            "64",
+            "96",
+            "128",
+            "256"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "3⁵ ÷ 3² = ?",
+          "answer": "27",
+          "options": [
+            "9",
+            "18",
+            "27",
+            "81"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "(2³ + 3²) × 2 = ?",
+          "answer": "34",
+          "options": [
+            "32",
+            "34",
+            "36",
+            "38"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Algebraik ifodalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "x = 4 bo'lsa, 3x + 2 = ?",
+          "answer": "14",
+          "options": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "a = 5 bo'lsa, 2a² - 5 = ?",
+          "answer": "45",
+          "options": [
+            "40",
+            "45",
+            "50",
+            "55"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "y = 3 bo'lsa, y² + 4y = ?",
+          "answer": "21",
+          "options": [
+            "19",
+            "20",
+            "21",
+            "22"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "x = 6 bo'lsa, (x - 2) × 3 = ?",
+          "answer": "12",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "a = 2 bo'lsa, 5a² - 3 = ?",
+          "answer": "17",
+          "options": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "b = 4 bo'lsa, b² + 2b = ?",
+          "answer": "24",
+          "options": [
+            "22",
+            "23",
+            "24",
+            "25"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "x = 5 bo'lsa, x² - 3x = ?",
+          "answer": "10",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "m = 7 bo'lsa, 2m - 5 = ?",
+          "answer": "9",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "p = 3 bo'lsa, (p + 2)² = ?",
+          "answer": "25",
+          "options": [
+            "20",
+            "25",
+            "30",
+            "35"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "x = 2 bo'lsa, 4x² + x = ?",
+          "answer": "18",
+          "options": [
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "a = 6 bo'lsa, a² - 2a + 1 = ?",
+          "answer": "25",
+          "options": [
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "y = 4 bo'lsa, 3y² - y = ?",
+          "answer": "44",
+          "options": [
+            "42",
+            "44",
+            "46",
+            "48"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "k = 5 bo'lsa, (2k + 1) × 2 = ?",
+          "answer": "22",
+          "options": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "x = 3 bo'lsa, x³ - x = ?",
+          "answer": "24",
+          "options": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "a = 4 bo'lsa, (a + 3)(a - 1) = ?",
+          "answer": "21",
+          "options": [
+            "18",
+            "20",
+            "21",
+            "22"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Kvadrat ildizlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "√196 + √49 = ?",
+          "answer": "21",
+          "options": [
+            "19",
+            "20",
+            "21",
+            "22"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "√324 - √64 = ?",
+          "answer": "10",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "√225 ÷ √25 = ?",
+          "answer": "3",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "2√81 - √36 = ?",
+          "answer": "12",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "√144 + √100 = ?",
+          "answer": "22",
+          "options": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "√400 - √169 = ?",
+          "answer": "7",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "√625 ÷ 5 = ?",
+          "answer": "5",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "(√64)² = ?",
+          "answer": "64",
+          "options": [
+            "32",
+            "48",
+            "64",
+            "128"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "√81 × √49 = ?",
+          "answer": "63",
+          "options": [
+            "56",
+            "63",
+            "72",
+            "81"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "√361 - √121 = ?",
+          "answer": "8",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "√441 + √16 = ?",
+          "answer": "25",
+          "options": [
+            "23",
+            "24",
+            "25",
+            "26"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "√900 ÷ √25 = ?",
+          "answer": "6",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "3√49 + √64 = ?",
+          "answer": "29",
+          "options": [
+            "28",
+            "29",
+            "30",
+            "31"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "√529 - √49 = ?",
+          "answer": "16",
+          "options": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "√256 + √144 - √100 = ?",
+          "answer": "18",
+          "options": [
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Chiziqli tenglamalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "3x + 5 = 26. x = ?",
+          "answer": "7",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "5x - 8 = 27. x = ?",
+          "answer": "7",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "4(x - 2) = 24. x = ?",
+          "answer": "8",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "2x + 9 = 5x - 6. x = ?",
+          "answer": "5",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "7x + 4 = 46. x = ?",
+          "answer": "6",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6x - 15 = 3x + 12. x = ?",
+          "answer": "9",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "5(x + 1) = 35. x = ?",
+          "answer": "6",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8x - 12 = 44. x = ?",
+          "answer": "7",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9 + 2x = 3x - 4. x = ?",
+          "answer": "13",
+          "options": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "3(x + 4) = 27. x = ?",
+          "answer": "5",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "10x - 25 = 45. x = ?",
+          "answer": "7",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "2(x + 6) = 20. x = ?",
+          "answer": "4",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "4x + 8 = 2x + 20. x = ?",
+          "answer": "6",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "15 - 3x = -6. x = ?",
+          "answer": "7",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "(x - 4) / 3 = 5. x = ?",
+          "answer": "19",
+          "options": [
+            "17",
+            "18",
+            "19",
+            "20"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Nuqta va to'g'ri chiziq",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Rasmda A, B, C va D nuqtalar bir to'g'ri chiziqda tartib bilan yotadi. AB = 4 sm, BC = 6 sm va CD = 8 sm bo'lsa, AD kesma o'rtasi va BC kesma o'rtasi orasidagi masofani toping.",
+          "answer": "10 sm",
+          "options": [
+            "1 sm",
+            "2 sm",
+            "4 sm",
+            "10 sm"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Tekislikda 5 ta to'g'ri chiziq ko'pi bilan nechta nuqtada kesishishi mumkin? (Rasmda misol keltirilgan)",
+          "answer": "10",
+          "options": [
+            "5",
+            "8",
+            "10",
+            "15"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Rasmda berilganidek, to'g'ri chiziqda joylashgan A, B, C nuqtalar uchun AB:BC = 3:5 va AC = 24 bo'lsa, BC kesma uzunligini aniqlang.",
+          "answer": "7.5",
+          "options": [
+            "9",
+            "11",
+            "7.5",
+            "18.3"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Rasmda nurning boshlang'ich O nuqtasidan chiquvchi 6 ta turli nurlar tasvirlangan. Ular yordamida jami nechta burchak hosil qilish mumkin?",
+          "answer": "6",
+          "options": [
+            "10",
+            "12",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "A, B, C nuqtalar bitta to'g'ri chiziqda yotadi. AB = 12, BC = 15 bo'lsa, AC kesmaning eng kichik qiymatini toping.",
+          "answer": "15",
+          "options": [
+            "3",
+            "12",
+            "15",
+            "27"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Chizmada to'g'ri chiziqni 6 ta nuqta nechta nur va nechta kesmaga ajratadi?",
+          "answer": "17",
+          "options": [
+            "21",
+            "13",
+            "4",
+            "17"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "AB kesma o'rtasi M nuqta. K nuqta AM kesmada yotadi. Agar AK = 3, KB = 7 bo'lsa, MK masofani toping.",
+          "answer": "Aniqlab bo'lmaydi",
+          "options": [
+            "5",
+            "Barcha javoblar to'g'ri",
+            "25",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Rasmda AB va CD kesmalar o'zaro kesishadi. Agar AO=OB va CO=OD bo'lsa, AD va BC kesmalar haqidagi qaysi tasdiq to'g'ri?",
+          "answer": "7",
+          "options": [
+            "4",
+            "76",
+            "7",
+            "Nisbati aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "A va B nuqtalar orasidagi masofa 30 ga teng. C nuqta bu kesmani 2:3 nisbatda ichkaridan bo'lsa, BC kesmani toping.",
+          "answer": "72°",
+          "options": [
+            "10°",
+            "12°",
+            "72°",
+            "79°"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Chizmada parallel a va b to'g'ri chiziqlarni kesuvchi c chiziq kesib o'tmoqda. Ichki almashinuvchi burchaklar yig'indisi 160° bo'lsa, ulardan birini toping.",
+          "answer": "7.5",
+          "options": [
+            "6.2",
+            "7.5",
+            "10",
+            "12.3"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Uzunligi 48 sm bo'lgan kesma 3 ta teng bo'lmagan qismga bo'lindi. Chetki qismlar o'rtalari orasidagi masofa 32 sm bo'lsa, o'rtadagi kesma uzunligini toping.",
+          "answer": "Aniqlab bo'lmaydi",
+          "options": [
+            "Aniqlab bo'lmaydi",
+            "16 sm",
+            "18 sm",
+            "20 sm"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "To'g'ri chiziqda 8 ta nuqta belgilandi. Bu nuqtalar yordamida nechta turli kesmalar hosil bo'ladi?",
+          "answer": "5",
+          "options": [
+            "21",
+            "28",
+            "5",
+            "45"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Rasmda berilgan o'zaro parallel uchta chiziqda mos ravishda 2, 3 va 4 ta nuqtalar belgilangan. Ularni birlashtirib ko'pi bilan nechta uchburchak hosil qilish mumkin?",
+          "answer": "150°",
+          "options": [
+            "150°",
+            "113°",
+            "55°",
+            "145°"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Tekislikda berilgan 4 ta nuqta orqali ko'pi bilan nechta turli to'g'ri chiziq o'tkazish mumkin?",
+          "answer": "14",
+          "options": [
+            "12",
+            "14",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "A nuqtadan chiquvchi nurlar orasidagi burchaklar teng bo'lib, ular jami 360° to'liq burchakni hosil qiladi. Agar burchaklar 15° dan bo'lsa, nechta nur o'tkazilgan?",
+          "answer": "50°",
+          "options": [
+            "30°",
+            "14°",
+            "76°",
+            "120°"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Burchaklar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Rasmda qo'shni burchaklar berilgan. Ularning ayirmasi 40° ga teng bo'lsa, katta burchakni toping.",
+          "answer": "144°",
+          "options": [
+            "100°",
+            "110°",
+            "144°",
+            "130°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Rasmda ikki parallel to'g'ri chiziqni uchinchi chiziq kesib o'tmoqda. Hosil bo'lgan ichki bir tomonli burchaklar nisbati 4:5 bo'lsa, kichik burchakni toping.",
+          "answer": " 70°",
+          "options": [
+            " 70°",
+            "80°",
+            "100°",
+            "120°"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Chizmada berilgan α burchak o'zining qo'shni burchagidan 5 marta kichik. α burchak qiymatini aniqlang.",
+          "answer": " 72°",
+          "options": [
+            "20°",
+            " 72°",
+            "45°",
+            "60°"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Rasmda vertikal burchaklar berilgan. Ularning yig'indisi 144° bo'lsa, ushbu burchaklarga qo'shni bo'lgan burchakni toping.",
+          "answer": "15°",
+          "options": [
+            "15°",
+            "108°",
+            "118°",
+            "144°"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Chizmada soat 16:00 ni ko'rsatmoqda. Soat va daqiqa millari orasidagi burchak necha gradusga teng?",
+          "answer": "30",
+          "options": [
+            "90°",
+            "30",
+            "135°",
+            "150°"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Rasmda o'zaro parallel to'g'ri chiziqlar orasidagi siniq chiziq berilgan. α, β va γ burchaklar uchun α + γ = β sharti bajarilsa va α = 35°, β = 85° bo'lsa, γ ni toping.",
+          "answer": " 75°",
+          "options": [
+            " 75°",
+            "45°",
+            "50°",
+            "55°"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Ikki to'g'ri chiziqning kesishishidan hosil bo'lgan uchta burchak yig'indisi 260° ga teng. Eng kichik burchakni toping.",
+          "answer": "110°",
+          "options": [
+            "110°",
+            "90°",
+            "100°",
+            "120°"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Burchakning bissektrisasi uning tomoni bilan 42° li burchak hosil qiladi. Berilgan burchakka qo'shni bo'lgan burchakni toping.",
+          "answer": "40°",
+          "options": [
+            "40°",
+            "96°",
+            "106°",
+            "138°"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Rasmda a || b. Ichki bir tomonli burchaklardan biri ikkinchisidan 40° ga katta. Katta burchakni aniqlang.",
+          "answer": "60°",
+          "options": [
+            "100°",
+            "110°",
+            "60°",
+            "130°"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Yoyiq burchak o'zaro teng bo'lmagan uchta burchakka bo'lindi. Ularning o'rtacha qiymati qanchaga teng?",
+          "answer": "60°",
+          "options": [
+            "45°",
+            "60°",
+            "90°",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Rasmda berilgan o'tkir burchakning bissektrisasi va uning bir tomoni davomi orasidagi burchak 135° bo'lsa, burchakning o'zini toping.",
+          "answer": "22.5°",
+          "options": [
+            "45°",
+            "22.5°",
+            "90°",
+            "100°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "To'g'ri burchak ichidan chiquvchi nur uni 2:3 nisbatda bo'ladi. Hosil bo'lgan kichik burchakning qo'shni burchagini toping.",
+          "answer": "144°",
+          "options": [
+            "20",
+            "54°",
+            "126°",
+            "144°"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Rasmda α va β qo'shni burchaklar. Agar 3α = 2β bo'lsa, burchaklar ayirmasini toping.",
+          "answer": "120°",
+          "options": [
+            "120°",
+            "36°",
+            "54°",
+            "72°"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Ikki to'g'ri chiziq kesishganda hosil bo'lgan vertical burchaklarning bissektrisalari orasidagi burchak nechaga teng?",
+          "answer": "60°",
+          "options": [
+            "60°",
+            "90°",
+            "120°",
+            "180°"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Soat mili 1 soatda necha gradusga buriladi?",
+          "answer": "140°",
+          "options": [
+            "6°",
+            "15°",
+            "140°",
+            "60°"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Uchburchaklar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Rasmda ABC uchburchak berilgan. AB = AC va tashqi burchak ∠CAD = 110° bo'lsa, B burchak necha gradusga teng?",
+          "answer": "60°",
+          "options": [
+            "60°",
+            "70°",
+            "110°",
+            "125°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Teng yonli uchburchakning perimetri 36 sm, asosi esa yon tomonidan 6 sm qisqa. Yon tomoni uzunligini toping.",
+          "answer": "40°",
+          "options": [
+            "10 sm",
+            "40°",
+            "14 sm",
+            "16 sm"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Rasmda ABC uchburchak berilgan. BC tomonga AD balandlik o'tkazilgan. AB = 13, AD = 12 va AC = 15 bo'lsa, BC tomon uzunligini toping.",
+          "answer": "9",
+          "options": [
+            "11",
+            "12",
+            "9",
+            "16"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Uchburchak burchaklari nisbati 3:4:5 kabi bo'lsa, uning eng kichik burchagini toping.",
+          "answer": "6",
+          "options": [
+            "30°",
+            "6",
+            "60°",
+            "75°"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Rasmda to'g'ri burchakli uchburchak berilgan. O'tkir burchaklarining bissektrisalari kesishishidan hosil bo'lgan o'tmas burchakni toping.",
+          "answer": "120°",
+          "options": [
+            "120°",
+            "135°",
+            "145°",
+            "150°"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Uchburchakning ikki tomoni 5 va 8 sm ga teng. Uchinchi tomonining eng katta butun qiymati necha sm bo'lishi mumkin?",
+          "answer": "38.21°",
+          "options": [
+            "11 sm",
+            "38.21°",
+            "13 sm",
+            "14 sm"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Rasmda ABC uchburchak berilgan. AD bissektrisa. Agar AB = 8 sm, AC = 12 sm va BD = 4 sm bo'lsa, DC kesma uzunligini toping.",
+          "answer": "√132",
+          "options": [
+            "5 sm",
+            "√132",
+            "7 sm",
+            "8 sm"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Teng yonli uchburchakning asosidagi burchagi 75° ga teng. Uchidagi tashqi burchakni aniqlang.",
+          "answer": "8",
+          "options": [
+            "30°",
+            "8",
+            "150°",
+            "165°"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Rasmda berilgan to'g'ri burchakli uchburchakda gipotenuzaga o'tkazilgan mediana 8 sm bo'lsa, gipotenuza uzunligi qanchaga teng?",
+          "answer": "40°",
+          "options": [
+            "8 sm",
+            "12 sm",
+            "40°",
+            "20 sm"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "ABC uchburchakda AB = BC, B burchak 80° ga teng. A burchak bissektrisasi va BC tomon kesishishidan hosil bo'lgan o'tkir burchakni toping.",
+          "answer": "54°",
+          "options": [
+            "65°",
+            "54°",
+            "75°",
+            "80°"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Uchburchakning barcha tashqi burchaklari yig'indisi nechaga teng?",
+          "answer": "AB > AC",
+          "options": [
+            "180°",
+            "270°",
+            "AB > AC",
+            "540°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Rasmda muntazam uchburchak ichida kvadrat joylashtirilgan. Kvadrat va uchburchak tomonlari ustma-ust tushgan bo'lsa, rasmda belgilangan x burchakni toping.",
+          "answer": "3",
+          "options": [
+            "15°",
+            "3",
+            "45°",
+            "60°"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Uchburchak tomonlari 10, 10 va 12 sm ga teng. Asosiga tushirilgan balandlikni toping.",
+          "answer": "2√37",
+          "options": [
+            "6 sm",
+            "2√37",
+            "10 sm",
+            "12 sm"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "To'g'ri burchakli uchburchakning katetlari 9 va 12 sm bo'lsa, unga tashqi chizilgan aylana radiusini toping.",
+          "answer": "90°",
+          "options": [
+            "6.5 sm",
+            "7.5 sm",
+            "90°",
+            "15 sm"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Uchburchakning burchaklari x, x + 20° va x + 40° bo'lsa, eng katta burchagini aniqlang.",
+          "answer": "4.2",
+          "options": [
+            "60°",
+            "4.2",
+            "100°",
+            "120°"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Parallelogramma",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Rasmda ABCD parallelogramm berilgan. Agar A burchak 60° va AB = 8 sm, AD = 12 sm bo'lsa, uning yuzini toping.",
+          "answer": "√589",
+          "options": [
+            "√589",
+            "48√3 sm²",
+            "96 sm²",
+            "96√3 sm²"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Parallelogrammning ikki burchagi ayirmasi 50° ga teng. Uning katta burchagini toping.",
+          "answer": "280",
+          "options": [
+            "105°",
+            "280",
+            "125°",
+            "135°"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "ABCD parallelogrammda AC va BD diagonallar O nuqtada kesishadi. AO = 6 sm, BO = 8 sm va AB = 10 sm bo'lsa, bu qanday maxsus to'rtburchak?",
+          "answer": "30√3",
+          "options": [
+            "30√3",
+            "To'g'ri to'rtburchak",
+            "Kvadrat",
+            "Trapetsiya"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Parallelogrammning perimetri 50 sm, bir tomoni ikkinchisidan 5 sm uzun bo'lsa, uning kichik tomonini toping.",
+          "answer": "Aniqlab bo'lmaydi",
+          "options": [
+            "10 sm",
+            "Aniqlab bo'lmaydi",
+            "15 sm",
+            "20 sm"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Parallelogramm tomonlari 6 va 8 sm bo'lib, ular orasidagi burchak 30° ga teng. Parallelogramm yuzini toping.",
+          "answer": "101.54°",
+          "options": [
+            "12 sm²",
+            "101.54°",
+            "24√3 sm²",
+            "48 sm²"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Rasmda parallelogramm o'tkir burchagining bissektrisasi yon tomonini teng ikkiga bo'ladi. Yon tomoni 6 sm bo'lsa, uning perimetrini toping.",
+          "answer": "48",
+          "options": [
+            "24 sm",
+            "30 sm",
+            "48",
+            "42 sm"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Rasmda berilganidek, parallelogramm diagonallari 12 va 16 sm bo'lsa, uning barcha tomonlari kvadratlari yig'indisini toping.",
+          "answer": "25√119/6 (≈45.45)",
+          "options": [
+            "25√119/6 (≈45.45)",
+            "400 sm²",
+            "600 sm²",
+            "800 sm²"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Parallelogrammning balandliklari 4 va 6 sm bo'lib, uning kichik tomoni 8 sm bo'lsa, katta tomonini toping.",
+          "answer": "Aniqlab bo'lmaydi",
+          "options": [
+            "10 sm",
+            "Aniqlab bo'lmaydi",
+            "14 sm",
+            "16 sm"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "ABCD parallelogrammning A va B burchaklari bissektrisalari qanday burchak ostida kesishadi?",
+          "answer": "9",
+          "options": [
+            "45°",
+            "60°",
+            "9",
+            "120°"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Rasmda parallelogramm berilgan. Agar uning diagonallari o'zaro teng bo'lsa, u har doim qanday shakl bo'ladi?",
+          "answer": "60°",
+          "options": [
+            "Romb",
+            "60°",
+            "Kvadrat",
+            "Trapetsiya"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Parallelogramm yuzi 72 sm², tomonlari esa 9 va 12 sm bo'lsa, uning kichik balandligini toping.",
+          "answer": "√282 (≈16.79)",
+          "options": [
+            "6 sm",
+            "8 sm",
+            "√282 (≈16.79)",
+            "10 sm"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Rasmda berilgan parallelogramm diagonalining uzunligi uning tomoniga teng bo'lib, unga perpendikulyar. Kichik burchagini aniqlang.",
+          "answer": "24",
+          "options": [
+            "30°",
+            "24",
+            "60°",
+            "75°"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Parallelogramm yonma-yon burchaklari nisbati 1:5 bo'lsa, uning o'tmas burchagini toping.",
+          "answer": "216√3",
+          "options": [
+            "120°",
+            "216√3",
+            "150°",
+            "165°"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Parallelogrammning qarama-qarshi burchaklari yig'indisi 140° bo'lsa, uning barcha burchaklarini aniqlang.",
+          "answer": "24",
+          "options": [
+            "24",
+            "60° va 120°",
+            "80° va 100°",
+            "50° va 130°"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Rasmda parallelogramm ichiga chizilgan eng katta yuzali uchburchak berilgan. Uchburchak yuzi 18 sm² bo'lsa, parallelogramm yuzini toping.",
+          "answer": "45°",
+          "options": [
+            "18 sm²",
+            "27 sm²",
+            "36 sm²",
+            "45°"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Aylana va doira",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Rasmda aylana markazi O nuqta. Agar markaziy burchak ∠AOB = 80° bo'lsa, unga tayanuvchi ichki chizilgan ∠ACB burchakni toping.",
+          "answer": "4π",
+          "options": [
+            "4π",
+            "80°",
+            "120°",
+            "160°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Aylananing eng uzun vatari (diametri) 14 sm bo'lsa, uning radiusi va uzunligini (L) toping (π=3).",
+          "answer": "60°",
+          "options": [
+            "R=7, L=21",
+            "60°",
+            "R=14, L=42",
+            "R=7, L=84"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Rasmda AB va CD vatarlar O nuqtada kesishadi. AO = 4, OB = 6 va CO = 3 bo'lsa, OD kesmaning uzunligini toping.",
+          "answer": "5",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Doiraning radiusi 3 marta oshirilsa, uning yuzi necha marta ortadi?",
+          "answer": "3",
+          "options": [
+            "3 marta",
+            "3",
+            "9 marta",
+            "12 marta"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Rasmda aylanaga A nuqtadan AB va AC urinmalar o'tkazilgan. Agar ∠BAC = 60° bo'lsa, kichik BC yoyining gradus o'lchovini toping.",
+          "answer": "12",
+          "options": [
+            "12",
+            "90°",
+            "120°",
+            "150°"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Radiusi 12 sm bo'lgan doira sektorining burchagi 120° ga teng. Sektor yuzini toping (π hisobga olinsin).",
+          "answer": "3",
+          "options": [
+            "24π sm²",
+            "36π sm²",
+            "3",
+            "72π sm²"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Rasmda aylanaga urinma va kesuvchi o'tkazilgan. Urinma kesmasi AB = 6 va kesuvchining tashqi qismi AC = 4 bo'lsa, kesuvchining ichki qismini (CD) toping.",
+          "answer": "5π",
+          "options": [
+            "4",
+            "5π",
+            "6",
+            "9"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Markaziy burchagi 60° bo'lgan yoy uzunligi 4π sm bo'lsa, aylananing radiusini toping.",
+          "answer": "80°",
+          "options": [
+            "6 sm",
+            "8 sm",
+            "80°",
+            "18 sm"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Aylanadan tashqaridagi nuqtadan aylanagacha bo'lgan eng qisqa masofa 4 sm, eng uzoq masofa esa 16 sm bo'lsa, aylana radiusini toping.",
+          "answer": "a/√2",
+          "options": [
+            "4 sm",
+            "a/√2",
+            "8 sm",
+            "10 sm"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Rasmda doira ichiga kvadrat chizilgan. Kvadratning tomoni 8 sm bo'lsa, bo'yalgan sohalar (segmentlar) yuzini toping (π=3 deb olinsin).",
+          "answer": "7",
+          "options": [
+            "16 sm²",
+            "32 sm²",
+            "48 sm²",
+            "7"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Aylana uzunligi 36π sm ga teng bo'lsa, uning yuzini toping.",
+          "answer": "19",
+          "options": [
+            "144π sm²",
+            "19",
+            "324π sm²",
+            "400π sm²"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Rasmda diametrga tayanuvchi ichki chizilgan burchak berilgan. Uning qiymati har doim necha gradusga teng?",
+          "answer": "6",
+          "options": [
+            "45°",
+            "6",
+            "90°",
+            "120°"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Konsentrik (markazi bitta) ikkita aylananing radiuslari 8 va 10 sm. Ular orasida hosil bo'lgan halqa yuzini aniqlang.",
+          "answer": "5",
+          "options": [
+            "12π sm²",
+            "24π sm²",
+            "5",
+            "64π sm²"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Aylananing 90° li yoyiga tayanuvchi vatar uzunligi 6√2 sm bo'lsa, aylana radiusini toping.",
+          "answer": "a/√3",
+          "options": [
+            "6 sm",
+            "a/√3",
+            "10 sm",
+            "12 sm"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Rasmda to'g'ri burchakli uchburchakka ichki chizilgan aylana berilgan. Katetlari 6 va 8 sm bo'lsa, aylana radiusini toping.",
+          "answer": "4",
+          "options": [
+            "1 sm",
+            "2 sm",
+            "3 sm",
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Mantiqiy savollar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Uchta quti bor. Birida faqat oltin, birida faqat kumush, birida ikkalasi aralash. Lekin uchala yorliq ham noto'g'ri yopishtirilgan. Faqat bitta tanga olib ko'rish orqali hammasini aniqlash mumkin. Qaysi qutidan tanga olish kerak?",
+          "answer": "Aralash",
+          "options": [
+            "Oltin",
+            "Kumush",
+            "Aralash",
+            "Istalgan"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "5 kishi bir stol atrofida o'tiribdi. Har biri o'ng tomonidagi kishiga yolg'on gapirdi. Chap tomonidagi kishidan esa rost gap eshitdi. Nechta yolg'on aytilgan?",
+          "answer": "5",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Ali Bekdan balandroq. Bek Sardordan pastroq. Sardor Jamshiddan balandroq. Jamshid Alidan baland. Kim eng baland?",
+          "answer": "Jamshid",
+          "options": [
+            "Ali",
+            "Bek",
+            "Sardor",
+            "Jamshid"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Ketma-ketlikni toping: 3, 7, 15, 31, 63, ?",
+          "answer": "127",
+          "options": [
+            "95",
+            "111",
+            "127",
+            "129"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Bir odam dushanba kuni safarga chiqdi. 72 soat o'tgach qaytdi. Qaysi kuni qaytdi?",
+          "answer": "Payshanba",
+          "options": [
+            "Chorshanba",
+            "Payshanba",
+            "Juma",
+            "Yakshanba"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Agar: Barcha X lar Y. Ba'zi Y lar Z. Hech bir Z X emas. Qaysi hukm albatta to'g'ri?",
+          "answer": "Hech bir X Z emas.",
+          "options": [
+            "Hech bir X Z emas.",
+            "Ba'zi X lar Z.",
+            "Barcha Z X.",
+            "Aniqlab bo'lmaydi."
+          ]
+        },
+        {
+          "index": 6,
+          "question": "6 ta sham yonmoqda. 3 tasi o'chirildi. 2 tasi oxirigacha yonib tugadi. Xonada nechta sham qoladi?",
+          "answer": "4",
+          "options": [
+            "1",
+            "3",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Agar 2→6, 3→12, 4→20 bo'lsa, 7→?",
+          "answer": "56",
+          "options": [
+            "42",
+            "49",
+            "56",
+            "63"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Bir lift 8-qavatdan 2-qavatga tushdi. Keyin 11-qavatga chiqdi. So'ng 5-qavatga tushdi. Jami nechta qavat harakatlandi?",
+          "answer": "18",
+          "options": [
+            "10",
+            "12",
+            "16",
+            "18"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "4 ta kalitdan faqat bittasi eshikni ochadi. Har urinishdan keyin noto'g'ri kalit qayta ishlatilmaydi. Eng yomon holatda nechta urinish kerak?",
+          "answer": "4",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Soat 2:20 da strelkalar orasidagi kichik burchak nechchi gradus?",
+          "answer": "50°",
+          "options": [
+            "40°",
+            "50°",
+            "60°",
+            "70°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Besh kishi musobaqada qatnashdi. Ali Bekdan oldin. Bek Dilshoddan keyin. Dilshod Kamoldan keyin. Kamol Erkindan keyin. Kim birinchi?",
+          "answer": "Erkin",
+          "options": [
+            "Ali",
+            "Bek",
+            "Erkin",
+            "Kamol"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Bir sonni 30% ga oshirib, keyin 30% ga kamaytirilsa natija nima bo'ladi?",
+          "answer": "9% kamayadi",
+          "options": [
+            "O'zgarmaydi",
+            "9% kamayadi",
+            "9% oshadi",
+            "30% kamayadi"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Ketma-ketlikni toping: 1, 4, 10, 22, 46, ?",
+          "answer": "94",
+          "options": [
+            "90",
+            "92",
+            "94",
+            "96"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "To'rt do'st: Aziz, Bobur, Jasur, Kamol. Aziz: 'Bobur yolg'on gapiryapti.' Bobur: 'Kamol aybdor.' Jasur: 'Men aybdor emasman.' Kamol: 'Bobur yolg'on gapiryapti.' Faqat bitta odam yolg'on gapirgan. Aybdor kim?",
+          "answer": "Kamol",
+          "options": [
+            "Aziz",
+            "Bobur",
+            "Jasur",
+            "Kamol"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Shartli mantiq",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Agar Ali imtihondan o'tsa, Bek ham o'tadi. Bek o'tmasa, Kamol ham o'tmaydi. Kamol o'tdi. Qaysi hukm albatta to'g'ri?",
+          "answer": "Bek o'tgan",
+          "options": [
+            "Ali o'tgan",
+            "Bek o'tgan",
+            "Ali o'tmagan",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Agar chiroq yonsa, elektr bor. Elektr bo'lsa, generator ishlamaydi. Generator ishlayapti. Qaysi hukm to'g'ri?",
+          "answer": "Elektr yo'q",
+          "options": [
+            "Elektr bor",
+            "Chiroq yonmoqda",
+            "Elektr yo'q",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Agar Aziz kelsa, Bobur kelmaydi. Bobur kelsa, Kamol keladi. Aziz keldi. Qaysi hukm albatta to'g'ri?",
+          "answer": "Bobur kelmadi",
+          "options": [
+            "Bobur keldi",
+            "Kamol keldi",
+            "Bobur kelmadi",
+            "Kamol kelmadi"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Agar bugun seshanba bo'lsa, ertaga chorshanba. Ertaga chorshanba. Qaysi hukm to'g'ri?",
+          "answer": "Bugun seshanba bo'lishi mumkin",
+          "options": [
+            "Bugun albatta seshanba",
+            "Bugun seshanba bo'lishi mumkin",
+            "Bugun dushanba",
+            "Aniq emas"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Agar barcha shifokorlar oq xalat kiysa va Aziz oq xalat kiymagan bo'lsa, qaysi hukm to'g'ri?",
+          "answer": "Aziz shifokor emas",
+          "options": [
+            "Aziz shifokor emas",
+            "Aziz shifokor",
+            "Aziz kasal",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Agar A rost bo'lsa, B rost. Agar B rost bo'lsa, C yolg'on. C rost. A haqida nima deyish mumkin?",
+          "answer": "A yolg'on",
+          "options": [
+            "A rost",
+            "A yolg'on",
+            "Aniqlab bo'lmaydi",
+            "B rost"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Agar kalit to'g'ri bo'lsa, eshik ochiladi. Eshik ochilmadi. Qaysi hukm to'g'ri?",
+          "answer": "Qulf buzilgan bo'lishi mumkin",
+          "options": [
+            "Kalit noto'g'ri",
+            "Qulf buzilgan bo'lishi mumkin",
+            "Kalit to'g'ri",
+            "Eshik ochilgan"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Agar yomg'ir yog'sa, ko'cha ho'l bo'ladi. Ko'cha ho'l emas. Qaysi hukm albatta to'g'ri?",
+          "answer": "Yomg'ir yog'magan",
+          "options": [
+            "Yomg'ir yog'magan",
+            "Ko'cha yopiq",
+            "Shamol bo'lgan",
+            "Aniqlab bo'lmaydi"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Analogiyalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Kapitan : Kema = Uchuvchi : ?",
+          "answer": "Samolyot",
+          "options": [
+            "Samolyot",
+            "Poezd",
+            "Avtomobil",
+            "Velosiped"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Fotosintez : O'simlik = Nafas olish : ?",
+          "answer": "Hayvon",
+          "options": [
+            "Hayvon",
+            "Tuproq",
+            "Suv",
+            "Havo"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Termometr : Harorat = Tarozi : ?",
+          "answer": "Og'irlik",
+          "options": [
+            "Uzunlik",
+            "Og'irlik",
+            "Tezlik",
+            "Bosim"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Sudya : Hukm = O'qituvchi : ?",
+          "answer": "Baho",
+          "options": [
+            "Dars",
+            "Baho",
+            "Kitob",
+            "Maktab"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "DNK : Gen = Kitob : ?",
+          "answer": "Bob",
+          "options": [
+            "Muqova",
+            "Bet",
+            "Bob",
+            "Muallif"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Yurak : Qon = Nasos : ?",
+          "answer": "Suv",
+          "options": [
+            "Havo",
+            "Suv",
+            "Elektr",
+            "Yoqilg'i"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Alifbo : Harf = Sonlar : ?",
+          "answer": "Raqam",
+          "options": [
+            "Belgi",
+            "Raqam",
+            "Formula",
+            "Hisob"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Kompas : Yo'nalish = Xarita : ?",
+          "answer": "Joylashuv",
+          "options": [
+            "Masofa",
+            "Hudud",
+            "Joylashuv",
+            "Sayohat"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Ko'z : Yorug'lik = Quloq : ?",
+          "answer": "Tovush to'lqini",
+          "options": [
+            "Ovoz",
+            "Havo",
+            "Nutq",
+            "Tovush to'lqini"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Atom : Molekula = G'isht : ?",
+          "answer": "Uy",
+          "options": [
+            "Uy",
+            "Tom",
+            "Devor",
+            "Poydevor"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Daraxt : Ildiz = Inson : ?",
+          "answer": "Umurtqa",
+          "options": [
+            "Miya",
+            "Yurak",
+            "Umurtqa",
+            "Oyoq"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Protsessor : Kompyuter = Miya : ?",
+          "answer": "Inson",
+          "options": [
+            "Inson",
+            "Robot",
+            "Telefon",
+            "Elektr"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Orbita : Sayyora = Yo'l : ?",
+          "answer": "Mashina",
+          "options": [
+            "Mashina",
+            "Velosiped",
+            "Piyoda",
+            "Transport"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Kalit : Qulf = Parol : ?",
+          "answer": "Kirish",
+          "options": [
+            "Telefon",
+            "Kompyuter",
+            "Hisob",
+            "Kirish"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Qonun : Jamiyat = Qoida : ?",
+          "answer": "O'yin",
+          "options": [
+            "O'yin",
+            "Sinf",
+            "Maktab",
+            "Intizom"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Matritsali mantiq",
+      "questions": [
+        {
+          "index": 0,
+          "question": "2 4 6\n3 6 9\n4 8 ?",
+          "answer": "12",
+          "options": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "1 2 4\n2 4 8\n3 6 ?",
+          "answer": "12",
+          "options": [
+            "9",
+            "10",
+            "12",
+            "14"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "5 10 15\n4 8 12\n3 6 ?",
+          "answer": "9",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "8 6 4\n12 9 6\n16 12 ?",
+          "answer": "8",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "3 5 8\n5 8 13\n8 13 ?",
+          "answer": "21",
+          "options": [
+            "18",
+            "20",
+            "21",
+            "22"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "10 8 6\n8 6 4\n6 4 ?",
+          "answer": "2",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "2 3 6\n4 5 20\n6 7 ?",
+          "answer": "42",
+          "options": [
+            "36",
+            "40",
+            "42",
+            "48"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "1 4 16\n2 5 25\n3 6 ?",
+          "answer": "36",
+          "options": [
+            "30",
+            "32",
+            "36",
+            "40"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "7 14 21\n5 10 15\n3 6 ?",
+          "answer": "9",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "9 3 1\n18 6 2\n27 9 ?",
+          "answer": "3",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "4 16 64\n3 9 27\n2 4 ?",
+          "answer": "8",
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "11 22 33\n7 14 21\n5 10 ?",
+          "answer": "15",
+          "options": [
+            "12",
+            "15",
+            "18",
+            "20"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "6 12 18\n12 24 36\n18 36 ?",
+          "answer": "54",
+          "options": [
+            "48",
+            "54",
+            "60",
+            "72"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "15 12 9\n12 9 6\n9 6 ?",
+          "answer": "3",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "2 5 10\n3 6 18\n4 7 ?",
+          "answer": "28",
+          "options": [
+            "24",
+            "26",
+            "28",
+            "30"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Sonlar ketma-ketligi",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Ketma-ketlikni davom ettiring: 2, 6, 18, 54, ?",
+          "answer": "162",
+          "options": [
+            "108",
+            "144",
+            "162",
+            "216"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Ketma-ketlikni toping: 5, 9, 17, 33, 65, ?",
+          "answer": "129",
+          "options": [
+            "97",
+            "113",
+            "121",
+            "129"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Ketma-ketlikni toping: 1, 2, 6, 24, 120, ?",
+          "answer": "720",
+          "options": [
+            "480",
+            "600",
+            "720",
+            "840"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Ketma-ketlikni toping: 3, 8, 15, 24, 35, ?",
+          "answer": "48",
+          "options": [
+            "46",
+            "48",
+            "50",
+            "52"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Ketma-ketlikni davom ettiring: 81, 27, 9, 3, ?",
+          "answer": "1",
+          "options": [
+            "2",
+            "1",
+            "0",
+            "6"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Ketma-ketlikni toping: 7, 10, 16, 28, 52, ?",
+          "answer": "100",
+          "options": [
+            "76",
+            "88",
+            "100",
+            "104"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Ketma-ketlikni toping: 4, 6, 12, 14, 28, 30, ?",
+          "answer": "60",
+          "options": [
+            "58",
+            "60",
+            "62",
+            "64"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Ketma-ketlikni toping: 2, 5, 11, 23, 47, ?",
+          "answer": "95",
+          "options": [
+            "91",
+            "93",
+            "95",
+            "97"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Ketma-ketlikni toping: 100, 97, 91, 82, 70, ?",
+          "answer": "55",
+          "options": [
+            "58",
+            "55",
+            "56",
+            "57"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Ketma-ketlikni toping: 1, 3, 7, 15, 31, ?",
+          "answer": "63",
+          "options": [
+            "47",
+            "55",
+            "63",
+            "65"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Ketma-ketlikni toping: 9, 16, 25, 36, 49, ?",
+          "answer": "64",
+          "options": [
+            "56",
+            "61",
+            "64",
+            "81"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Ketma-ketlikni toping: 2, 4, 7, 11, 16, 22, ?",
+          "answer": "29",
+          "options": [
+            "27",
+            "28",
+            "29",
+            "30"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Ketma-ketlikni toping: 13, 24, 35, 46, 57, ?",
+          "answer": "68",
+          "options": [
+            "66",
+            "67",
+            "68",
+            "69"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Ketma-ketlikni toping: 8, 13, 21, 34, 55, ?",
+          "answer": "89",
+          "options": [
+            "76",
+            "81",
+            "89",
+            "90"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Ketma-ketlikni toping: 256, 128, 64, 32, 16, ?",
+          "answer": "8",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "IQ testlari",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Menda shaharlar bor, lekin uylar yo'q. Daryolar bor, lekin suv yo'q. Men nimaman?",
+          "answer": "Xarita",
+          "options": [
+            "Globus",
+            "Xarita",
+            "Kitob",
+            "Kompas"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Qaysi narsa qurigani sari ho'llash vazifasini bajaradi?",
+          "answer": "Sochiq",
+          "options": [
+            "Qog'oz",
+            "Shimgich",
+            "Sochiq",
+            "Bulut"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Qaysi narsa sizga tegishli, ammo undan boshqalar sizdan ko'ra ko'proq foydalanadi?",
+          "answer": "Ismingiz",
+          "options": [
+            "Telefon",
+            "Ismingiz",
+            "Kalitingiz",
+            "Pulingiz"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Qaysi narsa qancha ko'p ishlatilsa, shuncha qisqarib boradi?",
+          "answer": "Sham",
+          "options": [
+            "Sham",
+            "Arqon",
+            "Qalam",
+            "Taxta"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Qaysi narsa sizdan oldin keladi, lekin hech qachon sizni quvib o'tmaydi?",
+          "answer": "Soya",
+          "options": [
+            "Kelajak",
+            "Soya",
+            "Kecha",
+            "Nafas"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Bir xonaga kirganingizda gugurt, sham, pech va chiroq bor. Avval nimani yoqasiz?",
+          "answer": "Gugurt",
+          "options": [
+            "Sham",
+            "Pech",
+            "Chiroq",
+            "Gugurt"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Qaysi narsa har doim oldinda, lekin hech qachon yetib bo'lmaydi?",
+          "answer": "Kelajak",
+          "options": [
+            "Vaqt",
+            "Kelajak",
+            "Quyosh",
+            "Yo'l"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Qaysi narsa qanotga ega emas, ammo uchadi?",
+          "answer": "Vaqt",
+          "options": [
+            "Bulut",
+            "Vaqt",
+            "Tutun",
+            "Fikr"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Men sindirilmasam ishlamayman. Men nimaman?",
+          "answer": "Tuxum",
+          "options": [
+            "Tuxum",
+            "Shisha",
+            "Telefon",
+            "Qulf"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Bir odamning beva ayoli qolsa, uning singlisiga uylanishi mumkinmi?",
+          "answer": "Yo'q",
+          "options": [
+            "Ha",
+            "Yo'q",
+            "Faqat ruxsat bilan",
+            "Faqat chet elda"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Qaysi sonni teskari aylantirsangiz ham o'zi bo'lib qoladi?",
+          "answer": "8",
+          "options": [
+            "6",
+            "8",
+            "9",
+            "2"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Ikki ota va ikki o'g'il restoranga bordi. Ular 3 ta ovqat buyurtma qilishdi va har biri bittadan yedi. Bu qanday mumkin?",
+          "answer": "Ular uch kishi bo'lgan",
+          "options": [
+            "Ulardan biri ovqat yemagan",
+            "Ular uch kishi bo'lgan",
+            "Bittasi ikki marta yegan",
+            "Ovqat bo'lingan"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Qaysi narsa og'zi yo'q bo'lsa ham javob qaytaradi?",
+          "answer": "Echo",
+          "options": [
+            "Telefon",
+            "Echo",
+            "Radio",
+            "Kompyuter"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Men ko'rinaman, lekin ushlab bo'lmayman. Men yo'qolsam hamma meni qidiradi. Men nimaman?",
+          "answer": "Internet",
+          "options": [
+            "Vaqt",
+            "Soya",
+            "Nur",
+            "Internet"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Qaysi narsa qancha ko'p bo'lsa, shuncha kam ko'rasiz?",
+          "answer": "Qorong'ulik",
+          "options": [
+            "Tuman",
+            "Qorong'ulik",
+            "Yomg'ir",
+            "Tutun"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Deduktiv mantiq",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Barcha shifokorlar biologiyani biladi. Biologiyani biladiganlarning ayrimlari olim. Hech bir olim dangasa emas. Aziz dangasa. Qaysi hukm albatta to'g'ri?",
+          "answer": "Aziz olim emas",
+          "options": [
+            "Aziz shifokor emas",
+            "Aziz olim emas",
+            "Aziz biologiyani bilmaydi",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Barcha A lar B. Hech bir B C emas. Ba'zi D lar C. X elementi A ga tegishli. Qaysi hukm albatta to'g'ri?",
+          "answer": "X C ga tegishli emas",
+          "options": [
+            "X C ga tegishli",
+            "X D ga tegishli",
+            "X C ga tegishli emas",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Faqat imtihondan o'tgan talabalar stipendiya oladi. Ba'zi stipendiya olganlar yotoqxonada turadi. Bek stipendiya olmaydi. Qaysi hukm albatta to'g'ri?",
+          "answer": "Bek imtihondan o'tmagan",
+          "options": [
+            "Bek imtihondan o'tmagan",
+            "Bek yotoqxonada turmaydi",
+            "Bek talaba emas",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Barcha professorlar o'qituvchi. Hech bir o'qituvchi 18 yoshdan kichik emas. Kamol 17 yoshda. Qaysi hukm albatta to'g'ri?",
+          "answer": "Kamol o'qituvchi emas",
+          "options": [
+            "Kamol professor emas",
+            "Kamol o'qituvchi emas",
+            "Kamol talaba",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Barcha mushuklar sut emizuvchi. Ba'zi sut emizuvchilar yirtqich. Hech bir yirtqich o'txo'r emas. Quyidagilardan qaysi biri albatta to'g'ri?",
+          "answer": "Aniqlab bo'lmaydi",
+          "options": [
+            "Hech bir mushuk o'txo'r emas",
+            "Ba'zi mushuklar yirtqich",
+            "Barcha mushuklar yirtqich",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Hech bir matematik tarixchi emas. Barcha olimlar matematik. Aziz olim. Qaysi hukm albatta to'g'ri?",
+          "answer": "Aziz tarixchi emas",
+          "options": [
+            "Aziz tarixchi emas",
+            "Aziz professor",
+            "Aziz o'qituvchi",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Ba'zi talabalar sportchi. Barcha sportchilar sog'lom. Hech bir sog'lom odam kasal emas. Qaysi hukm albatta to'g'ri?",
+          "answer": "Ba'zi talabalar kasal emas",
+          "options": [
+            "Ba'zi talabalar kasal emas",
+            "Barcha talabalar sog'lom",
+            "Hech bir talaba kasal emas",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Barcha A lar B. Barcha B lar C. Hech bir C D emas. Hech bir D E emas. X elementi A ga tegishli. Qaysi hukm albatta to'g'ri?",
+          "answer": "X D emas",
+          "options": [
+            "X D emas",
+            "X E emas",
+            "X C emas",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Kutubxonadagi barcha tarix kitoblari qizil javonda. Hech bir qizil javondagi kitob eski emas. 'Amir Temur' kitobi tarix kitobi. Qaysi hukm to'g'ri?",
+          "answer": "Kitob eski emas",
+          "options": [
+            "Kitob eski emas",
+            "Kitob yangi",
+            "Kitob qalin",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Barcha qushlar tuxum qo'yadi. Pingvin qush. Hech bir tuxum qo'yuvchi sut emizuvchi emas. Qaysi hukm albatta to'g'ri?",
+          "answer": "Pingvin sut emizuvchi emas",
+          "options": [
+            "Pingvin sut emizuvchi emas",
+            "Pingvin ucha olmaydi",
+            "Pingvin baliq",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Hech bir firibgar halol emas. Ba'zi tadbirkorlar halol. Qaysi hukm albatta to'g'ri?",
+          "answer": "Ba'zi tadbirkorlar firibgar emas",
+          "options": [
+            "Ba'zi tadbirkorlar firibgar emas",
+            "Barcha tadbirkorlar halol",
+            "Hech bir tadbirkor firibgar emas",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Barcha shaxmatchilar sabrli. Hech bir sabrsiz odam musobaqada g'olib bo'lmaydi. Ali musobaqada g'olib bo'ldi. Qaysi hukm albatta to'g'ri?",
+          "answer": "Ali sabrsiz emas",
+          "options": [
+            "Ali sabrsiz emas",
+            "Ali shaxmatchi",
+            "Ali sportchi",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Barcha avtomobillar transport vositasi. Hech bir transport vositasi daraxt emas. Elektromobil avtomobil. Qaysi hukm albatta to'g'ri?",
+          "answer": "Elektromobil daraxt emas",
+          "options": [
+            "Elektromobil daraxt emas",
+            "Elektromobil benzin ishlatadi",
+            "Elektromobil yuk mashinasi",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Barcha olimlar izlanuvchan. Ba'zi izlanuvchanlar yozuvchi. Hech bir yozuvchi dangasa emas. Aziz olim. Qaysi hukm albatta to'g'ri?",
+          "answer": "Aziz izlanuvchan",
+          "options": [
+            "Aziz dangasa emas",
+            "Aziz yozuvchi",
+            "Aziz izlanuvchan",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Hech bir uchuvchi balandlikdan qo'rqmaydi. Kamol balandlikdan qo'rqadi. Qaysi hukm albatta to'g'ri?",
+          "answer": "Kamol uchuvchi emas",
+          "options": [
+            "Kamol uchuvchi emas",
+            "Kamol uchuvchi",
+            "Kamol samolyot ko'rmagan",
+            "Aniqlab bo'lmaydi"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Mantiqiy munosabatlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Agar A > B, B > C va C > D bo'lsa, qaysi hukm albatta to'g'ri?",
+          "answer": "A > D",
+          "options": [
+            "A > D",
+            "D > A",
+            "B < D",
+            "A = D"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Agar x < y va y < z bo'lsa, qaysi hukm to'g'ri?",
+          "answer": "x < z",
+          "options": [
+            "x > z",
+            "x < z",
+            "x = z",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Qaysi munosabat tranzitiv hisoblanadi?",
+          "answer": ">",
+          "options": [
+            ">",
+            "≠",
+            "⊥",
+            "~"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Agar Ali Bekning akasi, Bek esa Kamolning akasi bo'lsa, Ali Kamolning kim bo'ladi?",
+          "answer": "Akasi",
+          "options": [
+            "Ukasi",
+            "Akasi",
+            "Amakisi",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Qaysi munosabat refleksiv hisoblanadi?",
+          "answer": "=",
+          "options": [
+            "=",
+            ">",
+            "<",
+            "≠"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Agar a = b va b = c bo'lsa:",
+          "answer": "a = c",
+          "options": [
+            "a > c",
+            "a = c",
+            "a < c",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Qaysi munosabat simmetrik?",
+          "answer": "=",
+          "options": [
+            "=",
+            ">",
+            "<",
+            "≥"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Agar Kamol Dilshoddan baland, Dilshod Jasurdan baland bo'lsa, eng past bo'ylisi kim?",
+          "answer": "Jasur",
+          "options": [
+            "Kamol",
+            "Dilshod",
+            "Jasur",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Agar x ≥ y va y ≥ z bo'lsa:",
+          "answer": "x ≥ z",
+          "options": [
+            "x ≥ z",
+            "x < z",
+            "z > x",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Agar A ≠ B va B ≠ C bo'lsa, qaysi hukm to'g'ri?",
+          "answer": "Aniqlab bo'lmaydi",
+          "options": [
+            "A ≠ C",
+            "A = C",
+            "Aniqlab bo'lmaydi",
+            "A > C"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Agar Ali Bekdan tez, Bek Sardordan tez bo'lsa, kim eng tez?",
+          "answer": "Ali",
+          "options": [
+            "Ali",
+            "Bek",
+            "Sardor",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Agar x ≤ y va y ≤ x bo'lsa:",
+          "answer": "x = y",
+          "options": [
+            "x = y",
+            "x > y",
+            "x < y",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Agar P > Q, Q = R bo'lsa:",
+          "answer": "P > R",
+          "options": [
+            "P > R",
+            "P < R",
+            "P = R",
+            "Aniqlab bo'lmaydi"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Qaysi munosabat antisimmetrik hisoblanadi?",
+          "answer": "≤",
+          "options": [
+            "≤",
+            "≠",
+            "~",
+            "⊥"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Agar a > b, b = c va c > d bo'lsa, qaysi hukm to'g'ri?",
+          "answer": "a > d",
+          "options": [
+            "a > d",
+            "d > a",
+            "a = d",
+            "Aniqlab bo'lmaydi"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Topishmoqlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Bir odam yomg'ir ostida 10 daqiqa yurdi. U soyabon ham ishlatmadi, bosh kiyimi ham yo'q edi. Lekin sochi umuman ho'l bo'lmadi. Nega?",
+          "answer": "U kal bo'lgan",
+          "options": [
+            "Yomg'ir juda sekin yog'gan",
+            "U yugurib ketgan",
+            "U kal bo'lgan",
+            "Shamol yomg'irni uchirib ketgan"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Qaysi narsa qancha ko'p olinsa, shuncha kattalashib boradi?",
+          "answer": "Teshik",
+          "options": [
+            "Pul",
+            "Teshik",
+            "Sandiq",
+            "Yo'l"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Bir xonada 5 ta sham yonib turibdi. 2 tasi o'chirildi. Oxirida nechta sham qoladi?",
+          "answer": "2",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "0"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Bir odam 20 qavatli binodan sakrab tushdi va omon qoldi. Qanday qilib?",
+          "answer": "Pastki qavatdan sakragan",
+          "options": [
+            "Parashyut bilan",
+            "Pastki qavatdan sakragan",
+            "Qorga tushgan",
+            "Suvga tushgan"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Ota va o'g'il avtohalokatga uchradi. Ota vafot etdi. O'g'ilni kasalxonaga olib borishdi. Jarroh bolani ko'rib: 'Bu mening o'g'lim', dedi. Qanday bo'lishi mumkin?",
+          "answer": "Onasi",
+          "options": [
+            "Amakisi",
+            "Bobosi",
+            "Onasi",
+            "Tog'asi"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Bir qo'lda 5 ta olma, ikkinchi qo'lda 6 ta olma bor. Senda nima bor?",
+          "answer": "Katta qo'llar",
+          "options": [
+            "11 ta olma",
+            "Katta qo'llar",
+            "Savat",
+            "Mevali daraxt"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Qaysi oyda odamlar eng kam uxlaydi?",
+          "answer": "Hech qaysi",
+          "options": [
+            "Fevral",
+            "Dekabr",
+            "Hech qaysi",
+            "Yanvar"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Bir odamning 3 ta qizi bor. Har qizining bittadan ukasi bor. Odamning nechta farzandi bor?",
+          "answer": "4",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Qaysi savolga 'ha' deb ham, 'yo'q' deb ham to'g'ri javob berib bo'lmaydi?",
+          "answer": "Uxlayapsanmi?",
+          "options": [
+            "Isming nima?",
+            "Uxlayapsanmi?",
+            "Yoshing nechada?",
+            "Qayerda yashaysan?"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Elektr poyezdi shimolga qarab ketmoqda. Shamol janubga qarab esmoqda. Tutun qaysi tomonga ketadi?",
+          "answer": "Tutun bo'lmaydi",
+          "options": [
+            "Shimolga",
+            "Janubga",
+            "Sharqqa",
+            "Tutun bo'lmaydi"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Bir savatdagi 6 ta olmadan 4 tasini olding. Senda nechta olma bor?",
+          "answer": "4",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "10"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Bir xonada 10 kishi bor. Har biri boshqalar bilan bir martadan qo'l berib ko'rishdi. Jami nechta qo'l berish bo'ldi?",
+          "answer": "45",
+          "options": [
+            "45",
+            "50",
+            "55",
+            "90"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Qaysi narsa sindirilsa ishlatiladi?",
+          "answer": "Tuxum",
+          "options": [
+            "Shisha",
+            "Qalam",
+            "Tuxum",
+            "Qulf"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Bir odam juma kuni shaharga keldi. Uch kun qolib, juma kuni qaytib ketdi. Bu qanday mumkin?",
+          "answer": "Shahar nomi Juma",
+          "options": [
+            "Kalendar xato",
+            "Shahar nomi Juma",
+            "U yolg'on gapirgan",
+            "Boshqa davlat"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Men gapirsam yo'qolaman. Men nimaman?",
+          "answer": "Sukut",
+          "options": [
+            "Tuman",
+            "Sir",
+            "Sukut",
+            "Sham"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "logic",
+      "topic": "Ortiqcha elementni toping",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Qaysi biri ortiqcha?",
+          "answer": "Uchburchak",
+          "options": [
+            "Kvadrat",
+            "To'rtburchak",
+            "Trapetsiya",
+            "Uchburchak"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Qaysi biri ortiqcha?",
+          "answer": "Granit",
+          "options": [
+            "Mis",
+            "Temir",
+            "Alyuminiy",
+            "Granit"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Qaysi biri ortiqcha?",
+          "answer": "Kompyuter",
+          "options": [
+            "Yurak",
+            "O'pka",
+            "Buyrak",
+            "Kompyuter"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Qaysi biri ortiqcha?",
+          "answer": "Oy",
+          "options": [
+            "Mars",
+            "Yupiter",
+            "Oy",
+            "Saturn"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Qaysi biri ortiqcha?",
+          "answer": "Windows",
+          "options": [
+            "Python",
+            "Java",
+            "C++",
+            "Windows"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Qaysi biri ortiqcha?",
+          "answer": "Printer",
+          "options": [
+            "Gitara",
+            "Pianino",
+            "Skripka",
+            "Printer"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Qaysi biri ortiqcha?",
+          "answer": "Kartoshka",
+          "options": [
+            "Olma",
+            "Nok",
+            "Banan",
+            "Kartoshka"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Qaysi biri ortiqcha?",
+          "answer": "Litr",
+          "options": [
+            "Kilogramm",
+            "Gramm",
+            "Litr",
+            "Tonna"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Qaysi biri ortiqcha?",
+          "answer": "Wi-Fi",
+          "options": [
+            "Fotosintez",
+            "Nafas olish",
+            "Ovqat hazm qilish",
+            "Wi-Fi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Qaysi biri ortiqcha?",
+          "answer": "Photoshop",
+          "options": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Photoshop"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Qaysi biri ortiqcha?",
+          "answer": "Ko'rshapalak",
+          "options": [
+            "Pingvin",
+            "Tuyaqush",
+            "Lochin",
+            "Ko'rshapalak"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Qaysi biri ortiqcha?",
+          "answer": "Logarifm",
+          "options": [
+            "Sinus",
+            "Kosinus",
+            "Tangens",
+            "Logarifm"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Qaysi biri ortiqcha?",
+          "answer": "Monitor",
+          "options": [
+            "SSD",
+            "HDD",
+            "RAM",
+            "Monitor"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Qaysi biri ortiqcha?",
+          "answer": "Bavariya",
+          "options": [
+            "London",
+            "Parij",
+            "Berlin",
+            "Bavariya"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Qaysi biri ortiqcha?",
+          "answer": "Uchburchak",
+          "options": [
+            "Kasr",
+            "Natural son",
+            "Butun son",
+            "Uchburchak"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Pul va bank tizimi",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Pulning asosiy vazifasi nima?",
+          "answer": "Ayirboshlash vositasi bo'lish",
+          "options": [
+            "Soliq yig'ish",
+            "Ayirboshlash vositasi bo'lish",
+            "Kredit berish",
+            "Narx belgilash"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "O'zbekistonda milliy valyuta nima?",
+          "answer": "So'm",
+          "options": [
+            "Rubl",
+            "Dollar",
+            "So'm",
+            "Yevro"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Bankning asosiy vazifasi nima?",
+          "answer": "Moliyaviy vositachilik qilish",
+          "options": [
+            "Kitob sotish",
+            "Moliyaviy vositachilik qilish",
+            "Soliq yig'ish",
+            "Zavod qurish"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Jamg'arma hisobvarag'i nimaga xizmat qiladi?",
+          "answer": "Pul saqlash va foiz olishga",
+          "options": [
+            "Pul saqlash va foiz olishga",
+            "Soliq to'lashga",
+            "Import qilishga",
+            "Sug'urta qilishga"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Kredit nima?",
+          "answer": "Qarzni qaytarish majburiyati bilan olingan mablag'",
+          "options": [
+            "Qarzni qaytarish majburiyati bilan olingan mablag'",
+            "Sovg'a",
+            "Soliq",
+            "Dividend"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Markaziy bankning asosiy vazifasi?",
+          "answer": "Pul-kredit siyosatini yuritish",
+          "options": [
+            "Telefon sotish",
+            "Pul-kredit siyosatini yuritish",
+            "Avtomobil ishlab chiqarish",
+            "Import qilish"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Inflyatsiya davrida pulning xarid qobiliyati:",
+          "answer": "Pasayadi",
+          "options": [
+            "Oshadi",
+            "O'zgarmaydi",
+            "Pasayadi",
+            "Ikki baravar oshadi"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Tijorat banklari daromadining asosiy manbai:",
+          "answer": "Kredit foizlari",
+          "options": [
+            "Soliq yig'ish",
+            "Kredit foizlari",
+            "Jarimalar",
+            "Eksport"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Majburiy rezerv normasi oshirilsa:",
+          "answer": "Kreditlash kamayadi",
+          "options": [
+            "Banklar ko'proq kredit beradi",
+            "Kreditlash kamayadi",
+            "Pul massasi oshadi",
+            "Hech narsa o'zgarmaydi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Depozit nima?",
+          "answer": "Bankka qo'yilgan mablag'",
+          "options": [
+            "Bankka qo'yilgan mablag'",
+            "Soliq turi",
+            "Sug'urta",
+            "Aksiya"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Pul multiplikatori qaysi ko'rsatkich bilan teskari bog'liq?",
+          "answer": "Majburiy rezerv normasi",
+          "options": [
+            "Foiz stavkasi",
+            "Majburiy rezerv normasi",
+            "YaIM",
+            "Inflyatsiya"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Ochiq bozor operatsiyasida Markaziy bank obligatsiyalarni sotib olsa:",
+          "answer": "Pul massasi ortadi",
+          "options": [
+            "Pul massasi kamayadi",
+            "Pul massasi ortadi",
+            "Soliq ortadi",
+            "Kreditlar yo'qoladi"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Nominal foiz stavkasi 12%, inflyatsiya 7% bo'lsa, taxminiy real foiz stavkasi:",
+          "answer": "5%",
+          "options": [
+            "19%",
+            "12%",
+            "5%",
+            "-5%"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Bank tizimida 'likvidlik' nimani anglatadi?",
+          "answer": "Aktivlarni tezda naqd pulga aylantira olish qobiliyati",
+          "options": [
+            "Aktivlarni tezda naqd pulga aylantira olish qobiliyati",
+            "Foyda",
+            "Soliq",
+            "Qarzdorlik"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Qaysi holat pul-kredit siyosatining qisqaruvchi siyosatiga misol bo'ladi?",
+          "answer": "Rezerv talabini oshirish",
+          "options": [
+            "Foiz stavkalarini pasaytirish",
+            "Obligatsiyalarni sotib olish",
+            "Rezerv talabini kamaytirish",
+            "Rezerv talabini oshirish"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Mikroiqtisodiyot asoslari",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Hamma iqtisodiy tizimlar uchun fundamental muammo bo‘lib hisoblanadi, bu...",
+          "answer": "Noyoblik va taqchillik",
+          "options": [
+            "Investitsiya",
+            "Ishlab chiqarish",
+            "Noyoblik va taqchillik",
+            "Iste’mol"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Har qanday iqtisodiy tizimlarda 'nima', 'qanday' va 'kim uchun' degan fundamental savollar mikro va makro darajada hal etiladi. Quyidagi savollardan qaysi biri mikroiqtisodiyot darajasida hal etiladi?",
+          "answer": "Nima va qancha ishlab chiqarish kerak?",
+          "options": [
+            "To‘liq bandlik darajasiga qanday qilib erishiladi?",
+            "Nima va qancha ishlab chiqarish kerak?",
+            "Inflyatsiyadan qanday qutilish mumkin?",
+            "Iqtisodiy o‘sishni qanday rag‘batlantirish mumkin?"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. 'Mikroiqtisodiyot' fani nimani o‘rganadi?",
+          "answer": "Alohida iqtisodiy subyektlar va alohida bozorlarning faoliyatini o‘rganadi",
+          "options": [
+            "Iqtisodiy tizimning harakatini va rivojlanishini yaxlit o‘rganadi",
+            "Jamiyat ehtiyojlarini qondirish uchun resurslardan foydalanishni o‘rganadi",
+            "Alohida iqtisodiy subyektlar va alohida bozorlarning faoliyatini o‘rganadi",
+            "Bozor iqtisodiyotining rivojlanish mexanizmini o‘rganadi"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Iqtisodiyotning asosiy muammosi nima?",
+          "answer": "Cheksiz ehtiyojni qondirishda cheklangan resurslardan oqilona foydalanish",
+          "options": [
+            "Cheksiz ehtiyojni qondirishda cheklangan resurslardan oqilona foydalanish",
+            "Ishlab chiqarishni to‘g‘ri tashkil etish",
+            "Ko‘proq foyda olish",
+            "Nima ishlab chiqarish kerak"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Agar iqtisodiy muammolarning bir qismi bozor, bir qismi hukumat tomonidan hal etilsa, bunday iqtisodiyot...",
+          "answer": "Aralash",
+          "options": [
+            "Aralash",
+            "Ma’muriy",
+            "Natural",
+            "Bozorli"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Agar jamiyatda ishlab chiqarish resurslari ko‘paysa, u holda...",
+          "answer": "Iqtisodiyot tovar va xizmatlar ishlab chiqarishini ko‘paytirish imkoniga ega bo‘ladi",
+          "options": [
+            "Tovar va xizmatlar ishlab chiqarish ko‘payadi",
+            "Texnologiya yaxshilanadi",
+            "Iqtisodiyot tovar va xizmatlar ishlab chiqarishini ko‘paytirish imkoniga ega bo‘ladi",
+            "Farovonlik avtomatik oshadi"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Ishlab chiqarish resursi hisoblanmaydigan qatorni belgilang.",
+          "answer": "Iste’mol mollari",
+          "options": [
+            "Foydali qazilmalar",
+            "Malakali ishchi kuchi",
+            "Iste’mol mollari",
+            "Laboratoriya jihozlari"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Ishlab chiqarish resurslariga nimalar kiradi?",
+          "answer": "Mehnat, yer, kapital, tadbirkorlik qobiliyati, axborot",
+          "options": [
+            "Mehnat, kapital, tadbirkorlik qobiliyati",
+            "Mehnat, yer, kapital, tadbirkorlik qobiliyati, axborot",
+            "Mehnat, yer, kapital",
+            "Faqat yer va kapital"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Iqtisodiy ne’mat tavsiflari qaysilar?",
+          "answer": "Ehtiyojni qondirish vositasi, kamyoblik, qimmatlilik",
+          "options": [
+            "Ehtiyojni qondirish vositasi, kamyoblik, qimmatlilik",
+            "Faqat kamyoblik",
+            "Faqat qimmatlilik",
+            "Faqat ehtiyojni qondirish vositasi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Iqtisodiy agentlar deb nimaga aytiladi?",
+          "answer": "Iqtisodiy ne’matlarni ishlab chiqarish, taqsimlash, ayirboshlash va iste’mol qilishda qatnashuvchi subyektlar",
+          "options": [
+            "Ishlab chiqaruvchi korxonalar",
+            "Iste’molchilar",
+            "Iqtisodiy ne’matlarni ishlab chiqarish, taqsimlash, ayirboshlash va iste’mol qilishda qatnashuvchi subyektlar",
+            "Uy xo‘jaligi"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Quyidagilardan qaysi biri mehnatga bo‘lgan talabga ta’sir ko‘rsatmaydi?",
+          "answer": "Inflyatsiya natijasida sodir bo‘lgan nominal ish haqining o‘zgarishi",
+          "options": [
+            "Inflyatsiya natijasida sodir bo‘lgan nominal ish haqining o‘zgarishi",
+            "Ishlab chiqarish texnologiyasi",
+            "Yakuniy mahsulotga bo‘lgan talab",
+            "Mehnatning chekli mahsuloti bilan boshqa resurslarning chekli mahsuloti o‘rtasidagi munosabat"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Qaysi ibora insonlarning biror bir tovarni sotib olish uchun imkoniyat va xohishi borligini anglatadi?",
+          "answer": "Talab",
+          "options": [
+            "Talab",
+            "Ehtiyoj",
+            "Zaruriyat",
+            "Xohish"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Talab qonuni deyiladi, agar...",
+          "answer": "Mahsulot narxi pasaysa, xarid hajmi ortadi",
+          "options": [
+            "Daromad oshsa, xarid ham oshadi",
+            "Talab egri chizig‘i musbat qiyalikka ega",
+            "Mahsulot narxi pasaysa, xarid hajmi ortadi",
+            "Taklif talabdan oshsa narx tushadi"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. X mahsulotga bo‘lgan talab chizig‘i siljishini nima bilan izohlash mumkin?",
+          "answer": "Iste’molchilar didlarining o‘zgarganligi sababli har qanday narxda ko‘proq xarid qilishni xohlashadi",
+          "options": [
+            "Iste’molchilar didlarining o‘zgarganligi sababli har qanday narxda ko‘proq xarid qilishni xohlashadi",
+            "Mahsulot narxi o‘zgargani uchun kamroq xarid qilishadi",
+            "Mahsulot taklifi kamaygan",
+            "Narx pasaygani uchun ko‘proq xarid qilishadi"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Ishlab chiqaruvchi X mahsulot narxini 5% ga pasaytirdi, natijada sotuv hajmi 4% ga oshdi. X mahsulotga bo‘lgan talab qanday?",
+          "answer": "Noelastik",
+          "options": [
+            "Elastik",
+            "Noelastik",
+            "Mutlaq elastik",
+            "Birlik elastik"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Makroiqtisodiyot asoslari",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Mikroiqtisodiyotdan farqli ravishda makroiqtisodiyot...",
+          "answer": "Ustuvor ravishda umumlashtirilgan tushunchalar bilan ishlaydi",
+          "options": [
+            "Ustuvor ravishda umumlashtirilgan tushunchalar bilan ishlaydi",
+            "Tavakkal fikrlarni qo‘llamaydi",
+            "Uy xo‘jaliklari hulq-atvorini o‘rganadi",
+            "Iqtisodiy muvozanat tushunchasidan foydalanadi"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Milliy daromad tarkibiga nimalar kiradi?",
+          "answer": "Ijara haqi, ish haqi, kapitalga foiz, mulkdan olingan daromad va korporatsiya foydasi",
+          "options": [
+            "Ijara haqi, ish haqi, kapitalga foiz, mulkdan olingan daromad va korporatsiya foydasi",
+            "Investitsiyalar – jamg‘armalar",
+            "Uzoq muddat foydalaniladigan buyumlar va xizmatlar qiymati",
+            "Uy xo‘jaliklari + investitsiya + davlat xarajatlari – transfert to‘lovlari + bilvosita soliqlar"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Milliy daromad va biznesga egri soliqlar yig‘indisi – bu...",
+          "answer": "Sof ichki mahsulot",
+          "options": [
+            "Sof ichki mahsulot",
+            "Shaxsiy daromad",
+            "Yalpi ichki mahsulot",
+            "Ixtiyordagi daromad"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Milliy iqtisodiyot holatini xarakterlovchi muhim makroiqtisodiy ko‘rsatkichlar – bu...",
+          "answer": "Yalpi milliy daromad, yalpi ichki mahsulot, sof milliy mahsulot, milliy daromad, ishchi kuchi bandligi, ishsizlik, inflyatsiya",
+          "options": [
+            "Yalpi milliy daromad, yalpi ichki mahsulot, sof milliy mahsulot, milliy daromad, ishchi kuchi bandligi, ishsizlik, inflyatsiya",
+            "Yalpi milliy daromad, yalpi ichki mahsulot",
+            "Yalpi milliy daromad, to‘lov balansi, sof milliy mahsulot, milliy daromad",
+            "Daromad, ichki milliy mahsulot"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Monetaristlar iqtisodiyotni barqarorlashtirishning eng maqbul vositasi deb nimani hisoblaydilar?",
+          "answer": "Pul massasi o‘zgarishini",
+          "options": [
+            "Pul massasi o‘zgarishini",
+            "Soliqlar o‘zgarishini",
+            "Davlat xarajatlari o‘zgarishini",
+            "Davlat zaxiralari o‘zgarishini"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Mutlaq ustunlik nazariyasi qaysi olimga tegishli?",
+          "answer": "A. Smit",
+          "options": [
+            "A. Smit",
+            "D. Rikardo",
+            "E. Xeksher",
+            "B. Olin"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Narxlar indeksi qanday farqni baholash uchun ishlatiladi?",
+          "answer": "Turli davrdagi iste'mol savatining bozor qiymatidagi farqini baholash uchun",
+          "options": [
+            "Turli davrdagi iste'mol savatining bozor qiymatidagi farqini baholash uchun",
+            "Ikki turli mamlakat narx darajalaridagi farqni baholash uchun",
+            "Bazis yildagi ishlab chiqarish tarkibidagi farqni baholash uchun",
+            "Ulgurji va chakana narx darajalari o‘rtasidagi farqni baholash uchun"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Nima uchun oraliq va pirovard mahsulotlarni farqlay bilishimiz kerak?",
+          "answer": "Bir mahsulotni ikki marta hisoblamaslik uchun",
+          "options": [
+            "Bir mahsulotni ikki marta hisoblamaslik uchun",
+            "Bir mahsulotni ikki joyda hisoblash uchun",
+            "Bir mahsulotni ikki joyda iste'mol qilish uchun",
+            "Ikki mahsulotni iste'mol qilish uchun"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Nisbiy ustunlik nazariyasi kimga tegishli?",
+          "answer": "D. Rikardo",
+          "options": [
+            "D. Rikardo",
+            "Abba Lerner",
+            "J. Keyns",
+            "J. Xiks"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Nominal YaIM qanday narxlarda hisoblanadi?",
+          "answer": "Joriy narxlarda",
+          "options": [
+            "Joriy narxlarda",
+            "O‘zgaruvchan narxlarda",
+            "Chakana narxlarda",
+            "Ulgurji narxlarda"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Ochiq iqtisodiyot – bu...",
+          "answer": "Mamlakatning fuqarolari xalqaro bozorda cheklanmagan miqdorda faoliyat yuritish huquqiga ega",
+          "options": [
+            "Mamlakatning fuqarolari xalqaro bozorda cheklanmagan miqdorda faoliyat yuritish huquqiga ega",
+            "Xalqaro investitsiya qisman kirib kelishi mumkin",
+            "Mamlakat aholisi cheklangan holdagi faoliyati",
+            "Tashqi iqtisodiy aloqalarning qisman cheklangan shakli"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Pirovard mahsulot – bu...",
+          "answer": "Yakuniy iste'mol uchun sotib olinadigan tugal mahsulot",
+          "options": [
+            "Yakuniy iste'mol uchun sotib olinadigan tugal mahsulot",
+            "Qayta ishlash uchun sotib olinadigan tugal mahsulot",
+            "Sotish va qayta ishlash uchun sotib olinadigan tugal mahsulot",
+            "Sotish uchun sotib olinadigan tugal mahsulot"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Potensial YaIM deganda...",
+          "answer": "Mamlakatdagi ishlab chiqarish resurslaridan to‘liq foydalanilgan sharoitda mumkin bo‘lgan ishlab chiqarish hajmi tushuniladi",
+          "options": [
+            "Mamlakatdagi ishlab chiqarish resurslaridan to‘liq foydalanilgan sharoitda mumkin bo‘lgan ishlab chiqarish hajmi tushuniladi",
+            "Juda ko‘p hajmda ishlab chiqarilgan mahsulot",
+            "Resurslarni tejab ishlatish natijasidagi ishlab chiqarilgan mahsulot hajmi",
+            "YaIMning kamayib ketishi"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Pulning qadr-qimmati nima bilan o‘lchanadi?",
+          "answer": "Undagi oltin miqdori va narxlar darajasi bilan",
+          "options": [
+            "Iqtisodiyotdagi muomalada bo‘lgan pul miqdori bilan",
+            "Mamlakatning oltin zaxirasi bilan",
+            "Mutloq likvidliligi bilan",
+            "Undagi oltin miqdori va narxlar darajasi bilan"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Qanday mamlakat iqtisodiyoti ochiq iqtisodiyot deyiladi?",
+          "answer": "Eksport-import aloqalari yo‘lga qo‘yilgan",
+          "options": [
+            "Eksport-import aloqalari yo‘lga qo‘yilgan",
+            "Eksport-import aloqalari yo‘lga qo‘yilmagan",
+            "Faqat import aloqalari yo‘lga qo‘yilgan",
+            "Faqat eksport aloqalari yo‘lga qo‘yilgan"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Talab va taklif qonunlari",
+      "questions": [
+        {
+          "index": 0,
+          "question": "1. Talab nima?",
+          "answer": "Iste’molchilarning ma’lum narxda ma’lum miqdorda tovar sotib olish istagi va imkoniyati",
+          "options": [
+            "Ishlab chiqaruvchilarning mahsulot sotish istagi",
+            "Iste’molchilarning ma’lum narxda ma’lum miqdorda tovar sotib olish istagi va imkoniyati",
+            "Davlatning narxlarni belgilashi",
+            "Tovarlar sonining kamayishi"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "2. Taklif nima?",
+          "answer": "Ishlab chiqaruvchilarning ma’lum narxda tovarni bozorga chiqarish istagi",
+          "options": [
+            "Iste’molchilarning xarid qilish istagi",
+            "Bozor muvozanati",
+            "Ishlab chiqaruvchilarning ma’lum narxda tovarni bozorga chiqarish istagi",
+            "Narxlarning pasayishi"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "3. Talab qonuni nima?",
+          "answer": "Narx oshsa talab kamayadi, narx tushsa talab oshadi",
+          "options": [
+            "Narx oshsa talab oshadi",
+            "Narx va talab bir xil o‘zgaradi",
+            "Narx oshsa talab kamayadi, narx tushsa talab oshadi",
+            "Talab narxga bog‘liq emas"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "4. Taklif qonuni nima?",
+          "answer": "Narx oshsa taklif oshadi, narx tushsa taklif kamayadi",
+          "options": [
+            "Narx oshsa taklif oshadi, narx tushsa taklif kamayadi",
+            "Narx oshsa taklif kamayadi",
+            "Taklif narxga bog‘liq emas",
+            "Narx tushsa taklif oshadi"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "5. Talabga ta’sir etuvchi omillar qaysilar?",
+          "answer": "Daromad, narx, did, aholi soni, o‘rinbosar tovarlar",
+          "options": [
+            "Faqat narx",
+            "Faqat daromad",
+            "Daromad, narx, did, aholi soni, o‘rinbosar tovarlar",
+            "Faqat reklama"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "6. Taklifga ta’sir etuvchi omillar qaysilar?",
+          "answer": "Ishlab chiqarish xarajatlari, texnologiya, soliqlar",
+          "options": [
+            "Ishlab chiqarish xarajatlari, texnologiya, soliqlar",
+            "Faqat narx",
+            "Faqat daromad",
+            "Aholi soni"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "7. Bozor muvozanati nima?",
+          "answer": "Talab va taklif teng bo‘lgan holat",
+          "options": [
+            "Talab taklifdan ko‘p bo‘lgan holat",
+            "Taklif talabdan ko‘p bo‘lgan holat",
+            "Talab va taklif teng bo‘lgan holat",
+            "Narxlarning oshishi"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "8. Muvozanat narxi nima?",
+          "answer": "Talab va taklif tenglashgan narx",
+          "options": [
+            "Eng yuqori narx",
+            "Eng past narx",
+            "Davlat belgilagan narx",
+            "Talab va taklif tenglashgan narx"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "9. Talab elastikligi nima?",
+          "answer": "Narx o‘zgarishiga talabning sezgirligi",
+          "options": [
+            "Narx o‘zgarishiga talabning sezgirligi",
+            "Taklifning o‘zgarishi",
+            "Narxning oshishi",
+            "Bozor muvozanati"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "10. Taklif elastikligi nima?",
+          "answer": "Narx o‘zgarishiga taklifning sezgirligi",
+          "options": [
+            "Talabning o‘zgarishi",
+            "Narx o‘zgarishiga taklifning sezgirligi",
+            "Narxning pasayishi",
+            "Ishlab chiqarish hajmi"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "11. Elastik talab degani?",
+          "answer": "Narx o‘zgarishiga kuchli javob beruvchi talab",
+          "options": [
+            "Narx o‘zgarishiga umuman javob bermaydigan talab",
+            "Narx o‘zgarishiga sust javob beruvchi talab",
+            "Narx o‘zgarishiga kuchli javob beruvchi talab",
+            "Taklifning o‘zgarishi"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "12. Noelastik talab degani?",
+          "answer": "Narx o‘zgarishiga sust javob beruvchi talab",
+          "options": [
+            "Narx o‘zgarishiga kuchli javob beruvchi talab",
+            "Narx o‘zgarishiga sust javob beruvchi talab",
+            "Taklifning o‘zgarishi",
+            "Bozor muvozanati"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "13. Talab egri chizig‘i qayerga og‘adi?",
+          "answer": "Chapdan pastga o‘ngga qarab",
+          "options": [
+            "Chapdan pastga o‘ngga qarab",
+            "Chapdan yuqoriga o‘ngga qarab",
+            "Tik holatda",
+            "Gorizontal holatda"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "14. Taklif egri chizig‘i qayerga og‘adi?",
+          "answer": "Chapdan yuqoriga o‘ngga qarab",
+          "options": [
+            "Chapdan pastga o‘ngga qarab",
+            "Tik holatda",
+            "Chapdan yuqoriga o‘ngga qarab",
+            "Gorizontal holatda"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "15. Talab ortishi nimani anglatadi?",
+          "answer": "Iste’molchilar ko‘proq sotib olishni xohlaydi",
+          "options": [
+            "Iste’molchilar kamroq xarid qiladi",
+            "Ishlab chiqaruvchilar mahsulotni kamaytiradi",
+            "Narxlar pasayadi",
+            "Iste’molchilar ko‘proq sotib olishni xohlaydi"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Inflyatsiya va ishsizlik",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Inflyatsiya nima?",
+          "answer": "Narxlar umumiy darajasining oshishi",
+          "options": [
+            "Ishsizlikning kamayishi",
+            "Narxlar umumiy darajasining oshishi",
+            "Ish haqining oshishi",
+            "Soliqlarning kamayishi"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Qaysi holat inflyatsiyaga misol bo'ladi?",
+          "answer": "Non narxi 3000 so'mdan 3300 so'mga chiqdi",
+          "options": [
+            "Non narxi 3000 so'mdan 3300 so'mga chiqdi",
+            "Ishsizlik kamaydi",
+            "Dollar kursi o'zgarmadi",
+            "Bank ochildi"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Ishsizlik nima?",
+          "answer": "Ishlashni xohlaydigan, lekin ish topa olmayotgan odamlar holati",
+          "options": [
+            "Daromadning kamayishi",
+            "Ishlashni xohlaydigan, lekin ish topa olmayotgan odamlar holati",
+            "Talabalarning o'qishi",
+            "Pensionerlar soni"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Inflyatsiya davrida pulning xarid qobiliyati:",
+          "answer": "Pasayadi",
+          "options": [
+            "Oshadi",
+            "O'zgarmaydi",
+            "Pasayadi",
+            "Ikki baravar oshadi"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Qaysi tashkilot inflyatsiyani nazorat qilishda muhim rol o'ynaydi?",
+          "answer": "Markaziy bank",
+          "options": [
+            "Maktab",
+            "Markaziy bank",
+            "Universitet",
+            "Kasaba uyushmasi"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Agar inflyatsiya 10% bo'lsa, 100 000 so'mning xarid qobiliyati:",
+          "answer": "Taxminan kamayadi",
+          "options": [
+            "Oshadi",
+            "Taxminan kamayadi",
+            "O'zgarmaydi",
+            "Nolga teng bo'ladi"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Qaysi holat talab inflyatsiyasiga sabab bo'lishi mumkin?",
+          "answer": "Aholining xaridlari keskin ortishi",
+          "options": [
+            "Ishlab chiqarish xarajatlari oshishi",
+            "Aholining xaridlari keskin ortishi",
+            "Hosilning kamayishi",
+            "Soliq oshishi"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Ishsizlikning qaysi turi yangi ish qidirayotgan odamlar bilan bog'liq?",
+          "answer": "Friksion",
+          "options": [
+            "Friksion",
+            "Strukturaviy",
+            "Tsiklik",
+            "Yashirin"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Strukturaviy ishsizlik odatda nima sababli yuzaga keladi?",
+          "answer": "Texnologik o'zgarishlar",
+          "options": [
+            "Texnologik o'zgarishlar",
+            "Dam olish mavsumi",
+            "Narxlar tushishi",
+            "Soliq kamayishi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Qaysi ko'rsatkich mamlakatdagi ishsizlik darajasini ifodalaydi?",
+          "answer": "Ishsizlar sonining mehnat resurslariga nisbati",
+          "options": [
+            "YaIM",
+            "Ishsizlar sonining mehnat resurslariga nisbati",
+            "Eksport hajmi",
+            "Inflyatsiya darajasi"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Agar nominal ish haqi 15% ga oshsa, lekin inflyatsiya 20% bo'lsa:",
+          "answer": "Real ish haqi kamayadi",
+          "options": [
+            "Real ish haqi oshadi",
+            "Real ish haqi kamayadi",
+            "Hech narsa o'zgarmaydi",
+            "Real ish haqi ikki baravar oshadi"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Phillips egri chizig'i nimani ko'rsatadi?",
+          "answer": "Inflyatsiya va ishsizlik o'rtasidagi bog'liqlikni",
+          "options": [
+            "Soliq va YaIM bog'liqligini",
+            "Inflyatsiya va ishsizlik o'rtasidagi bog'liqlikni",
+            "Eksport va import nisbatini",
+            "Foiz va investitsiyalar nisbatini"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Qaysi holat \"cost-push inflation\" ga misol bo'ladi?",
+          "answer": "Neft narxining keskin qimmatlashishi",
+          "options": [
+            "Aholi xarajatlarining oshishi",
+            "Neft narxining keskin qimmatlashishi",
+            "Soliqlarning kamayishi",
+            "Kreditlarning ko'payishi"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Tsiklik ishsizlik odatda qachon yuz beradi?",
+          "answer": "Iqtisodiy pasayish davrida",
+          "options": [
+            "Iqtisodiy pasayish davrida",
+            "Texnologik rivojlanish vaqtida",
+            "Universitet bitirganda",
+            "Mavsumiy ishlarda"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Tabiiy ishsizlik darajasi tarkibiga odatda qaysi ishsizliklar kiradi?",
+          "answer": "Friksion va strukturaviy",
+          "options": [
+            "Tsiklik va yashirin",
+            "Friksion va strukturaviy",
+            "Tsiklik va strukturaviy",
+            "Mavsumiy va tsiklik"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Davlat byudjeti va soliq tizimi",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Davlat byudjeti nima?",
+          "answer": "Davlatning daromad va xarajatlar rejasi",
+          "options": [
+            "Korxona moliyaviy rejasi",
+            "Davlatning daromad va xarajatlar rejasi",
+            "Bank hisoboti",
+            "Oila budjeti"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Davlat byudjetining asosiy daromad manbai nima?",
+          "answer": "Soliqlar",
+          "options": [
+            "Jarimalar",
+            "Soliqlar",
+            "Kreditlar",
+            "Dividendlar"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Soliq nima?",
+          "answer": "Davlatga majburiy to'lov",
+          "options": [
+            "Davlatga majburiy to'lov",
+            "Kredit turi",
+            "Jamg'arma",
+            "Investitsiya"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Qo'shilgan qiymat solig'i (QQS) qaysi turdagi soliq?",
+          "answer": "Bilvosita",
+          "options": [
+            "Bevosita",
+            "Bilvosita",
+            "Mahalliy",
+            "Xalqaro"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Davlat byudjeti mablag'lari qaysi sohaga sarflanishi mumkin?",
+          "answer": "Yuqoridagilarning barchasi",
+          "options": [
+            "Ta'lim",
+            "Sog'liqni saqlash",
+            "Mudofaa",
+            "Yuqoridagilarning barchasi"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Agar davlat xarajatlari daromadlaridan oshib ketsa, nima yuzaga keladi?",
+          "answer": "Defitsit",
+          "options": [
+            "Profitsit",
+            "Defitsit",
+            "Depozit",
+            "Inflyatsiya"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Byudjet profitsiti nima?",
+          "answer": "Daromadlar xarajatlardan ko'p",
+          "options": [
+            "Xarajatlar daromadlardan ko'p",
+            "Daromadlar xarajatlardan ko'p",
+            "Soliqlar bekor qilingan",
+            "Kreditlar ko'paygan"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Jismoniy shaxs daromad solig'i qaysi turga kiradi?",
+          "answer": "Bevosita soliq",
+          "options": [
+            "Bevosita soliq",
+            "Bilvosita soliq",
+            "Aksiz solig'i",
+            "Bojxona to'lovi"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Davlat defitsitni qoplash uchun ko'pincha nima qiladi?",
+          "answer": "Obligatsiyalar chiqaradi",
+          "options": [
+            "Obligatsiyalar chiqaradi",
+            "Maktablar quradi",
+            "Eksportni to'xtatadi",
+            "Soliqlarni bekor qiladi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Aksiz solig'i odatda qaysi mahsulotlarga qo'llaniladi?",
+          "answer": "Tamaki va alkogol",
+          "options": [
+            "Non va sut",
+            "Tamaki va alkogol",
+            "Kitoblar",
+            "Dori vositalari"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Qaysi holatda progressiv soliq tizimi qo'llaniladi?",
+          "answer": "Daromad oshgani sari soliq stavkasi ham oshadi",
+          "options": [
+            "Daromad oshgani sari soliq stavkasi kamayadi",
+            "Hamma bir xil foiz to'laydi",
+            "Daromad oshgani sari soliq stavkasi ham oshadi",
+            "Soliq faqat korxonalardan olinadi"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Agar hukumat iqtisodiyotni rag'batlantirmoqchi bo'lsa, qaysi fiskal siyosatni qo'llashi mumkin?",
+          "answer": "Xarajatlarni oshirish",
+          "options": [
+            "Xarajatlarni kamaytirish",
+            "Soliqlarni oshirish",
+            "Xarajatlarni oshirish",
+            "Pul massasini kamaytirish"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Davlat qarzi ortib borishi uzoq muddatda nimaga olib kelishi mumkin?",
+          "answer": "Foiz to'lovlarining oshishiga",
+          "options": [
+            "Foiz to'lovlarining oshishiga",
+            "Soliqlarning yo'qolishiga",
+            "Ishsizlikning nol bo'lishiga",
+            "Pulning qadrsizlanmasligiga"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Qaysi soliq iste'molchi tomonidan mahsulot narxi orqali to'lanadi?",
+          "answer": "QQS",
+          "options": [
+            "Daromad solig'i",
+            "Foyda solig'i",
+            "QQS",
+            "Yer solig'i"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Fiskal siyosat kim tomonidan amalga oshiriladi?",
+          "answer": "Hukumat va Moliya vazirligi",
+          "options": [
+            "Markaziy bank",
+            "Hukumat va Moliya vazirligi",
+            "Tijorat banklari",
+            "Fond birjasi"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Xalqaro iqtisodiy munosabatlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Xalqaro savdo nima?",
+          "answer": "Mamlakatlar o'rtasidagi savdo",
+          "options": [
+            "Bir mamlakat ichidagi savdo",
+            "Mamlakatlar o'rtasidagi savdo",
+            "Bank operatsiyasi",
+            "Soliq tizimi"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Eksport nima?",
+          "answer": "Tovarlarni boshqa mamlakatlarga sotish",
+          "options": [
+            "Tovarlarni chetdan olib kirish",
+            "Tovarlarni boshqa mamlakatlarga sotish",
+            "Soliq yig'ish",
+            "Valyuta almashtirish"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Import nima?",
+          "answer": "Tovarlarni xorijdan sotib olish",
+          "options": [
+            "Tovarlarni xorijga sotish",
+            "Tovarlarni xorijdan sotib olish",
+            "Kredit olish",
+            "Investitsiya kiritish"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "O'zbekistonning milliy valyutasi qaysi?",
+          "answer": "So'm",
+          "options": [
+            "Dollar",
+            "Rubl",
+            "So'm",
+            "Yevro"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Valyuta kursi nima?",
+          "answer": "Bir valyutaning boshqa valyutaga nisbatan qiymati",
+          "options": [
+            "Soliq stavkasi",
+            "Bir valyutaning boshqa valyutaga nisbatan qiymati",
+            "Kredit foizi",
+            "Inflyatsiya darajasi"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Agar eksport importdan ko'p bo'lsa, nima yuz beradi?",
+          "answer": "Savdo profitsiti",
+          "options": [
+            "Savdo defitsiti",
+            "Savdo profitsiti",
+            "Inflyatsiya",
+            "Ishsizlik"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Quyidagilardan qaysi biri xalqaro tashkilot hisoblanadi?",
+          "answer": "IMF",
+          "options": [
+            "Mahalla",
+            "IMF",
+            "Maktab",
+            "Bankomat"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Tarif nima?",
+          "answer": "Import qilinadigan mahsulotlarga qo'yiladigan boj",
+          "options": [
+            "Eksport subsidiyasi",
+            "Import qilinadigan mahsulotlarga qo'yiladigan boj",
+            "Valyuta kursi",
+            "Kredit foizi"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Xorijiy investitsiya nima?",
+          "answer": "Boshqa davlatdan kiritilgan kapital",
+          "options": [
+            "Mamlakat ichidagi jamg'arma",
+            "Boshqa davlatdan kiritilgan kapital",
+            "Soliq turi",
+            "Kredit"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Valyuta qadrsizlansa (depreciation), eksport odatda:",
+          "answer": "Arzonlashadi va raqobatbardosh bo'ladi",
+          "options": [
+            "Qimmatlashadi",
+            "Arzonlashadi va raqobatbardosh bo'ladi",
+            "To'xtaydi",
+            "O'zgarmaydi"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Qaysi tashkilot davlatlarga moliyaviy yordam va iqtisodiy maslahatlar beradi?",
+          "answer": "IMF",
+          "options": [
+            "FIFA",
+            "IMF",
+            "UNESCO",
+            "OPEC"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Mutlaq ustunlik (Absolute Advantage) nimani anglatadi?",
+          "answer": "Mahsulotni boshqalarga qaraganda kamroq xarajat bilan ishlab chiqarish",
+          "options": [
+            "Mahsulotni boshqalarga qaraganda kamroq xarajat bilan ishlab chiqarish",
+            "Ko'proq ishchi ishlatish",
+            "Ko'proq eksport qilish",
+            "Yuqori soliq qo'yish"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Qiyosiy ustunlik (Comparative Advantage) nazariyasiga ko'ra:",
+          "answer": "Mamlakatlar nisbatan samarali ishlab chiqaradigan mahsulotlarga ixtisoslashishi kerak",
+          "options": [
+            "Har bir mamlakat hamma narsani o'zi ishlab chiqarishi kerak",
+            "Mamlakatlar nisbatan samarali ishlab chiqaradigan mahsulotlarga ixtisoslashishi kerak",
+            "Import taqiqlanishi kerak",
+            "Eksport zararli"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Agar dollar kursi 10% ga oshsa, import qilinadigan mahsulotlar odatda:",
+          "answer": "Qimmatlashadi",
+          "options": [
+            "Arzonlashadi",
+            "Qimmatlashadi",
+            "Yo'qoladi",
+            "Soliqsiz bo'ladi"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Savdo balansi nimani ko'rsatadi?",
+          "answer": "Eksport va import o'rtasidagi farqni",
+          "options": [
+            "Davlat byudjetini",
+            "Eksport va import o'rtasidagi farqni",
+            "Inflyatsiya darajasini",
+            "Ishsizlik darajasini"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Iqtisodiy o‘sish va rivojlanish",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Iqtisodiy o‘sish nima?",
+          "answer": "Mamlakat ishlab chiqarishi hajmining ortishi",
+          "options": [
+            "Narxlarning oshishi",
+            "Mamlakat ishlab chiqarishi hajmining ortishi",
+            "Soliqlarning kamayishi",
+            "Importning oshishi"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Iqtisodiy o‘sishni o‘lchashda eng ko‘p ishlatiladigan ko‘rsatkich qaysi?",
+          "answer": "YaIM (GDP)",
+          "options": [
+            "Inflyatsiya",
+            "YaIM (GDP)",
+            "Ishsizlik",
+            "Eksport"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "YaIM (GDP) nimani bildiradi?",
+          "answer": "Mamlakatda ma'lum davrda ishlab chiqarilgan barcha yakuniy mahsulot va xizmatlar qiymatini",
+          "options": [
+            "Davlat qarzini",
+            "Mamlakatda ma'lum davrda ishlab chiqarilgan barcha yakuniy mahsulot va xizmatlar qiymatini",
+            "Soliq tushumlarini",
+            "Valyuta zaxiralarini"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Quyidagilardan qaysi biri iqtisodiy rivojlanishga misol?",
+          "answer": "Yuqoridagilarning barchasi",
+          "options": [
+            "Maktablar sonining ko‘payishi",
+            "Aholi savodxonligining oshishi",
+            "Tibbiyot xizmatlarining yaxshilanishi",
+            "Yuqoridagilarning barchasi"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Qaysi omil iqtisodiy o‘sishga yordam beradi?",
+          "answer": "Investitsiyalar",
+          "options": [
+            "Investitsiyalar",
+            "Urushlar",
+            "Ishsizlikning ortishi",
+            "Korruptsiyaning kuchayishi"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Aholi soni YaIMdan tezroq o‘ssa, aholi jon boshiga YaIM:",
+          "answer": "Kamayadi",
+          "options": [
+            "Oshadi",
+            "Kamayadi",
+            "O‘zgarmaydi",
+            "Ikki baravar oshadi"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Inson kapitali nima?",
+          "answer": "Bilim, malaka va tajriba",
+          "options": [
+            "Zavodlar",
+            "Pul mablag'lari",
+            "Bilim, malaka va tajriba",
+            "Soliqlar"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Qaysi ko‘rsatkich iqtisodiy rivojlanishni baholashda ishlatiladi?",
+          "answer": "HDI (Human Development Index)",
+          "options": [
+            "HDI (Human Development Index)",
+            "Dollar kursi",
+            "QQS",
+            "Kredit foizi"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Texnologik taraqqiyot odatda:",
+          "answer": "Mehnat unumdorligini oshiradi",
+          "options": [
+            "Mehnat unumdorligini oshiradi",
+            "YaIMni kamaytiradi",
+            "Soliqlarni bekor qiladi",
+            "Ishlab chiqarishni to‘xtatadi"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Kapital qo‘yilmalarining ortishi nimaga olib kelishi mumkin?",
+          "answer": "Ishlab chiqarish hajmining ortishiga",
+          "options": [
+            "Ishlab chiqarish hajmining ortishiga",
+            "Eksportning yo‘qolishiga",
+            "Ishsizlikning oshishiga",
+            "Soliqlarning bekor bo‘lishiga"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Quyidagilardan qaysi biri intensiv iqtisodiy o‘sishga misol?",
+          "answer": "Yangi texnologiyalar joriy etish",
+          "options": [
+            "Ko‘proq ishchi yollash",
+            "Ko‘proq yer ishlatish",
+            "Yangi texnologiyalar joriy etish",
+            "Ish vaqtini uzaytirish"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Agar mamlakat YaIMi 500 mlrd dollardan 550 mlrd dollarga oshsa, iqtisodiy o‘sish sur'ati taxminan necha foiz?",
+          "answer": "10%",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Qaysi holat iqtisodiy rivojlanishni iqtisodiy o‘sishdan farqlaydi?",
+          "answer": "Hayot sifati va ijtimoiy ko‘rsatkichlarning yaxshilanishi",
+          "options": [
+            "Faqat ishlab chiqarish hajmi",
+            "Faqat eksport",
+            "Hayot sifati va ijtimoiy ko‘rsatkichlarning yaxshilanishi",
+            "Faqat soliqlar"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "\"Middle Income Trap\" (o‘rta daromad tuzog‘i) nimani anglatadi?",
+          "answer": "Mamlakatning yuqori daromadli davlatga aylana olmasligi",
+          "options": [
+            "Mamlakatning yuqori daromadli davlatga aylana olmasligi",
+            "Soliqlarning oshishi",
+            "Inflyatsiyaning pasayishi",
+            "Eksportning ortishi"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Quyidagilardan qaysi biri uzoq muddatli iqtisodiy o‘sishning eng muhim omillaridan biri hisoblanadi?",
+          "answer": "Ta'lim va innovatsiyalar",
+          "options": [
+            "Tabiiy resurslar",
+            "Ta'lim va innovatsiyalar",
+            "Valyuta kursi",
+            "Bojxona to‘lovlari"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Iqtisodiyot nazariyasi asoslari",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Iqtisodiyotning bosh masalasi nimadan iborat?",
+          "answer": "Cheksiz ehtiyojlar va cheklangan resurslar o‘rtasidagi ziddiyatni hal qilish",
+          "options": [
+            "Soliqlarni kamaytirish",
+            "Ishsizlikni tugatish",
+            "Cheksiz ehtiyojlar va cheklangan resurslar o‘rtasidagi ziddiyatni hal qilish",
+            "Narxlarni nazorat qilish"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Mikroiqtisodiyot nimani o‘rganadi?",
+          "answer": "Korxona, firma va uy xo‘jaliklari faoliyatini",
+          "options": [
+            "Butun mamlakat iqtisodiyotini",
+            "Korxona, firma va uy xo‘jaliklari faoliyatini",
+            "Xalqaro savdoni",
+            "Davlat byudjetini"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Iqtisodiy resurslarning asosiy xususiyati nima?",
+          "answer": "Kamyobligi",
+          "options": [
+            "Cheksizligi",
+            "Tez tiklanishi",
+            "Kamyobligi",
+            "Bepulligi"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Merkantilizm ta’limotiga ko‘ra boylik manbai nima?",
+          "answer": "Tashqi savdo",
+          "options": [
+            "Qishloq xo‘jaligi",
+            "Sanoat",
+            "Tashqi savdo",
+            "Xizmatlar sohasi"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Fiziokratlar boylikning asosiy manbai deb nimani hisoblashgan?",
+          "answer": "Qishloq xo‘jaligi",
+          "options": [
+            "Savdo",
+            "Qishloq xo‘jaligi",
+            "Bank tizimi",
+            "Sanoat"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Klassik siyosiy iqtisod maktabining asosiy o‘rganish sohasi qaysi?",
+          "answer": "Ishlab chiqarish sohasi",
+          "options": [
+            "Ayirboshlash sohasi",
+            "Moliya bozori",
+            "Ishlab chiqarish sohasi",
+            "Soliq tizimi"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Marjinalizm qaysi iqtisodiy miqdorlarni o‘rganishga asoslanadi?",
+          "answer": "Keyingi qo‘shilgan miqdorlarni",
+          "options": [
+            "O‘rtacha miqdorlarni",
+            "Keyingi qo‘shilgan miqdorlarni",
+            "Umumiy miqdorlarni",
+            "Minimal miqdorlarni"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Iqtisodiy qonunlar qanday xarakterga ega?",
+          "answer": "Obyektiv",
+          "options": [
+            "Faqat subyektiv",
+            "Faqat huquqiy",
+            "Faqat siyosiy",
+            "Obyektiv"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Takror ishlab chiqarish nima?",
+          "answer": "Ishlab chiqarish jarayonining qayta va uzluksiz takrorlanishi",
+          "options": [
+            "Mahsulotlarni eksport qilish",
+            "Ishlab chiqarish jarayonining qayta va uzluksiz takrorlanishi",
+            "Narxlarning oshishi",
+            "Daromadlarni taqsimlash"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Oddiy takror ishlab chiqarish nimani anglatadi?",
+          "answer": "Ishlab chiqarish hajmi o‘zgarmasdan takrorlanishini",
+          "options": [
+            "Ishlab chiqarish hajmi o‘zgarmasdan takrorlanishini",
+            "Ishlab chiqarish hajmi ortishini",
+            "Ishlab chiqarish hajmi kamayishini",
+            "Ishsizlikning kamayishini"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "“Siyosiy iqtisod” tushunchasini muallifi kim?",
+          "answer": "Antuan de Monkretyen",
+          "options": [
+            "Adam Smit",
+            "Aristotel",
+            "Antuan de Monkretyen",
+            "Karl Marks"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Iqtisodiy tahlilda miqdoriy o‘lchamlarni o‘rganishda qaysi usul qo‘llaniladi?",
+          "answer": "Matematik",
+          "options": [
+            "Tarixiy",
+            "Matematik",
+            "Mantiqiy",
+            "Normativ"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Muvozanatlashgan iqtisodiy model qaysi?",
+          "answer": "Yalpi talab va yalpi taklif modeli",
+          "options": [
+            "Xarajatlar modeli",
+            "Narx modeli",
+            "Yalpi talab va yalpi taklif modeli",
+            "Ish haqi modeli"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Infratuzilma nima?",
+          "answer": "Ishlab chiqarish va ayirboshlash jarayonlarining normal faoliyat yuritishini ta’minlovchi sohalar majmui",
+          "options": [
+            "Ishlab chiqarish va ayirboshlash jarayonlarining normal faoliyat yuritishini ta’minlovchi sohalar majmui",
+            "Faqat transport tizimi",
+            "Faqat aloqa tizimi",
+            "Faqat xizmatlar sohasi"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Quyidagilardan qaysi biri uzoq muddatli iqtisodiy o‘sishning eng muhim omillaridan biri hisoblanadi?",
+          "answer": "Ta’lim va innovatsiyalar",
+          "options": [
+            "Tabiiy resurslar",
+            "Ta’lim va innovatsiyalar",
+            "Valyuta kursi",
+            "Bojxona to‘lovlari"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "iq",
+      "topic": "Bozor iqtisodiyoti va uning mexanizmi",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Bozor iqtisodiyotining asosiy mexanizmi qanday shakllangan?",
+          "answer": "Bir necha asrlar davomida evolyutsiya orqali",
+          "options": [
+            "Bir necha asrlar davomida evolyutsiya orqali",
+            "Markazlashgan reja asosida",
+            "Hukumatning to‘g‘ridan-to‘g‘ri boshqaruvi orqali",
+            "Tasodifiy shaklda rivojlangan"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Bozor iqtisodiyoti nimaga asoslanadi?",
+          "answer": "Tovar va pul munosabatlariga",
+          "options": [
+            "Tovar va pul munosabatlariga",
+            "Tabiiy resurslarning nazoratiga",
+            "Davlat monopoliyasiga",
+            "Ishchi kuchining yagona tizimiga"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Bozor iqtisodiyotining asosiy subyektlari qaysilar?",
+          "answer": "Ishchilar, tadbirkorlar va iste’molchilar",
+          "options": [
+            "Faqat tadbirkorlar",
+            "Ishchilar, tadbirkorlar va iste’molchilar",
+            "Faqat davlat tashkilotlari",
+            "Qishloq xo‘jaligi korxonalari"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Bozor iqtisodiyoti qanday tizimni rad etadi?",
+          "answer": "Iqtisodiy raqobatsizlik yoki monopolizmni",
+          "options": [
+            "Hukumat nazorati",
+            "Raqobatni rag‘batlantirish tizimi",
+            "Iqtisodiy raqobatsizlik yoki monopolizmni",
+            "Bozorning mustaqilligi"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Bozor iqtisodiyoti nimani o‘z ichiga oladi?",
+          "answer": "Ishlab chiqarish, taqsimot va iste’mol jarayonlarini",
+          "options": [
+            "Faqat ishlab chiqarish va iste’molni",
+            "Ishlab chiqarish, taqsimot va iste’mol jarayonlarini",
+            "Faqat tabiiy resurslardan foydalanishni",
+            "Faqat pul muomalasini"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Bozor iqtisodiyotining rivojlanishiga nima turtki beradi?",
+          "answer": "Xususiy mulkchilik",
+          "options": [
+            "Xususiy mulkchilik",
+            "Davlat rejalashtiruvi",
+            "Faqat xalqaro savdo",
+            "Tabiiy resurslarni qayta ishlash"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Bozor iqtisodiyotida tovar va xizmatlar qanday taqsimlanadi?",
+          "answer": "Narx mexanizmi orqali",
+          "options": [
+            "Hukumat tomonidan boshqariladi",
+            "Narx mexanizmi orqali",
+            "Tabiiy resurslarga qarab taqsimlanadi",
+            "Ishchilarning talabiga ko‘ra"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Bozor iqtisodiyoti erkinligi nimada ko‘rinadi?",
+          "answer": "Subyektlarning iqtisodiy mustaqilligida",
+          "options": [
+            "Hukumatning qattiq nazoratida",
+            "Subyektlarning iqtisodiy mustaqilligida",
+            "Ishlab chiqarish vositalarining davlatga tegishliligida",
+            "Faqat qishloq xo‘jaligi sohasida"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Bozor iqtisodiyotining afzalliklari nimada?",
+          "answer": "Iqtisodiy resurslarning erkin harakati",
+          "options": [
+            "Iqtisodiy resurslarning erkin harakati",
+            "Hukumat tomonidan to‘liq boshqarilishi",
+            "Faqat yuqori daromadli sohaga yo‘naltirilganligi",
+            "Ishchilar uchun majburiy mehnat"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Bozor iqtisodiyotining ziddiyatlari qanday namoyon bo‘ladi?",
+          "answer": "Iqtisodiy raqobat va resurslarni notekis taqsimlashda",
+          "options": [
+            "Iqtisodiy raqobat va resurslarni notekis taqsimlashda",
+            "To‘liq iqtisodiy barqarorlikda",
+            "Hukumatning barcha jarayonlarni boshqarishida",
+            "Ishchi kuchining mutlaq yetishmasligida"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Bozor iqtisodiyotida narxlarning asosiy vazifasi nima?",
+          "answer": "Resurslarni samarali taqsimlash va bozor ishtirokchilariga axborot berish",
+          "options": [
+            "Faqat davlat daromadini oshirish",
+            "Resurslarni samarali taqsimlash va bozor ishtirokchilariga axborot berish",
+            "Ishchilar sonini ko‘paytirish",
+            "Monopoliyalarni yaratish"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Bozor iqtisodiyotida raqobatning asosiy vazifasi nima?",
+          "answer": "Mahsulot sifati va samaradorlikni oshirish",
+          "options": [
+            "Narxlarni sun’iy ravishda oshirish",
+            "Korxonalarni davlatga bo‘ysundirish",
+            "Mahsulot sifati va samaradorlikni oshirish",
+            "Importni kamaytirish"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Talab oshib, taklif o‘zgarmasa bozor iqtisodiyotida odatda nima yuz beradi?",
+          "answer": "Narx oshadi",
+          "options": [
+            "Narx pasayadi",
+            "Narx o‘zgarmaydi",
+            "Narx oshadi",
+            "Ishlab chiqarish to‘xtaydi"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Bozor iqtisodiyotining samarali ishlashi uchun eng muhim shartlardan biri qaysi?",
+          "answer": "Xususiy mulk huquqining himoyalanishi",
+          "options": [
+            "Barcha korxonalarning davlatga tegishli bo‘lishi",
+            "Xususiy mulk huquqining himoyalanishi",
+            "Narxlarning markazlashgan tarzda belgilanishi",
+            "Tashqi savdoning taqiqlanishi"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Bozor iqtisodiyoti sharoitida korxonaning asosiy maqsadi nima?",
+          "answer": "Foyda olish va raqobatbardosh bo‘lish",
+          "options": [
+            "Faqat mahsulot hajmini oshirish",
+            "Davlat topshiriqlarini bajarish",
+            "Foyda olish va raqobatbardosh bo‘lish",
+            "Soliqlarni kamaytirish"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Logarifimlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Hisoblang: log₃81",
+          "answer": "4",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Hisoblang: log₅125 − log₅5",
+          "answer": "2",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Hisoblang: 2log₂3 − log₂12",
+          "answer": "0",
+          "options": [
+            "0",
+            "1",
+            "log₂6",
+            "log₂(3/2)"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Hisoblang: log₄32 + log₄2",
+          "answer": "log₄64",
+          "options": [
+            "log₄64",
+            "5",
+            "log₄16",
+            "log₄8"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Hisoblang: log₇49 − log₇(1/7)",
+          "answer": "3",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Hisoblang: log₂18 − log₂9",
+          "answer": "1",
+          "options": [
+            "log₂2",
+            "1",
+            "log₂3",
+            "2"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Hisoblang: log₃27 + log₃9 − log₃81",
+          "answer": "1",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Hisoblang: log₅√125",
+          "answer": "3/2",
+          "options": [
+            "1/2",
+            "2/3",
+            "3/2",
+            "5/2"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Hisoblang: log₂8 + log₂4 + log₂16",
+          "answer": "9",
+          "options": [
+            "6",
+            "9",
+            "12",
+            "15"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Hisoblang: log₃54 − log₃6 + 2log₃2",
+          "answer": "3",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Hisoblang: log₂3 + log₂12 − log₂6",
+          "answer": "log₂6",
+          "options": [
+            "log₂2",
+            "1",
+            "log₂3",
+            "2"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Hisoblang: log₅125 + 1/2 log₅25",
+          "answer": "4",
+          "options": [
+            "2",
+            "5/2",
+            "7/2",
+            "3"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Hisoblang: log₁⁄₂8",
+          "answer": "-3",
+          "options": [
+            "-3",
+            "-2",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Hisoblang: logₓ9 = 2 bo'lsa, logₓ(1/27) ni toping.",
+          "answer": "-3/2",
+          "options": [
+            "-3",
+            "-3/2",
+            "-2",
+            "2"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Hisoblang: log₂18 − log₂3 + log₂(2/9)",
+          "answer": "log₂4",
+          "options": [
+            "log₂4",
+            "log₂2",
+            "0",
+            "log₂6"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "math",
+      "topic": "Ildizlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "sqrt(144) + sqrt(81) = ?",
+          "answer": "21",
+          "options": [
+            "19",
+            "20",
+            "21",
+            "22"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "sqrt(225) - sqrt(64) = ?",
+          "answer": "7",
+          "options": [
+            "5",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "sqrt(49) * sqrt(16) = ?",
+          "answer": "28",
+          "options": [
+            "24",
+            "26",
+            "28",
+            "30"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "sqrt(400) / sqrt(25) = ?",
+          "answer": "4",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "sqrt(x^2), x = -6 bo'lsa, qiymat nechaga teng?",
+          "answer": "6",
+          "options": [
+            "-6",
+            "0",
+            "6",
+            "36"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "sqrt(196) + sqrt(121) = ?",
+          "answer": "25",
+          "options": [
+            "23",
+            "24",
+            "25",
+            "26"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "3sqrt(36) - sqrt(81) = ?",
+          "answer": "9",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "sqrt(625) / 5 = ?",
+          "answer": "5",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "sqrt(25 + 119) = ?",
+          "answer": "12",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "2sqrt(100) + sqrt(64) = ?",
+          "answer": "28",
+          "options": [
+            "26",
+            "27",
+            "28",
+            "29"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "sqrt(361) - sqrt(169) = ?",
+          "answer": "6",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "sqrt(9 * 16) = ?",
+          "answer": "12",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "sqrt(900) + sqrt(36) = ?",
+          "answer": "36",
+          "options": [
+            "34",
+            "35",
+            "36",
+            "37"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "sqrt(x + 9) = 5 bo'lsa, x = ?",
+          "answer": "16",
+          "options": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "sqrt(64) + sqrt(27)/sqrt(3) = ?",
+          "answer": "11",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -46,10 +46,34 @@ async function parseResponse(response) {
   return data;
 }
 
-export async function apiFetch(path, options = {}) {
+async function refreshAccessToken() {
+  const refresh = getRefreshToken();
+  if (!refresh) return null;
+
+  const response = await fetch(`${API_BASE_URL}/auth/token/refresh/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ refresh }),
+  });
+
+  if (!response.ok) {
+    clearTokens();
+    return null;
+  }
+
+  const data = await response.json();
+  if (data?.access) {
+    saveTokens({ access: data.access });
+    return data.access;
+  }
+  return null;
+}
+
+export async function apiFetch(path, options = {}, retry = true) {
   const token = getAccessToken();
+  const isFormData = typeof FormData !== "undefined" && options.body instanceof FormData;
   const headers = {
-    "Content-Type": "application/json",
+    ...(isFormData ? {} : { "Content-Type": "application/json" }),
     ...(options.headers || {}),
   };
 
@@ -57,10 +81,20 @@ export async function apiFetch(path, options = {}) {
     headers.Authorization = `Bearer ${token}`;
   }
 
-  const response = await fetch(`${API_BASE_URL}${path}`, {
+  let response = await fetch(`${API_BASE_URL}${path}`, {
     ...options,
     headers,
   });
+
+  if (response.status === 401 && retry && getRefreshToken()) {
+    const newAccess = await refreshAccessToken();
+    if (newAccess) {
+      response = await fetch(`${API_BASE_URL}${path}`, {
+        ...options,
+        headers: { ...headers, Authorization: `Bearer ${newAccess}` },
+      });
+    }
+  }
 
   return parseResponse(response);
 }
@@ -84,7 +118,6 @@ export const api = {
     }),
 
   profile: () => apiFetch("/auth/profile/"),
-
   subjects: () => apiFetch("/subjects/"),
 
   tests: ({ subject = "", search = "", premium = "" } = {}) => {
@@ -106,9 +139,18 @@ export const api = {
 
   attempts: () => apiFetch("/attempts/"),
 
-  premiumMockPurchase: ({ test_id, subject_id, amount = 5000 }) =>
-    apiFetch("/premium/mock-purchase/", {
+  paymentCardInfo: () => apiFetch("/payments/card-info/"),
+
+  submitPayment: ({ test_id, transaction_id = "", receipt = null }) => {
+    const formData = new FormData();
+    formData.append("test_id", String(test_id));
+    if (transaction_id) formData.append("transaction_id", transaction_id);
+    if (receipt) formData.append("receipt", receipt);
+    return apiFetch("/payments/submit/", {
       method: "POST",
-      body: JSON.stringify({ test_id, subject_id, amount }),
-    }),
+      body: formData,
+    });
+  },
+
+  myPayments: () => apiFetch("/payments/mine/"),
 };

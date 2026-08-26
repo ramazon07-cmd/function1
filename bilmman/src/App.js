@@ -11,7 +11,8 @@ function App() {
   const hideLayout =
     location.pathname.startsWith("/card/") ||
     location.pathname === "/account"||
-    location.pathname === "/hae"
+    location.pathname === "/hae" ||
+    location.pathname.startsWith("/admin/")
 
 
   return (

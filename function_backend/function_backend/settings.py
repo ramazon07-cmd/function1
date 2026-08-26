@@ -14,6 +14,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'dev-only-change-this-secret-key')
 DEBUG = os.getenv('DEBUG', 'True').lower() in ('true', '1', 'yes')
 ALLOWED_HOSTS = [h.strip() for h in os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',') if h.strip()]
 
+# Manual P2P destination. Keep the real card number in .env, never in Git.
+PAYMENT_CARD_NUMBER = os.getenv('PAYMENT_CARD_NUMBER', '')
+PAYMENT_CARD_HOLDER = os.getenv('PAYMENT_CARD_HOLDER', '')
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -77,7 +81,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

@@ -1595,3 +1595,265 @@
   }
 
 }
+
+
+/* FUNCTION1_P2P_UI_V3 — scoped only to the manual-payment modal */
+.p2p-payment-modal {
+    height: auto !important;
+    max-height: min(88vh, 760px);
+}
+
+.p2p-payment-body {
+    color: #111827;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p2p-card-box {
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #f8fafc;
+    margin-bottom: 18px;
+}
+
+.p2p-card-caption {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.p2p-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.p2p-card-number {
+    color: #0f172a;
+    font-size: clamp(18px, 4vw, 22px);
+    letter-spacing: 1.4px;
+    line-height: 1.25;
+}
+
+.p2p-card-holder {
+    margin-top: 7px;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.p2p-copy-btn {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dbe3ef;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #334155;
+    cursor: pointer;
+    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+
+.p2p-copy-btn:hover {
+    transform: translateY(-1px);
+    border-color: #94a3b8;
+    box-shadow: 0 7px 18px rgba(15, 23, 42, .08);
+}
+
+.p2p-payment-fields {
+    display: grid;
+    gap: 16px;
+}
+
+.p2p-field {
+    display: block;
+}
+
+.p2p-field-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 750;
+}
+
+.p2p-optional {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.p2p-payment-input {
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 13px;
+    outline: none;
+    background: #ffffff;
+    color: #0f172a;
+    font: inherit;
+    font-size: 15px;
+    transition: border-color .16s ease, box-shadow .16s ease;
+}
+
+.p2p-payment-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .12);
+}
+
+.p2p-payment-input::placeholder {
+    color: #94a3b8;
+}
+
+.p2p-file-picker {
+    min-height: 52px;
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #cbd5e1;
+    border-radius: 13px;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: pointer;
+    transition: border-color .16s ease, box-shadow .16s ease;
+}
+
+.p2p-file-picker:hover {
+    border-color: #94a3b8;
+    box-shadow: 0 7px 18px rgba(15, 23, 42, .05);
+}
+
+.p2p-file-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.p2p-file-button {
+    min-width: 142px;
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #f1f5f9;
+    border-right: 1px solid #e2e8f0;
+    color: #0f172a;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.p2p-file-name {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    overflow: hidden;
+    color: #64748b;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.p2p-payment-message {
+    margin: 15px 0 0;
+    padding: 11px 13px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.p2p-payment-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.p2p-payment-btn {
+    min-height: 50px;
+    width: 100%;
+    border-radius: 13px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 800;
+    cursor: pointer;
+    white-space: normal;
+    text-align: center;
+    transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
+}
+
+.p2p-payment-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.p2p-payment-btn:disabled {
+    cursor: not-allowed;
+    opacity: .58;
+}
+
+.p2p-payment-btn--primary {
+    background: #d97706;
+    color: #ffffff;
+    box-shadow: 0 9px 20px rgba(217, 119, 6, .20);
+}
+
+.p2p-payment-btn--primary:hover:not(:disabled) {
+    background: #b45309;
+    box-shadow: 0 11px 24px rgba(180, 83, 9, .23);
+}
+
+.p2p-payment-btn--secondary {
+    background: #ffffff;
+    color: #334155;
+    border-color: #cbd5e1;
+}
+
+.p2p-payment-btn--secondary:hover:not(:disabled) {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    box-shadow: 0 7px 18px rgba(15, 23, 42, .07);
+}
+
+@media (max-width: 560px) {
+    .p2p-payment-body {
+        padding: 18px !important;
+    }
+
+    .p2p-payment-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .p2p-file-picker {
+        flex-direction: column;
+    }
+
+    .p2p-file-button {
+        min-height: 46px;
+        border-right: 0;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .p2p-file-name {
+        min-height: 44px;
+    }
+}
