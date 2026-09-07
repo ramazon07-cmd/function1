@@ -1,6 +1,7 @@
 services:
   - type: web
     name: function-backend
+    branch: codex/deploy-vercel-render
     runtime: python
     plan: free
     region: frankfurt
