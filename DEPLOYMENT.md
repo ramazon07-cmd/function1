@@ -2,7 +2,9 @@
 
 Frontend: Vercel project `function-platform`, source directory `bilmman`.
 Backend: Render configuration in `render.yaml`, source directory `function_backend`.
-Deployment branch: `codex/deploy-vercel-render`.
+Deployment branch: `main`.
+
+Render project `Finaris` and free database `finaris-db` have been created. The database expires October 7, 2026. Backend deployment still requires connecting Render to the private GitHub repository. The deployed frontend is https://function-platform.vercel.app.
 
 ## Finish connecting the services
 
@@ -23,5 +25,5 @@ Local `.env`, SQLite databases, and uploaded files are excluded from deployment.
 
 - React production build passed with existing lint warnings.
 - Django system check and static collection passed.
-- Existing Django suite: 16 of 18 tests passed. The two outdated tests reference the removed `feedback_create` route and expect the API to accept a client-provided score without answers. Current tests cover recomputed scores and image-required feedback.
+- The outdated feedback and client-score tests now follow the current API contract: multipart feedback requires an image; unverified scores are rejected without recording an attempt.
 - Vercel could not connect the private GitHub repository automatically; the deployment uses the CLI. Future Git pushes will not automatically deploy the frontend until the integration is connected.

@@ -26,14 +26,12 @@ class LearningAPITest(TestCase):
         self.assertEqual(response.status_code, 201)
         self.assertEqual(response.data['score'], 1)
 
-    def test_record_local_attempt(self):
+    def test_record_local_attempt_rejects_unverified_score(self):
         self.client.force_authenticate(self.user)
         response = self.client.post(f'/api/tests/{self.test.id}/record-local-attempt/', {
             'score': 12,
             'total_questions': 15,
             'duration_seconds': 420,
         }, format='json')
-        self.assertEqual(response.status_code, 201)
-        self.assertEqual(response.data['score'], 12)
-        self.assertEqual(response.data['total_questions'], 15)
-        self.assertEqual(response.data['duration_seconds'], 420)
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(self.user.test_attempts.count(), 0)

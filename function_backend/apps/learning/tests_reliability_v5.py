@@ -1,4 +1,7 @@
 from django.contrib.auth import get_user_model
+from django.core.files.uploadedfile import SimpleUploadedFile
+from django.test import override_settings
+from tempfile import TemporaryDirectory
 from django.urls import reverse
 from rest_framework.test import APITestCase
 
@@ -7,15 +10,21 @@ from .models import Feedback, LocalAttemptAnswer, Subject, Test, TestAttempt
 
 
 class FeedbackPersistenceTests(APITestCase):
+    def setUp(self):
+        media = TemporaryDirectory()
+        self.addCleanup(media.cleanup)
+        self.enterContext(override_settings(MEDIA_ROOT=media.name))
+
     def test_public_feedback_is_persisted(self):
         response = self.client.post(
-            reverse('feedback_create'),
+            reverse('feedback'),
             {
                 'name': 'Javohir',
                 'direction': 'Matematika',
                 'message': 'Platforma juda foydali.',
+                'profile_image': SimpleUploadedFile('avatar.png', b'test-image', content_type='image/png'),
             },
-            format='json',
+            format='multipart',
         )
         self.assertEqual(response.status_code, 201, response.data)
         self.assertEqual(Feedback.objects.count(), 1)
