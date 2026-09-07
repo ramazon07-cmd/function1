@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || "http://127.0.0.1:8000/api";
+const API_BASE_URL = (process.env.REACT_APP_API_URL || (process.env.NODE_ENV === "production" ? "/api" : "http://127.0.0.1:8000/api")).replace(/\/$/, "");
 
 const ACCESS_KEY = "function_access_token";
 const REFRESH_KEY = "function_refresh_token";
@@ -161,7 +161,6 @@ export const api = {
     }),
 
   attempts: () => apiFetch("/attempts/", { cache: "no-store" }),
-  attempts: () => apiFetch("/attempts/"),
 
   feedbacks: () => apiFetch("/feedback/", { skipAuth: true }),
 
