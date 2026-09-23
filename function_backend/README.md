@@ -4,7 +4,8 @@ Simple Django REST API backend for the **Function Platform** frontend.
 
 ## Features
 
-- JWT register/login/profile
+- Email-first JWT register/login/profile
+- Profile + settings (name, email, avatar, password, permanent account deletion)
 - Subjects: Mathematics, Geometry, Logic, Economy
 - Courses and tests API
 - Test detail API with questions/options
@@ -43,12 +44,15 @@ http://127.0.0.1:8000/api/
 | POST | `/api/auth/login/` | Login and return JWT tokens |
 | POST | `/api/auth/token/refresh/` | Refresh JWT access token |
 | GET | `/api/auth/profile/` | Current user profile |
+| PATCH | `/api/auth/profile/` | Update name/email/avatar |
+| DELETE | `/api/auth/profile/` | Permanently delete account |
+| POST | `/api/auth/password/` | Change password |
 
 Register body:
 
 ```json
 {
-  "username": "ramazon",
+  "name": "Ramazon Raximov",
   "email": "ramazon@example.com",
   "password": "StrongPass123",
   "password2": "StrongPass123"
@@ -59,7 +63,7 @@ Login body:
 
 ```json
 {
-  "username": "ramazon",
+  "email": "ramazon@example.com",
   "password": "StrongPass123"
 }
 ```
@@ -112,9 +116,14 @@ Your React frontend routes can map like this:
 - category filter → `GET /api/tests/?subject=math`
 - test start `/card` → `GET /api/tests/<id>/`
 - finish test → `POST /api/tests/<id>/submit/`
-- register page → `POST /api/auth/register/`
-- login page → `POST /api/auth/login/`
+- register page → `POST /api/auth/register/` using name + email + password
+- login page → `POST /api/auth/login/` using email + password
+- profile settings → `PATCH /api/auth/profile/` and `POST /api/auth/password/`
 
 ## Notes
 
 This backend is intentionally simple. It does not process real card data. For production, connect Click/Payme through official payment flow and never store raw card numbers.
+
+## Manual payment settings
+
+Set `PAYMENT_CARD_NUMBER`, `PAYMENT_CARD_HOLDER`, and `PAYMENT_TELEGRAM_URL` in the backend environment. Premium seed price is 4,990 so‘m. Users send the receipt to the configured Telegram profile and then submit a verification request.

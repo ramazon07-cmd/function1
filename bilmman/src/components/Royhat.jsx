@@ -7,7 +7,7 @@ import { useAuth } from '../context/AuthContext'
 function Royhat() {
     const navigate = useNavigate()
     const { register } = useAuth()
-    const [username, setUsername] = useState('')
+    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [loading, setLoading] = useState(false)
@@ -17,8 +17,12 @@ function Royhat() {
         event.preventDefault()
         setError('')
 
-        if (!username.trim() || !email.trim() || !password) {
-            setError('Username, email va parolni to‘ldiring.')
+        if (!name.trim() || !email.trim() || !password) {
+            setError('Ism, email va parolni to‘ldiring.')
+            return
+        }
+        if (name.trim().length < 2) {
+            setError('Ism kamida 2 ta belgidan iborat bo‘lsin.')
             return
         }
         if (password.length < 8) {
@@ -28,7 +32,7 @@ function Royhat() {
 
         try {
             setLoading(true)
-            await register({ username: username.trim(), email: email.trim(), password })
+            await register({ name: name.trim(), email: email.trim().toLowerCase(), password })
             navigate('/test')
         } catch (err) {
             const data = err?.data
@@ -58,10 +62,10 @@ function Royhat() {
                     <form onSubmit={handleSubmit}>
                         <input
                             type="text"
-                            placeholder='Username'
-                            value={username}
-                            onChange={(event) => setUsername(event.target.value)}
-                            autoComplete="username"
+                            placeholder='Ismingiz'
+                            value={name}
+                            onChange={(event) => setName(event.target.value)}
+                            autoComplete="name"
                         />
 
                         <input
@@ -80,7 +84,7 @@ function Royhat() {
                             autoComplete="new-password"
                         />
 
-                        {error && <p style={{ color: 'crimson', margin: '8px 0' }}>{error}</p>}
+                        {error && <p className="auth-form-error">{error}</p>}
 
                         <button disabled={loading}>
                             {loading ? 'Yaratilmoqda...' : 'Davom etish'}

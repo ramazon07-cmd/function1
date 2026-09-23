@@ -233,3 +233,4 @@ form button {
 form button:hover {
     transform: translateY(-4px);
 }
+.auth-form-error{margin:0;color:#be123c;background:#fff1f2;border:1px solid #fecdd3;border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.4}

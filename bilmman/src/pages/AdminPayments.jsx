@@ -92,11 +92,11 @@ function AdminPayments() {
         <div>
           <span className="function1-admin-eyebrow">FUNCTION ADMIN</span>
           <h1>To‘lovlarni tekshirish</h1>
-          <p>Chekni ko‘ring, transaction ID’ni solishtiring va premium accessni boshqaring.</p>
+          <p>Telegramdagi chek yoki transaction ID’ni tekshiring va premium accessni boshqaring.</p>
         </div>
         <div className="function1-admin-user">
           <small>Admin</small>
-          <strong>{user.username}</strong>
+          <strong>{user.name || user.email || user.username}</strong>
         </div>
       </header>
 
@@ -143,6 +143,7 @@ function AdminPayments() {
                 <div><span>Test</span><strong>{payment.test_title}</strong></div>
                 <div><span>Fan</span><strong>{payment.subject_name}</strong></div>
                 <div><span>Transaction ID</span><strong>{payment.transaction_id || "—"}</strong></div>
+                <div><span>Chek kanali</span><strong>{payment.telegram_receipt_sent ? "Telegram" : (payment.receipt_url ? "Saytga yuklangan" : "—")}</strong></div>
                 <div><span>Yuborilgan</span><strong>{formatDate(payment.created_at)}</strong></div>
               </div>
 
@@ -158,6 +159,8 @@ function AdminPayments() {
                       PDF chekni ochish
                     </a>
                   )
+                ) : payment.telegram_receipt_sent ? (
+                  <div className="function1-no-receipt">Chek Telegram orqali yuborilgan — Telegramdan email va test nomi bo‘yicha tekshiring.</div>
                 ) : (
                   <div className="function1-no-receipt">Chek fayli yuborilmagan</div>
                 )}

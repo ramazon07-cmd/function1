@@ -11,7 +11,7 @@ from .models import PaymentRequest, PremiumAccess, Subject, Test
 User = get_user_model()
 
 
-@override_settings(PAYMENT_CARD_NUMBER='8600123412345678', PAYMENT_CARD_HOLDER='Test User')
+@override_settings(PAYMENT_CARD_NUMBER='8600123412345678', PAYMENT_CARD_HOLDER='Test User', PAYMENT_TELEGRAM_URL='https://t.me/function_payments')
 class ManualPaymentPatchTests(APITestCase):
     def setUp(self):
         self.user = User.objects.create_user(username='student', password='strong-pass-123')
@@ -47,6 +47,7 @@ class ManualPaymentPatchTests(APITestCase):
         response = self.client.get('/api/payments/card-info/')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.data['card_number'], '8600123412345678')
+        self.assertEqual(response.data['telegram_url'], 'https://t.me/function_payments')
 
     def test_payment_amount_is_taken_from_database(self):
         self.client.force_authenticate(self.user)
@@ -69,6 +70,18 @@ class ManualPaymentPatchTests(APITestCase):
             format='multipart',
         )
         self.assertEqual(response.status_code, 400)
+
+
+    def test_telegram_receipt_confirmation_is_accepted(self):
+        self.client.force_authenticate(self.user)
+        response = self.client.post(
+            '/api/payments/submit/',
+            {'test_id': self.premium_test.id, 'telegram_receipt_sent': 'true'},
+            format='multipart',
+        )
+        self.assertEqual(response.status_code, 201)
+        payment = PaymentRequest.objects.get(user=self.user, test=self.premium_test)
+        self.assertTrue(payment.telegram_receipt_sent)
 
     def test_receipt_upload_is_accepted(self):
         self.client.force_authenticate(self.user)

@@ -7,7 +7,7 @@ import { useAuth } from '../context/AuthContext'
 function Kirish() {
     const navigate = useNavigate()
     const { login } = useAuth()
-    const [username, setUsername] = useState('')
+    const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
@@ -16,17 +16,19 @@ function Kirish() {
         event.preventDefault()
         setError('')
 
-        if (!username.trim() || !password) {
-            setError('Username va parolni kiriting.')
+        if (!email.trim() || !password) {
+            setError('Email va parolni kiriting.')
             return
         }
 
         try {
             setLoading(true)
-            await login({ username: username.trim(), password })
+            await login({ email: email.trim().toLowerCase(), password })
             navigate('/test')
         } catch (err) {
-            setError(err?.data?.detail || err.message || 'Kirishda xatolik yuz berdi.')
+            const data = err?.data
+            const detail = data?.detail || (Array.isArray(data?.non_field_errors) ? data.non_field_errors[0] : '')
+            setError(detail || err.message || 'Email yoki parol noto‘g‘ri.')
         } finally {
             setLoading(false)
         }
@@ -48,11 +50,11 @@ function Kirish() {
 
                     <form onSubmit={handleSubmit}>
                         <input
-                            type="text"
-                            placeholder='Username'
-                            value={username}
-                            onChange={(event) => setUsername(event.target.value)}
-                            autoComplete="username"
+                            type="email"
+                            placeholder='Email'
+                            value={email}
+                            onChange={(event) => setEmail(event.target.value)}
+                            autoComplete="email"
                         />
 
                         <input
@@ -63,7 +65,7 @@ function Kirish() {
                             autoComplete="current-password"
                         />
 
-                        {error && <p style={{ color: 'crimson', margin: '8px 0' }}>{error}</p>}
+                        {error && <p className="auth-form-error">{error}</p>}
 
                         <button disabled={loading}>
                             {loading ? 'Kirilmoqda...' : 'Davom etish'}

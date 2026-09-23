@@ -26,6 +26,12 @@ services:
         fromDatabase:
           name: finaris-db
           property: connectionString
+      - key: PAYMENT_CARD_NUMBER
+        sync: false
+      - key: PAYMENT_CARD_HOLDER
+        sync: false
+      - key: PAYMENT_TELEGRAM_URL
+        sync: false
       - key: SEED_FUNCTION_DATA
         value: "true"
 databases:

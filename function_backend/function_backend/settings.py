@@ -23,6 +23,7 @@ if not DEBUG and SECRET_KEY == 'dev-only-change-this-secret-key':
 # Manual P2P destination. Keep the real card number in .env, never in Git.
 PAYMENT_CARD_NUMBER = os.getenv('PAYMENT_CARD_NUMBER', '')
 PAYMENT_CARD_HOLDER = os.getenv('PAYMENT_CARD_HOLDER', '')
+PAYMENT_TELEGRAM_URL = os.getenv('PAYMENT_TELEGRAM_URL', '').strip()
 
 INSTALLED_APPS = [
     'django.contrib.admin',

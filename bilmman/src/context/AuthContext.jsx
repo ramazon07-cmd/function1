@@ -33,20 +33,42 @@ export function AuthProvider({ children }) {
     };
   }, []);
 
-  async function login({ username, password }) {
-    const tokens = await api.login({ username, password });
+  async function login({ email, password }) {
+    const tokens = await api.login({ email, password });
     saveTokens(tokens);
     const profile = await api.profile();
     setUser(profile);
     return profile;
   }
 
-  async function register({ username, email, password }) {
-    const data = await api.register({ username, email, password });
+  async function register({ name, email, password }) {
+    const data = await api.register({ name, email, password });
     saveTokens(data.tokens);
     const profile = await api.profile();
     setUser(profile);
     return profile;
+  }
+
+  async function refreshProfile() {
+    const profile = await api.profile();
+    setUser(profile);
+    return profile;
+  }
+
+  async function updateProfile(payload) {
+    const profile = await api.updateProfile(payload);
+    setUser(profile);
+    return profile;
+  }
+
+  async function changePassword(payload) {
+    return api.changePassword(payload);
+  }
+
+  async function deleteAccount() {
+    await api.deleteAccount();
+    clearTokens();
+    setUser(null);
   }
 
   function logout() {
@@ -55,7 +77,18 @@ export function AuthProvider({ children }) {
   }
 
   const value = useMemo(
-    () => ({ user, loading, isAuthenticated: Boolean(user), login, register, logout }),
+    () => ({
+      user,
+      loading,
+      isAuthenticated: Boolean(user),
+      login,
+      register,
+      logout,
+      refreshProfile,
+      updateProfile,
+      changePassword,
+      deleteAccount,
+    }),
     [user, loading]
   );
 

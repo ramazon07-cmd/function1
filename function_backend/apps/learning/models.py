@@ -160,6 +160,7 @@ class PaymentRequest(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     transaction_id = models.CharField(max_length=120, blank=True)
     receipt = models.FileField(upload_to='payment_receipts/%Y/%m/', blank=True, null=True)
+    telegram_receipt_sent = models.BooleanField(default=False)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=STATUS_PENDING)
     admin_note = models.TextField(blank=True)
     reviewed_by = models.ForeignKey(

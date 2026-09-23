@@ -4,7 +4,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import {
   Brain, Calculator, ChevronLeft, ChevronRight, Clock, Copy,
-  HelpCircle, LayoutGrid, Star, TrendingUp, Triangle, Upload, X,
+  HelpCircle, LayoutGrid, Send, Star, TrendingUp, Triangle, X,
 } from 'lucide-react'
 import '../styles/testlar.css'
 import { api } from '../api/client'
@@ -76,7 +76,7 @@ function formatCardNumber(value = '') {
 
 export default function TestHeader() {
   const navigate = useNavigate()
-  const { isAuthenticated } = useAuth()
+  const { isAuthenticated, user } = useAuth()
   const wrapperRef = useRef(null)
   const [subjects, setSubjects] = useState([])
   const [tests, setTests] = useState([])
@@ -90,8 +90,7 @@ export default function TestHeader() {
 
   const [paymentInfo, setPaymentInfo] = useState(null)
   const [paymentInfoError, setPaymentInfoError] = useState('')
-  const [transactionId, setTransactionId] = useState('')
-  const [receiptFile, setReceiptFile] = useState(null)
+  const [telegramReceiptSent, setTelegramReceiptSent] = useState(false)
   const [paymentMessage, setPaymentMessage] = useState('')
   const [submittingPayment, setSubmittingPayment] = useState(false)
   const [checkingPayment, setCheckingPayment] = useState(false)
@@ -137,8 +136,7 @@ export default function TestHeader() {
   useEffect(() => {
     setPaymentInfo(null)
     setPaymentInfoError('')
-    setTransactionId('')
-    setReceiptFile(null)
+    setTelegramReceiptSent(false)
     setPaymentMessage('')
 
     if (
@@ -162,7 +160,7 @@ export default function TestHeader() {
     return () => {
       active = false
     }
-  }, [modalType, selectedTest?.id, selectedTest?.has_access, isAuthenticated])
+  }, [modalType, selectedTest?.id, selectedTest?.is_premium, selectedTest?.has_access, isAuthenticated])
 
   const regularSubjects = useMemo(
     () => subjects.filter((subject) => !SUBJECT_META[subject.slug]?.special),
@@ -214,14 +212,22 @@ export default function TestHeader() {
     }
   }
 
+  function openTelegramReceipt() {
+    if (!paymentInfo?.telegram_url) {
+      setPaymentMessage('Telegram profili serverda hali sozlanmagan.')
+      return
+    }
+    window.open(paymentInfo.telegram_url, '_blank', 'noopener,noreferrer')
+  }
+
   async function submitPaymentProof() {
     if (!selectedTest) return
     if (!isAuthenticated) {
       navigate('/hae')
       return
     }
-    if (!transactionId.trim() && !receiptFile) {
-      setPaymentMessage('Transaction ID yoki chek rasmini/faylini yuboring.')
+    if (!telegramReceiptSent) {
+      setPaymentMessage('Avval chekni Telegram orqali yuboring va tasdiqlash belgisini qo‘ying.')
       return
     }
 
@@ -230,8 +236,8 @@ export default function TestHeader() {
       setPaymentMessage('')
       const result = await api.submitPayment({
         test_id: selectedTest.id,
-        transaction_id: transactionId.trim(),
-        receipt: receiptFile,
+        transaction_id: '',
+        telegram_receipt_sent: telegramReceiptSent,
       })
       const statusValue = result?.payment?.status || 'pending'
       setSelectedTest((prev) => ({ ...prev, payment_status: statusValue }))
@@ -239,8 +245,7 @@ export default function TestHeader() {
         item.id === selectedTest.id ? { ...item, payment_status: statusValue } : item
       )))
       setPaymentMessage(result?.message || "To'lov ma'lumoti yuborildi. Admin tekshiradi.")
-      setTransactionId('')
-      setReceiptFile(null)
+      setTelegramReceiptSent(false)
     } catch (err) {
       setPaymentMessage(err.message || "To'lov ma'lumotini yuborishda xatolik.")
     } finally {
@@ -401,75 +406,89 @@ export default function TestHeader() {
 
       {selectedTest && modalType === 'payment' ? (
         <div className="fmBk-modal-overlay" onClick={() => setModalType(null)}>
-          <div className="fmBk-modal-window p2p-payment-modal" style={{ maxWidth: 520 }} onClick={(event) => event.stopPropagation()}>
+          <div className="fmBk-modal-window p2p-payment-modal" style={{ maxWidth: 680 }} onClick={(event) => event.stopPropagation()}>
             <div className="fmBk-modal-header">
               <div className="fmBk-modal-title"><h2>Premium test uchun to‘lov</h2><span>{selectedTest.title}</span></div>
               <button type="button" className="fmBk-close-circle" aria-label="Yopish" onClick={() => setModalType(null)}><X size={20} /></button>
             </div>
             <div className="fmBk-modal-body p2p-payment-body" style={{ padding: 20 }}>
-              {/* FUNCTION1_P2P_UI_V3 */}
-              <div style={{ textAlign: 'center', marginBottom: 16 }}>
-                <strong style={{ fontSize: 22 }}>{selectedTest.price} so‘m</strong>
-                <p style={{ margin: '8px 0 0' }}>Pulni ko‘rsatilgan kartaga o‘tkazing, keyin transaction ID yoki chekni yuboring.</p>
+              <div className="p2p-price-block">
+                <span>Bir martalik to‘lov</span>
+                <strong>{Number(selectedTest.price || 4990).toLocaleString('uz-UZ')} so‘m</strong>
+                <p>To‘lov tasdiqlangach aynan shu premium test ochiladi.</p>
               </div>
 
               {selectedTest.has_access ? (
-                <div style={{ padding: 14, borderRadius: 12, background: 'rgba(34,197,94,.10)', marginBottom: 14 }}>
+                <div className="p2p-status-box p2p-status-box--success">
                   <strong>To‘lov tasdiqlangan ✅</strong>
-                  <p style={{ margin: '6px 0 0' }}>Bu premium test siz uchun ochiq.</p>
+                  <p>Bu premium test siz uchun ochiq.</p>
                 </div>
               ) : null}
 
               {!selectedTest.has_access && selectedTest.payment_status === 'pending' ? (
-                <div style={{ padding: 14, borderRadius: 12, background: 'rgba(245,158,11,.12)', marginBottom: 14 }}>
+                <div className="p2p-status-box p2p-status-box--pending">
                   <strong>To‘lov tekshiruvda ⏳</strong>
-                  <p style={{ margin: '6px 0 0' }}>Admin tasdiqlagach test ochiladi.</p>
+                  <p>Chek Telegramda tekshiriladi. Admin tasdiqlagach test ochiladi.</p>
                 </div>
               ) : null}
 
               {!selectedTest.has_access && selectedTest.payment_status !== 'pending' ? (
                 <>
                   {selectedTest.payment_status === 'rejected' ? (
-                    <div style={{ padding: 12, borderRadius: 12, background: 'rgba(220,38,38,.08)', marginBottom: 12 }}>
-                      Oldingi to‘lov rad etilgan. To‘g‘ri ma’lumot bilan qayta yuboring.
+                    <div className="p2p-status-box p2p-status-box--rejected">
+                      <strong>Oldingi so‘rov rad etilgan.</strong>
+                      <p>To‘lov ma’lumotini tekshirib, chekni qayta yuboring.</p>
                     </div>
                   ) : null}
 
-                  {paymentInfoError ? <p style={{ color: 'crimson' }}>{paymentInfoError}</p> : null}
+                  {paymentInfoError ? <p className="p2p-payment-message p2p-payment-message--error">{paymentInfoError}</p> : null}
                   {paymentInfo ? (
-                    <div className="p2p-card-box">
-                      <small className="p2p-card-caption">Pulni ushbu kartaga o‘tkazing:</small>
-                      <div className="p2p-card-row">
-                        <strong className="p2p-card-number">{formatCardNumber(paymentInfo.card_number)}</strong>
-                        <button type="button" className="p2p-copy-btn" onClick={copyCardNumber} title="Karta raqamini nusxalash" aria-label="Karta raqamini nusxalash"><Copy size={17} /></button>
+                    <>
+                      <div className="p2p-card-box p2p-card-box--featured">
+                        <small className="p2p-card-caption">Pulni ushbu kartaga o‘tkazing</small>
+                        <div className="p2p-card-row">
+                          <strong className="p2p-card-number">{formatCardNumber(paymentInfo.card_number)}</strong>
+                          <button type="button" className="p2p-copy-btn" onClick={copyCardNumber} title="Karta raqamini nusxalash" aria-label="Karta raqamini nusxalash"><Copy size={18} /></button>
+                        </div>
+                        {paymentInfo.card_holder ? <div className="p2p-card-holder">Karta egasi: {paymentInfo.card_holder}</div> : null}
                       </div>
-                      {paymentInfo.card_holder ? <div className="p2p-card-holder">{paymentInfo.card_holder}</div> : null}
-                    </div>
+
+                      <div className="p2p-explanation">
+                        <strong>Qanday to‘lanadi?</strong>
+                        <ol>
+                          <li><span>1</span><p>Kartaga <b>{Number(selectedTest.price || 4990).toLocaleString('uz-UZ')} so‘m</b> o‘tkazing.</p></li>
+                          <li><span>2</span><p>Telegramga o‘ting va to‘lov chekini yuboring.</p></li>
+                          <li><span>3</span><p>Xabarda <b>{user?.email || 'akkaunt emailingiz'}</b> va <b>{selectedTest.title}</b> nomini yozing.</p></li>
+                          <li><span>4</span><p>Qaytib, chek yuborilganini belgilang va tekshiruvga jo‘nating.</p></li>
+                        </ol>
+                      </div>
+
+                      {paymentInfo.telegram_url ? (
+                        <button type="button" className="p2p-telegram-btn" onClick={openTelegramReceipt}>
+                          <Send size={19} />
+                          Telegramga o‘tish va chek yuborish
+                        </button>
+                      ) : (
+                        <div className="p2p-telegram-note">
+                          <div className="p2p-telegram-note__icon"><Send size={18} /></div>
+                          <div className="p2p-telegram-note__content">
+                            <strong>Telegram profil hali ulanmagan</strong>
+                            <p>Admin Telegram havolasini qo‘shgach, chekni to‘g‘ridan-to‘g‘ri shu yerdan yubora olasiz.</p>
+                          </div>
+                        </div>
+                      )}
+                    </>
                   ) : null}
 
                   <div className="p2p-payment-fields">
-                    <label className="p2p-field">
-                      <span className="p2p-field-label">Transaction ID <span className="p2p-optional">(chek yuklasangiz ixtiyoriy)</span></span>
-                      <input
-                        className="p2p-payment-input"
-                        value={transactionId}
-                        onChange={(event) => setTransactionId(event.target.value)}
-                        placeholder="Masalan: 123456789"
-                      />
+                    <label className={`p2p-telegram-confirm ${telegramReceiptSent ? 'is-checked' : ''}`}>
+                      <input type="checkbox" checked={telegramReceiptSent} onChange={(event) => setTelegramReceiptSent(event.target.checked)} />
+                      <div className="p2p-telegram-confirm__content">
+                        <strong>Chekni Telegram orqali yubordim</strong>
+                        <small>Chekni yuborganingizdan keyin shuni belgilang, keyin tekshiruvga yuboring.</small>
+                      </div>
+                      <span className="p2p-telegram-confirm__state">{telegramReceiptSent ? 'Belgilandi' : 'Belgilang'}</span>
                     </label>
-                    <div className="p2p-field">
-                      <span className="p2p-field-label">Chek rasmi yoki PDF</span>
-                      <label className="p2p-file-picker">
-                        <input
-                          className="p2p-file-input"
-                          type="file"
-                          accept="image/*,.pdf"
-                          onChange={(event) => setReceiptFile(event.target.files?.[0] || null)}
-                        />
-                        <span className="p2p-file-button"><Upload size={18} /> Fayl tanlash</span>
-                        <span className="p2p-file-name">{receiptFile?.name || 'Fayl tanlanmagan'}</span>
-                      </label>
-                    </div>
                   </div>
                 </>
               ) : null}

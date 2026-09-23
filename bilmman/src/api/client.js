@@ -107,24 +107,44 @@ export function recordVerifiedLocalAttemptV13(testId, payload) {
 }
 
 export const api = {
-  register: ({ username, email, password }) =>
+  register: ({ name, email, password }) =>
     apiFetch("/auth/register/", {
       method: "POST",
       body: JSON.stringify({
-        username,
+        name,
         email,
         password,
         password2: password,
       }),
     }),
 
-  login: ({ username, password }) =>
+  login: ({ email, password }) =>
     apiFetch("/auth/login/", {
       method: "POST",
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ email, password }),
     }),
 
   profile: () => apiFetch("/auth/profile/"),
+
+  updateProfile: ({ name, email, profile_image, remove_profile_image = false }) => {
+    const formData = new FormData();
+    if (name !== undefined) formData.append("name", name);
+    if (email !== undefined) formData.append("email", email);
+    if (profile_image) formData.append("profile_image", profile_image);
+    if (remove_profile_image) formData.append("profile_image", "");
+    return apiFetch("/auth/profile/", {
+      method: "PATCH",
+      body: formData,
+    });
+  },
+
+  changePassword: ({ current_password, new_password, new_password2 }) =>
+    apiFetch("/auth/password/", {
+      method: "POST",
+      body: JSON.stringify({ current_password, new_password, new_password2 }),
+    }),
+
+  deleteAccount: () => apiFetch("/auth/profile/", { method: "DELETE" }),
 
   subjects: () => apiFetch("/subjects/"),
 
@@ -180,10 +200,12 @@ export const api = {
 
   paymentCardInfo: () => apiFetch("/payments/card-info/"),
 
-  submitPayment: ({ test_id, transaction_id = "", receipt = null }) => {
+  submitPayment: ({ test_id, transaction_id = "", telegram_receipt_sent = false, receipt = null }) => {
     const formData = new FormData();
     formData.append("test_id", String(test_id));
     if (transaction_id) formData.append("transaction_id", transaction_id);
+    if (telegram_receipt_sent) formData.append("telegram_receipt_sent", "true");
+    // Kept for backward compatibility with the old admin/upload flow.
     if (receipt) formData.append("receipt", receipt);
 
     return apiFetch("/payments/submit/", {

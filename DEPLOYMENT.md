@@ -27,3 +27,9 @@ Local `.env`, SQLite databases, and uploaded files are excluded from deployment.
 - Django system check and static collection passed.
 - The outdated feedback and client-score tests now follow the current API contract: multipart feedback requires an image; unverified scores are rejected without recording an attempt.
 - Vercel could not connect the private GitHub repository automatically; the deployment uses the CLI. Future Git pushes will not automatically deploy the frontend until the integration is connected.
+
+## Payment environment
+
+For the manual premium flow, configure `PAYMENT_CARD_NUMBER`, `PAYMENT_CARD_HOLDER`, and `PAYMENT_TELEGRAM_URL` in Render. The Telegram value should be a full profile URL such as `https://t.me/your_username`.
+
+Profile avatars in this patch are stored as small base64 payloads in the database, so they do not depend on Render's ephemeral media filesystem.

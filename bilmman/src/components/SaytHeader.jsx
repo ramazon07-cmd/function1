@@ -4,8 +4,10 @@ import "aos/dist/aos.css";
 
 import "../styles/saytheader.css";
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 function SaytHeader() {
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     AOS.init({
@@ -41,7 +43,7 @@ function SaytHeader() {
               data-aos="zoom-in"
               data-aos-delay="500"
             >
-              <NavLink to="/account">
+              <NavLink to={isAuthenticated ? "/iqtisod" : "/account"}>
                  <button className="btn-prrimary">
                 Boshlash
               </button>

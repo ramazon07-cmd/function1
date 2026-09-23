@@ -203,12 +203,14 @@ class PaymentRequestCreateSerializer(serializers.Serializer):
     test_id = serializers.IntegerField()
     transaction_id = serializers.CharField(max_length=120, required=False, allow_blank=True)
     receipt = serializers.FileField(required=False, allow_null=True)
+    telegram_receipt_sent = serializers.BooleanField(required=False, default=False)
 
     def validate(self, attrs):
         transaction_id = (attrs.get('transaction_id') or '').strip()
         receipt = attrs.get('receipt')
-        if not transaction_id and not receipt:
-            raise serializers.ValidationError('Transaction ID yoki chek faylini yuboring.')
+        telegram_receipt_sent = bool(attrs.get('telegram_receipt_sent'))
+        if not transaction_id and not receipt and not telegram_receipt_sent:
+            raise serializers.ValidationError('Transaction ID kiriting yoki chekni Telegram orqali yuborganingizni tasdiqlang.')
 
         if receipt:
             if receipt.size > 5 * 1024 * 1024:
@@ -230,7 +232,7 @@ class PaymentRequestSerializer(serializers.ModelSerializer):
         model = PaymentRequest
         fields = (
             'id', 'test', 'test_title', 'amount', 'transaction_id', 'receipt_url',
-            'status', 'admin_note', 'created_at', 'updated_at', 'reviewed_at',
+            'telegram_receipt_sent', 'status', 'admin_note', 'created_at', 'updated_at', 'reviewed_at',
         )
 
     def get_receipt_url(self, obj):
@@ -300,12 +302,12 @@ class FeedbackSerializer(serializers.ModelSerializer):
 
 
 class AdminPaymentRequestSerializer(serializers.ModelSerializer):
-    username = serializers.CharField(source='user.username', read_only=True)
+    username = serializers.SerializerMethodField()
     user_email = serializers.CharField(source='user.email', read_only=True)
     test_title = serializers.CharField(source='test.title', read_only=True)
     subject_name = serializers.CharField(source='test.subject.name', read_only=True)
     subject_slug = serializers.CharField(source='test.subject.slug', read_only=True)
-    reviewed_by_username = serializers.CharField(source='reviewed_by.username', read_only=True)
+    reviewed_by_username = serializers.SerializerMethodField()
     receipt_url = serializers.SerializerMethodField()
     receipt_kind = serializers.SerializerMethodField()
 
@@ -314,9 +316,17 @@ class AdminPaymentRequestSerializer(serializers.ModelSerializer):
         fields = (
             'id', 'username', 'user_email', 'test', 'test_title',
             'subject_name', 'subject_slug', 'amount', 'transaction_id',
-            'receipt_url', 'receipt_kind', 'status', 'admin_note',
+            'receipt_url', 'receipt_kind', 'telegram_receipt_sent', 'status', 'admin_note',
             'created_at', 'updated_at', 'reviewed_at', 'reviewed_by_username',
         )
+
+    def get_username(self, obj):
+        return obj.user.first_name or obj.user.email or obj.user.username
+
+    def get_reviewed_by_username(self, obj):
+        if not obj.reviewed_by:
+            return None
+        return obj.reviewed_by.first_name or obj.reviewed_by.email or obj.reviewed_by.username
 
     def get_receipt_url(self, obj):
         if not obj.receipt:

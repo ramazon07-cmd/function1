@@ -13,6 +13,8 @@ import Saythaqida from './pages/Saythaqida';
 import Matematika from './pages/Matematika';
 import Attempts from './pages/Attempts';
 import AdminPayments from './pages/AdminPayments';
+import Profile from './pages/Profile';
+import ProfileSettings from './pages/ProfileSettings';
 import { AuthProvider } from './context/AuthContext';
 
 const appRouter = createBrowserRouter([{
@@ -64,6 +66,14 @@ const appRouter = createBrowserRouter([{
     {
       element: <AdminPayments />,
       path: "/admin/payments"
+    },
+    {
+      element: <Profile />,
+      path: "/profile"
+    },
+    {
+      element: <ProfileSettings />,
+      path: "/profile/settings"
     }
 
 

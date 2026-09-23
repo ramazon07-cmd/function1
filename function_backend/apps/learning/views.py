@@ -339,6 +339,7 @@ class PaymentCardInfoAPIView(APIView):
             'card_number': card_number,
             'masked_card_number': masked,
             'card_holder': getattr(settings, 'PAYMENT_CARD_HOLDER', ''),
+            'telegram_url': getattr(settings, 'PAYMENT_TELEGRAM_URL', ''),
         })
 
 
@@ -378,6 +379,7 @@ class PaymentRequestCreateAPIView(APIView):
         # SECURITY: amount always comes from Test.price in the database.
         payment.amount = test.price
         payment.transaction_id = data.get('transaction_id', '')
+        payment.telegram_receipt_sent = bool(data.get('telegram_receipt_sent'))
         if data.get('receipt') is not None:
             payment.receipt = data['receipt']
         payment.save()

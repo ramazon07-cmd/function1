@@ -121,7 +121,7 @@ class Command(BaseCommand):
                         'description': f'{topic} bo‘yicha qisqa test.',
                         'duration_minutes': 30,
                         'is_premium': test_index <= 5,
-                        'price': 5000 if test_index <= 5 else 0,
+                        'price': 4990 if test_index <= 5 else 0,
                         'is_active': True,
                         'order': test_index,
                     },
