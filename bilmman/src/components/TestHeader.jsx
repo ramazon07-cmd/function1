@@ -94,6 +94,7 @@ export default function TestHeader() {
   const [paymentMessage, setPaymentMessage] = useState('')
   const [submittingPayment, setSubmittingPayment] = useState(false)
   const [checkingPayment, setCheckingPayment] = useState(false)
+  const [showAuthNotice, setShowAuthNotice] = useState(false)
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true })
@@ -177,7 +178,16 @@ export default function TestHeader() {
     window.requestAnimationFrame(() => wrapperRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
   }
 
+  function showRegistrationGate() {
+    setModalType(null)
+    setShowAuthNotice(true)
+  }
+
   function startTest(test) {
+    if (!isAuthenticated) {
+      showRegistrationGate()
+      return
+    }
     setModalType(null)
     navigate(`/card/${test.id}`, {
       state: {
@@ -196,10 +206,22 @@ export default function TestHeader() {
       return
     }
     if (!isAuthenticated) {
-      navigate('/hae')
+      showRegistrationGate()
       return
     }
     setModalType('payment')
+  }
+
+  function requestTestStart(test) {
+    if (!isAuthenticated) {
+      showRegistrationGate()
+      return
+    }
+    if (test.is_premium && !test.has_access) {
+      openPremium(test)
+      return
+    }
+    startTest(test)
   }
 
   async function copyCardNumber() {
@@ -223,7 +245,7 @@ export default function TestHeader() {
   async function submitPaymentProof() {
     if (!selectedTest) return
     if (!isAuthenticated) {
-      navigate('/hae')
+      navigate('/account')
       return
     }
     if (!telegramReceiptSent) {
@@ -366,11 +388,13 @@ export default function TestHeader() {
                   <button
                     type="button"
                     className={lockedPremium ? 'premium-btn' : 'boshlash'}
-                    onClick={() => lockedPremium ? openPremium(test) : startTest(test)}
+                    onClick={() => requestTestStart(test)}
                   >
-                    {lockedPremium
-                      ? (test.payment_status === 'pending' ? 'Tekshiruvda' : 'Premium ochish')
-                      : 'Testni boshlash'}
+                    {!isAuthenticated
+                      ? 'Testni boshlash'
+                      : lockedPremium
+                        ? (test.payment_status === 'pending' ? 'Tekshiruvda' : 'Premium ochish')
+                        : 'Testni boshlash'}
                   </button>
                 </div>
               </article>
@@ -378,6 +402,23 @@ export default function TestHeader() {
           })}
         </div>
       </div>
+
+      {!isAuthenticated && showAuthNotice ? (
+        <div className="tests-login-warning-overlay" onClick={() => setShowAuthNotice(false)}>
+          <div className="tests-login-warning tests-login-warning--modal" role="alert" aria-live="assertive" onClick={(event) => event.stopPropagation()}>
+            <button type="button" className="tests-login-warning__close" aria-label="Yopish" onClick={() => setShowAuthNotice(false)}><X size={18} /></button>
+            <div className="tests-login-warning__icon">!</div>
+            <div className="tests-login-warning__content">
+              <strong>Testni boshlash uchun avval kiring</strong>
+              <span>Akkauntingiz bo‘lmasa, tezda ro‘yxatdan o‘tishingiz mumkin.</span>
+            </div>
+            <div className="tests-login-warning__actions">
+              <button type="button" className="tests-login-warning__secondary" onClick={() => navigate('/hae')}>Kirish</button>
+              <button type="button" className="tests-login-warning__primary" onClick={() => navigate('/account')}>Ro‘yxatdan o‘tish</button>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       {selectedTest && modalType === 'detail' ? (
         <div className="fmBk-modal-overlay" onClick={() => setModalType(null)}>
@@ -395,9 +436,9 @@ export default function TestHeader() {
               <button
                 type="button"
                 className={selectedTest.is_premium && !selectedTest.has_access ? 'premium-btn' : 'boshlash'}
-                onClick={() => selectedTest.is_premium && !selectedTest.has_access ? openPremium(selectedTest) : startTest(selectedTest)}
+                onClick={() => requestTestStart(selectedTest)}
               >
-                {selectedTest.is_premium && !selectedTest.has_access ? 'Premium ochish' : 'Testni boshlash'}
+                {!isAuthenticated ? 'Testni boshlash' : selectedTest.is_premium && !selectedTest.has_access ? 'Premium ochish' : 'Testni boshlash'}
               </button>
             </div>
           </div>

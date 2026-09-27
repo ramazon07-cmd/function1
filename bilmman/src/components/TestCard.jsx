@@ -4876,11 +4876,19 @@ export default function TestCard() {
   const routePremiumFlag = location.state?.isPremium;
   const navigate = useNavigate();
   const { testId } = useParams();
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, loading: authLoading } = useAuth();
   // FUNCTION1_TESTCARD_ROUTE_FALLBACK_V3:
   // React Router location.state disappears on refresh/direct URL. Keep backend test
   // metadata as a fallback so the legacy local question bank still resolves correctly.
   const [backendTestMeta, setBackendTestMeta] = useState(null);
+
+  // Guests may browse the test catalog, but an account is required to enter a test.
+  useEffect(() => {
+    if (!authLoading && !isAuthenticated) {
+      navigate('/account', { replace: true });
+    }
+  }, [authLoading, isAuthenticated, navigate]);
+
   const category = location.state?.category || backendTestMeta?.subject?.slug;
   const topic = location.state?.title || backendTestMeta?.title;
 
@@ -5049,6 +5057,10 @@ const handleBack = () => {
     const sec = time % 60;
     return `${min}:${sec < 10 ? "0" : ""}${sec}`;
   };
+
+  if (authLoading || !isAuthenticated) {
+    return null;
+  }
 
   if (accessChecking && routePremiumFlag !== false) {
     return (

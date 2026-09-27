@@ -1,12 +1,11 @@
-# One-screen payment modal patch
-
-This patch makes the premium payment modal fit in one viewport without an inner vertical scrollbar.
+Centered auth warning patch for test start.
 
 Changes:
-- Modal max width increased from 560px to 680px to use horizontal space instead of vertical space.
-- Payment modal header/body spacing compacted.
-- “Qanday to‘lanadi?” steps use a 2x2 grid.
-- Card, Telegram info, confirmation, and action buttons are shorter.
-- Extra compact rules for shorter laptop screens.
-- Responsive compact rules retained for mobile.
-- No backend/database changes.
+- Replaced inline/bottom login warning bar with centered modal overlay.
+- Warning now appears in the middle of the screen when unauthenticated users click “Testni boshlash”.
+- No jump to page top and no large top bar.
+- Includes close button, Kirish, and Ro‘yxatdan o‘tish actions.
+
+Files changed:
+- bilmman/src/components/TestHeader.jsx
+- bilmman/src/styles/testlar.css
