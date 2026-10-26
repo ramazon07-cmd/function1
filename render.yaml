@@ -32,6 +32,10 @@ services:
         sync: false
       - key: PAYMENT_TELEGRAM_URL
         sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
       - key: SEED_FUNCTION_DATA
         value: "true"
 databases:

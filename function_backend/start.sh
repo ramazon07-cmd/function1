@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 python manage.py migrate --noinput
+python manage.py ensure_admin
 if [ "${SEED_FUNCTION_DATA:-false}" = "true" ]; then
   python manage.py seed_function_data
 fi
