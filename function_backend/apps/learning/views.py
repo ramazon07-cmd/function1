@@ -432,7 +432,8 @@ class AdminPaymentRequestDecisionAPIView(APIView):
     @transaction.atomic
     def post(self, request, pk):
         payment = generics.get_object_or_404(
-            PaymentRequest.objects.select_for_update().select_related(
+            # of=('self',): Postgres refuses FOR UPDATE across the outer join to the nullable reviewed_by.
+            PaymentRequest.objects.select_for_update(of=('self',)).select_related(
                 'user', 'test', 'test__subject', 'reviewed_by'
             ),
             pk=pk,

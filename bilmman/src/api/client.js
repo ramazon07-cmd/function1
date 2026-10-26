@@ -37,7 +37,8 @@ async function parseResponse(response) {
       data?.detail ||
       data?.message ||
       data?.error ||
-      (typeof data === "string" ? data : "API xatolik yuz berdi");
+      // An HTML body is a server error page, not a message worth showing.
+      (typeof data === "string" && !data.trimStart().startsWith("<") ? data : `Server xatosi (${response.status}). Birozdan so'ng qayta urinib ko'ring.`);
     const error = new Error(response.status === 401 ? "Sessiya tugagan. Iltimos, qayta kiring." : message);
     error.status = response.status;
     error.data = data;
