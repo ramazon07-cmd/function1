@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/kirish.css'
 import BackButton from './BackButton'
 import { useNavigate } from 'react-router-dom'
@@ -6,7 +6,12 @@ import { useAuth } from '../context/AuthContext'
 
 function Kirish() {
     const navigate = useNavigate()
-    const { login } = useAuth()
+    const { login, isAuthenticated } = useAuth()
+
+    // Signed-in users who land here from a "Boshlash" button go straight to the tests.
+    useEffect(() => {
+        if (isAuthenticated) navigate('/test', { replace: true })
+    }, [isAuthenticated, navigate])
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [loading, setLoading] = useState(false)

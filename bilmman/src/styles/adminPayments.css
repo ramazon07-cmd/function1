@@ -3,7 +3,7 @@
   padding: 42px clamp(18px, 4vw, 56px) 70px;
   background: #f6f8fc;
   color: #111827;
-  font-family: inherit;
+  font-family: 'Inter','Segoe UI',system-ui,sans-serif;
 }
 .function1-admin-header {
   max-width: 1440px;
@@ -22,6 +22,9 @@
 .function1-admin-tabs { display:flex; gap:8px; flex-wrap:wrap; }
 .function1-admin-tabs button,.function1-admin-refresh { border:1px solid #dfe5ef; background:#fff; color:#475569; border-radius:12px; padding:10px 14px; font-weight:800; cursor:pointer; }
 .function1-admin-tabs button.is-active { background:#1d4ed8; border-color:#1d4ed8; color:#fff; }
+.function1-admin-tabs button b { margin-left:8px; min-width:22px; display:inline-block; padding:1px 7px; border-radius:999px; background:#eef2f7; color:#475569; font-size:12px; text-align:center; }
+.function1-admin-tabs button.is-active b { background:rgba(255,255,255,.22); color:#fff; }
+.function1-admin-tabs button b.has-pending { background:#ea580c; color:#fff; }
 .function1-admin-refresh { color:#1d4ed8; }
 .function1-admin-summary { max-width:1440px; margin:0 auto 18px; display:flex; gap:8px; align-items:baseline; color:#64748b; }
 .function1-admin-summary strong { color:#111827; font-size:26px; }
@@ -45,6 +48,10 @@
 .function1-receipt-box a span { position:absolute; left:10px; bottom:10px; background:rgba(15,23,42,.8); color:#fff; border-radius:8px; padding:6px 9px; font-size:11px; }
 .function1-receipt-pdf { color:#1d4ed8; font-weight:900; }
 .function1-no-receipt { color:#94a3b8; font-size:13px; }
+.function1-receipt-box.is-telegram { min-height:0; display:block; padding:14px; background:#f0f9ff; border-color:#bae6fd; }
+.function1-telegram-hint { display:flex; flex-direction:column; gap:6px; color:#0c4a6e; }
+.function1-telegram-hint strong { font-size:14px; }
+.function1-telegram-hint code { display:block; padding:6px 9px; border-radius:8px; background:#fff; border:1px solid #bae6fd; color:#0f172a; font-size:13px; word-break:break-all; }
 .function1-admin-note { display:block; margin-top:16px; }
 .function1-admin-note span { display:block; font-size:12px; font-weight:800; color:#64748b; margin-bottom:7px; }
 .function1-admin-note textarea { box-sizing:border-box; width:100%; min-height:76px; resize:vertical; border:1px solid #dfe5ef; border-radius:13px; padding:11px 12px; outline:none; font:inherit; }

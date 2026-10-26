@@ -20,10 +20,11 @@ if os.getenv('RENDER_EXTERNAL_HOSTNAME'):
 if not DEBUG and SECRET_KEY == 'dev-only-change-this-secret-key':
     raise ImproperlyConfigured('Set a unique SECRET_KEY in the production environment.')
 
-# Manual P2P destination. Keep the real card number in .env, never in Git.
-PAYMENT_CARD_NUMBER = os.getenv('PAYMENT_CARD_NUMBER', '')
-PAYMENT_CARD_HOLDER = os.getenv('PAYMENT_CARD_HOLDER', '')
-PAYMENT_TELEGRAM_URL = os.getenv('PAYMENT_TELEGRAM_URL', '').strip()
+# Manual P2P destination (public receiving card, shown to every signed-in user).
+# Env vars override these defaults; `or` also covers blank values set on the host.
+PAYMENT_CARD_NUMBER = os.getenv('PAYMENT_CARD_NUMBER') or '9860120163454941'
+PAYMENT_CARD_HOLDER = os.getenv('PAYMENT_CARD_HOLDER') or 'Dilfuza Mirniyazova'
+PAYMENT_TELEGRAM_URL = (os.getenv('PAYMENT_TELEGRAM_URL') or 'https://t.me/itsgoodboii').strip()
 
 INSTALLED_APPS = [
     'django.contrib.admin',

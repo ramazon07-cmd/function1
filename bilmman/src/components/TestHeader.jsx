@@ -70,8 +70,15 @@ function normalizeList(data) {
   return Array.isArray(data) ? data : data?.results || []
 }
 
+const PAYMENT_POLL_MS = 10000
+
 function formatCardNumber(value = '') {
   return value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim()
+}
+
+function telegramUsername(url = '') {
+  const name = url.split('?')[0].replace(/\/+$/, '').split('/').pop()
+  return name ? `@${name}` : 'admin'
 }
 
 export default function TestHeader() {
@@ -95,6 +102,7 @@ export default function TestHeader() {
   const [submittingPayment, setSubmittingPayment] = useState(false)
   const [checkingPayment, setCheckingPayment] = useState(false)
   const [showAuthNotice, setShowAuthNotice] = useState(false)
+  const [cardReload, setCardReload] = useState(0)
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true })
@@ -161,7 +169,24 @@ export default function TestHeader() {
     return () => {
       active = false
     }
-  }, [modalType, selectedTest?.id, selectedTest?.is_premium, selectedTest?.has_access, isAuthenticated])
+  }, [modalType, selectedTest?.id, selectedTest?.is_premium, selectedTest?.has_access, isAuthenticated, cardReload])
+
+  // While the admin reviews the receipt, re-check quietly so the test unlocks without a manual click.
+  const waitingForAdmin = modalType === 'payment' && selectedTest?.payment_status === 'pending' && !selectedTest?.has_access
+  useEffect(() => {
+    if (!waitingForAdmin) return undefined
+    const timer = window.setInterval(() => checkPaymentStatus({ silent: true }), PAYMENT_POLL_MS)
+    return () => window.clearInterval(timer)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [waitingForAdmin, selectedTest?.id, category])
+
+  const telegramHandle = telegramUsername(paymentInfo?.telegram_url)
+
+  // Session ended while the payment window was open: swap it for the sign-in prompt.
+  useEffect(() => {
+    if (modalType === 'payment' && !isAuthenticated) showRegistrationGate()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [modalType, isAuthenticated])
 
   const regularSubjects = useMemo(
     () => subjects.filter((subject) => !SUBJECT_META[subject.slug]?.special),
@@ -275,20 +300,22 @@ export default function TestHeader() {
     }
   }
 
-  async function checkPaymentStatus() {
+  async function checkPaymentStatus({ silent = false } = {}) {
     if (!selectedTest) return
     try {
-      setCheckingPayment(true)
+      if (!silent) setCheckingPayment(true)
       const freshTests = await loadTests(category)
       setTests(freshTests)
       const refreshed = freshTests.find((item) => item.id === selectedTest.id)
       if (!refreshed) {
-        setPaymentMessage('Test topilmadi.')
+        if (!silent) setPaymentMessage('Test topilmadi.')
         return
       }
       setSelectedTest(refreshed)
       if (refreshed.has_access) {
         setPaymentMessage("To'lov tasdiqlandi. Premium test ochildi ✅")
+      } else if (silent) {
+        // no change yet; keep the current message
       } else if (refreshed.payment_status === 'pending') {
         setPaymentMessage("To'lov hali admin tekshiruvida.")
       } else if (refreshed.payment_status === 'rejected') {
@@ -297,9 +324,9 @@ export default function TestHeader() {
         setPaymentMessage("Tasdiqlangan to'lov topilmadi.")
       }
     } catch (err) {
-      setPaymentMessage(err.message || 'Holatni tekshirishda xatolik.')
+      if (!silent) setPaymentMessage(err.message || 'Holatni tekshirishda xatolik.')
     } finally {
-      setCheckingPayment(false)
+      if (!silent) setCheckingPayment(false)
     }
   }
 
@@ -469,68 +496,69 @@ export default function TestHeader() {
               {!selectedTest.has_access && selectedTest.payment_status === 'pending' ? (
                 <div className="p2p-status-box p2p-status-box--pending">
                   <strong>To‘lov tekshiruvda ⏳</strong>
-                  <p>Chek Telegramda tekshiriladi. Admin tasdiqlagach test ochiladi.</p>
+                  <p>Chek adminga ({telegramHandle}) Telegramda yuborilgan bo‘lishi kerak. Admin tasdiqlashi bilan test shu yerda o‘zi ochiladi.</p>
                 </div>
               ) : null}
 
-              {!selectedTest.has_access && selectedTest.payment_status !== 'pending' ? (
+              {!selectedTest.has_access && selectedTest.payment_status === 'rejected' ? (
+                <div className="p2p-status-box p2p-status-box--rejected">
+                  <strong>Oldingi so‘rov rad etilgan.</strong>
+                  <p>To‘lov ma’lumotini tekshirib, chekni qayta yuboring.</p>
+                </div>
+              ) : null}
+
+              {!selectedTest.has_access ? (
                 <>
-                  {selectedTest.payment_status === 'rejected' ? (
-                    <div className="p2p-status-box p2p-status-box--rejected">
-                      <strong>Oldingi so‘rov rad etilgan.</strong>
-                      <p>To‘lov ma’lumotini tekshirib, chekni qayta yuboring.</p>
+                  {paymentInfoError ? (
+                    <div className="p2p-payment-message p2p-payment-message--error">
+                      <span>{paymentInfoError}</span>
+                      <button type="button" className="p2p-copy-btn" onClick={() => setCardReload((n) => n + 1)}>Qayta urinish</button>
                     </div>
                   ) : null}
-
-                  {paymentInfoError ? <p className="p2p-payment-message p2p-payment-message--error">{paymentInfoError}</p> : null}
                   {paymentInfo ? (
                     <>
                       <div className="p2p-card-box p2p-card-box--featured">
-                        <small className="p2p-card-caption">Pulni ushbu kartaga o‘tkazing</small>
+                        <div className="p2p-card-top">
+                          <small className="p2p-card-caption">Pulni ushbu kartaga o‘tkazing</small>
+                          <span className="p2p-card-chip" aria-hidden="true" />
+                        </div>
                         <div className="p2p-card-row">
                           <strong className="p2p-card-number">{formatCardNumber(paymentInfo.card_number)}</strong>
-                          <button type="button" className="p2p-copy-btn" onClick={copyCardNumber} title="Karta raqamini nusxalash" aria-label="Karta raqamini nusxalash"><Copy size={18} /></button>
+                          <button type="button" className="p2p-copy-btn" onClick={copyCardNumber} title="Karta raqamini nusxalash" aria-label="Karta raqamini nusxalash"><Copy size={17} />Nusxa</button>
                         </div>
-                        {paymentInfo.card_holder ? <div className="p2p-card-holder">Karta egasi: {paymentInfo.card_holder}</div> : null}
+                        {paymentInfo.card_holder ? <div className="p2p-card-holder"><small>Karta egasi</small><span>{paymentInfo.card_holder}</span></div> : null}
                       </div>
 
                       <div className="p2p-explanation">
                         <strong>Qanday to‘lanadi?</strong>
                         <ol>
                           <li><span>1</span><p>Kartaga <b>{Number(selectedTest.price || 4990).toLocaleString('uz-UZ')} so‘m</b> o‘tkazing.</p></li>
-                          <li><span>2</span><p>Telegramga o‘ting va to‘lov chekini yuboring.</p></li>
-                          <li><span>3</span><p>Xabarda <b>{user?.email || 'akkaunt emailingiz'}</b> va <b>{selectedTest.title}</b> nomini yozing.</p></li>
-                          <li><span>4</span><p>Qaytib, chek yuborilganini belgilang va tekshiruvga jo‘nating.</p></li>
+                          <li><span>2</span><p>To‘lov chekini adminga Telegramda yuboring: <b>{telegramHandle}</b>. Xabarda <b>{user?.email || 'akkaunt emailingiz'}</b> va <b>{selectedTest.title}</b> nomini yozing.</p></li>
+                          <li><span>3</span><p>Admin chekni tekshirib tasdiqlaydi va premium test avtomatik ochiladi.</p></li>
                         </ol>
                       </div>
 
                       {paymentInfo.telegram_url ? (
                         <button type="button" className="p2p-telegram-btn" onClick={openTelegramReceipt}>
                           <Send size={19} />
-                          Telegramga o‘tish va chek yuborish
+                          Chekni adminga yuborish ({telegramHandle})
                         </button>
-                      ) : (
-                        <div className="p2p-telegram-note">
-                          <div className="p2p-telegram-note__icon"><Send size={18} /></div>
-                          <div className="p2p-telegram-note__content">
-                            <strong>Telegram profil hali ulanmagan</strong>
-                            <p>Admin Telegram havolasini qo‘shgach, chekni to‘g‘ridan-to‘g‘ri shu yerdan yubora olasiz.</p>
-                          </div>
-                        </div>
-                      )}
+                      ) : null}
                     </>
                   ) : null}
 
-                  <div className="p2p-payment-fields">
-                    <label className={`p2p-telegram-confirm ${telegramReceiptSent ? 'is-checked' : ''}`}>
-                      <input type="checkbox" checked={telegramReceiptSent} onChange={(event) => setTelegramReceiptSent(event.target.checked)} />
-                      <div className="p2p-telegram-confirm__content">
-                        <strong>Chekni Telegram orqali yubordim</strong>
-                        <small>Chekni yuborganingizdan keyin shuni belgilang, keyin tekshiruvga yuboring.</small>
-                      </div>
-                      <span className="p2p-telegram-confirm__state">{telegramReceiptSent ? 'Belgilandi' : 'Belgilang'}</span>
-                    </label>
-                  </div>
+                  {selectedTest.payment_status !== 'pending' ? (
+                    <div className="p2p-payment-fields">
+                      <label className={`p2p-telegram-confirm ${telegramReceiptSent ? 'is-checked' : ''}`}>
+                        <input type="checkbox" checked={telegramReceiptSent} onChange={(event) => setTelegramReceiptSent(event.target.checked)} />
+                        <div className="p2p-telegram-confirm__content">
+                          <strong>Chekni adminga yubordim</strong>
+                          <small>Chekni yuborganingizdan keyin belgilang va tekshiruvga yuboring.</small>
+                        </div>
+                        <span className="p2p-telegram-confirm__state">{telegramReceiptSent ? 'Belgilandi' : 'Belgilang'}</span>
+                      </label>
+                    </div>
+                  ) : null}
                 </>
               ) : null}
 
@@ -542,13 +570,13 @@ export default function TestHeader() {
                 ) : null}
 
                 {!selectedTest.has_access && selectedTest.payment_status !== 'pending' ? (
-                  <button type="button" className="p2p-payment-btn p2p-payment-btn--primary" onClick={submitPaymentProof} disabled={submittingPayment}>
+                  <button type="button" className="p2p-payment-btn p2p-payment-btn--primary" onClick={submitPaymentProof} disabled={submittingPayment || !telegramReceiptSent}>
                     {submittingPayment ? 'Yuborilmoqda...' : 'To‘lovni tekshirishga yuborish'}
                   </button>
                 ) : null}
 
                 {!selectedTest.has_access ? (
-                  <button type="button" className="p2p-payment-btn p2p-payment-btn--secondary" onClick={checkPaymentStatus} disabled={checkingPayment}>
+                  <button type="button" className="p2p-payment-btn p2p-payment-btn--secondary" onClick={() => checkPaymentStatus()} disabled={checkingPayment}>
                     {checkingPayment ? 'Tekshirilmoqda...' : 'Holatni tekshirish'}
                   </button>
                 ) : null}

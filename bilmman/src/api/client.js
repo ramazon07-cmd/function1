@@ -2,6 +2,7 @@ const API_BASE_URL = (process.env.REACT_APP_API_URL || (process.env.NODE_ENV ===
 
 const ACCESS_KEY = "function_access_token";
 const REFRESH_KEY = "function_refresh_token";
+export const AUTH_EXPIRED_EVENT = "function:auth-expired";
 
 export function getAccessToken() {
   return localStorage.getItem(ACCESS_KEY);
@@ -37,7 +38,7 @@ async function parseResponse(response) {
       data?.message ||
       data?.error ||
       (typeof data === "string" ? data : "API xatolik yuz berdi");
-    const error = new Error(message);
+    const error = new Error(response.status === 401 ? "Sessiya tugagan. Iltimos, qayta kiring." : message);
     error.status = response.status;
     error.data = data;
     throw error;
@@ -57,8 +58,12 @@ async function refreshAccessToken() {
   });
 
   if (!response.ok) {
-    clearTokens();
-    return null;
+    // Only a rejected refresh token ends the session; a 5xx/cold start must not.
+    if (response.status === 400 || response.status === 401) {
+      clearTokens();
+      return null;
+    }
+    throw Object.assign(new Error("Server vaqtincha javob bermayapti."), { status: response.status });
   }
 
   const data = await response.json();
@@ -93,6 +98,13 @@ export async function apiFetch(path, options = {}, retry = true) {
     if (refreshedAccess) {
       response = await request(refreshedAccess);
     }
+  }
+
+  // Still unauthorized after the refresh attempt: the session is over. Tell the app so the UI
+  // stops acting signed in (otherwise every request keeps failing with "credentials not provided").
+  if (!skipAuth && response.status === 401 && path !== "/auth/login/") {
+    clearTokens();
+    window.dispatchEvent(new Event(AUTH_EXPIRED_EVENT));
   }
 
   return parseResponse(response);

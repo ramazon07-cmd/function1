@@ -65,6 +65,13 @@ function Header() {
                       Natijalar
                     </NavLink>
                   </li>
+                  {user?.is_staff && (
+                    <li>
+                      <NavLink to={'/admin/payments'} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMenuOpen(false)}>
+                        To‘lovlar
+                      </NavLink>
+                    </li>
+                  )}
                   <li className="nav-profile-item">
                     <NavLink to={'/profile'} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMenuOpen(false)}>
                       Profil

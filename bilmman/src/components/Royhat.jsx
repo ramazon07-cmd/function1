@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/royhat.css'
 import BackButton from './BackButton'
 import { useNavigate } from 'react-router-dom'
@@ -6,7 +6,12 @@ import { useAuth } from '../context/AuthContext'
 
 function Royhat() {
     const navigate = useNavigate()
-    const { register } = useAuth()
+    const { register, isAuthenticated } = useAuth()
+
+    // Signed-in users who land here from a "Boshlash" button go straight to the tests.
+    useEffect(() => {
+        if (isAuthenticated) navigate('/test', { replace: true })
+    }, [isAuthenticated, navigate])
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')

@@ -34,6 +34,9 @@ a {
 
 html {
     scroll-behavior: smooth;
+    /* The site is designed light-only; without this a dark OS/browser theme paints the unstyled canvas black. */
+    color-scheme: light;
+    background: #fff;
 }
 
 

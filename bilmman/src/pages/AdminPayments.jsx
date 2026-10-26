@@ -11,6 +11,8 @@ const tabs = [
   ["", "Barchasi"],
 ];
 
+const REFRESH_MS = 20000;
+
 function formatMoney(value) {
   const number = Number(value || 0);
   return `${new Intl.NumberFormat("uz-UZ", { maximumFractionDigits: 0 }).format(number)} UZS`;
@@ -28,31 +30,45 @@ function formatDate(value) {
 function AdminPayments() {
   const { user, loading: authLoading } = useAuth();
   const [statusFilter, setStatusFilter] = useState("pending");
-  const [payments, setPayments] = useState([]);
+  const [allPayments, setAllPayments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [busyId, setBusyId] = useState(null);
   const [notes, setNotes] = useState({});
 
-  const loadPayments = useCallback(async () => {
+  // One unfiltered fetch feeds every tab and its counter; shortcut: no server paging, fine until payments reach the thousands.
+  const loadPayments = useCallback(async ({ silent = false } = {}) => {
     if (!user?.is_staff) return;
-    setLoading(true);
+    if (!silent) setLoading(true);
     setError("");
     try {
-      const data = await api.adminPayments({ status: statusFilter });
-      setPayments(Array.isArray(data) ? data : []);
+      const data = await api.adminPayments();
+      setAllPayments(Array.isArray(data) ? data : []);
     } catch (err) {
-      setError(err?.message || "To‘lovlarni yuklab bo‘lmadi.");
+      if (!silent) setError(err?.message || "To‘lovlarni yuklab bo‘lmadi.");
     } finally {
-      setLoading(false);
+      if (!silent) setLoading(false);
     }
-  }, [statusFilter, user?.is_staff]);
+  }, [user?.is_staff]);
 
   useEffect(() => {
     loadPayments();
+    const timer = window.setInterval(() => {
+      if (!document.hidden) loadPayments({ silent: true });
+    }, REFRESH_MS);
+    return () => window.clearInterval(timer);
   }, [loadPayments]);
 
-  const counts = useMemo(() => ({ current: payments.length }), [payments]);
+  const counts = useMemo(() => {
+    const byStatus = { pending: 0, approved: 0, rejected: 0 };
+    allPayments.forEach((item) => { byStatus[item.status] = (byStatus[item.status] || 0) + 1; });
+    return { ...byStatus, "": allPayments.length };
+  }, [allPayments]);
+
+  const payments = useMemo(
+    () => (statusFilter ? allPayments.filter((item) => item.status === statusFilter) : allPayments),
+    [allPayments, statusFilter],
+  );
 
   const decide = async (payment, action) => {
     const verb = action === "approve" ? "tasdiqlash" : "rad etish";
@@ -64,7 +80,7 @@ function AdminPayments() {
         action,
         admin_note: notes[payment.id] || "",
       });
-      await loadPayments();
+      await loadPayments({ silent: true });
     } catch (err) {
       setError(err?.message || "Amalni bajarib bo‘lmadi.");
     } finally {
@@ -110,6 +126,7 @@ function AdminPayments() {
               onClick={() => setStatusFilter(value)}
             >
               {label}
+              <b className={value === "pending" && counts.pending ? "has-pending" : ""}>{counts[value]}</b>
             </button>
           ))}
         </div>
@@ -117,8 +134,8 @@ function AdminPayments() {
       </section>
 
       <div className="function1-admin-summary">
-        <strong>{counts.current}</strong>
-        <span>{statusFilter || "barcha"} to‘lov</span>
+        <strong>{payments.length}</strong>
+        <span>{statusFilter || "barcha"} to‘lov · har 20 soniyada o‘zi yangilanadi</span>
       </div>
 
       {error && <div className="function1-admin-error">{error}</div>}
@@ -147,7 +164,7 @@ function AdminPayments() {
                 <div><span>Yuborilgan</span><strong>{formatDate(payment.created_at)}</strong></div>
               </div>
 
-              <div className="function1-receipt-box">
+              <div className={`function1-receipt-box${!payment.receipt_url && payment.telegram_receipt_sent ? " is-telegram" : ""}`}>
                 {payment.receipt_url ? (
                   payment.receipt_kind === "image" ? (
                     <a href={payment.receipt_url} target="_blank" rel="noreferrer">
@@ -160,7 +177,13 @@ function AdminPayments() {
                     </a>
                   )
                 ) : payment.telegram_receipt_sent ? (
-                  <div className="function1-no-receipt">Chek Telegram orqali yuborilgan — Telegramdan email va test nomi bo‘yicha tekshiring.</div>
+                  <div className="function1-no-receipt function1-telegram-hint">
+                    <strong>Telegramda tekshiring</strong>
+                    <span>Sizga (@itsgoodboii) chek kelganini va xabarda quyidagilar borligini ko‘ring:</span>
+                    <code>{payment.user_email || payment.username}</code>
+                    <code>{payment.test_title}</code>
+                    <span>Summa {formatMoney(payment.amount)} bo‘lsa — Approve bosing.</span>
+                  </div>
                 ) : (
                   <div className="function1-no-receipt">Chek fayli yuborilmagan</div>
                 )}

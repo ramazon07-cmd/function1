@@ -1,7 +1,9 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { api, clearTokens, getAccessToken, saveTokens } from "../api/client";
+import { api, AUTH_EXPIRED_EVENT, clearTokens, getAccessToken, saveTokens } from "../api/client";
 
 const AuthContext = createContext(null);
+const PROFILE_ATTEMPTS = 3;
+const PROFILE_RETRY_DELAY_MS = 1500;
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -16,21 +18,36 @@ export function AuthProvider({ children }) {
         return;
       }
 
-      try {
-        const profile = await api.profile();
-        if (alive) setUser(profile);
-      } catch {
-        clearTokens();
-        if (alive) setUser(null);
-      } finally {
-        if (alive) setLoading(false);
+      // A cold-starting or briefly unreachable API must not log the user out:
+      // only a rejected token (401/403) clears the session; other errors are retried.
+      for (let attempt = 0; attempt < PROFILE_ATTEMPTS && alive; attempt += 1) {
+        try {
+          const profile = await api.profile();
+          if (alive) setUser(profile);
+          break;
+        } catch (err) {
+          if (err.status === 401 || err.status === 403) {
+            clearTokens();
+            break;
+          }
+          if (attempt < PROFILE_ATTEMPTS - 1) {
+            await new Promise((resolve) => setTimeout(resolve, PROFILE_RETRY_DELAY_MS));
+          }
+        }
       }
+      if (alive) setLoading(false);
     }
 
     loadProfile();
     return () => {
       alive = false;
     };
+  }, []);
+
+  useEffect(() => {
+    const onExpired = () => setUser(null);
+    window.addEventListener(AUTH_EXPIRED_EVENT, onExpired);
+    return () => window.removeEventListener(AUTH_EXPIRED_EVENT, onExpired);
   }, []);
 
   async function login({ email, password }) {
@@ -80,7 +97,9 @@ export function AuthProvider({ children }) {
     () => ({
       user,
       loading,
-      isAuthenticated: Boolean(user),
+      // While the saved session is being verified, a stored token counts as signed in,
+      // so early clicks don't bounce to the sign-in page.
+      isAuthenticated: Boolean(user) || (loading && Boolean(getAccessToken())),
       login,
       register,
       logout,
