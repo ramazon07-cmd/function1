@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { api } from "../api/client";
 import { useAuth } from "../context/AuthContext";
 import "../styles/adminPayments.css";
@@ -110,9 +110,12 @@ function AdminPayments() {
           <h1>To‘lovlarni tekshirish</h1>
           <p>Telegramdagi chek yoki transaction ID’ni tekshiring va premium accessni boshqaring.</p>
         </div>
-        <div className="function1-admin-user">
-          <small>Admin</small>
-          <strong>{user.name || user.email || user.username}</strong>
+        <div className="function1-admin-side">
+          <Link to="/" className="function1-admin-home">← Bosh sahifaga qaytish</Link>
+          <div className="function1-admin-user">
+            <small>Admin</small>
+            <strong>{user.name || user.email || user.username}</strong>
+          </div>
         </div>
       </header>
 
