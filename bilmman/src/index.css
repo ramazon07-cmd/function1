@@ -46,3 +46,25 @@ html {
     padding-right: 16px;
 }
 
+
+/* Password field with a show/hide eye (components/PasswordInput.jsx).
+   `all: unset` because the auth pages style every `form button` as a big gradient button. */
+.password-field { position: relative; width: 100%; }
+.password-field input { padding-right: 56px; }
+.password-field .password-field__toggle {
+    all: unset;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    color: #64748b;
+    cursor: pointer;
+}
+.password-field .password-field__toggle:hover { color: #1d4ed8; background: rgba(37, 99, 235, .08); transform: translateY(-50%); }
+.password-field .password-field__toggle:focus-visible { outline: 3px solid #93c5fd; outline-offset: 1px; }

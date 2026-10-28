@@ -10,6 +10,7 @@ import '../styles/testlar.css'
 import { api } from '../api/client'
 import { useAuth } from '../context/AuthContext'
 import jovo from '../images/jovo.jpg'
+import booksImage from '../images/kitoblar.png'
 import mathImage from '../images/math1.jpg'
 import geometryImage from '../images/images (1).jpg'
 import logicImage from '../images/images (2).jpg'
@@ -71,6 +72,7 @@ function normalizeList(data) {
 }
 
 const PAYMENT_POLL_MS = 10000
+const DEFAULT_PREMIUM_PRICE = 2990
 
 function formatCardNumber(value = '') {
   return value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim()
@@ -387,6 +389,7 @@ export default function TestHeader() {
               <div className="fmBk-premium-glow" />
               <div className="fmBk-premium-inner">
                 <span className="fmBk-badge">KUTUBXONA</span>
+                <img className="fmBk-book-art" src={booksImage} alt="" />
                 <div><h3>{book.title}</h3><p>{book.images.length} ta formulalar varag‘i jamlangan.</p></div>
                 <button type="button" className="fmBk-open-btn" onClick={() => setSelectedBook(book)}>Katalogga kirish</button>
               </div>
@@ -482,7 +485,7 @@ export default function TestHeader() {
             <div className="fmBk-modal-body p2p-payment-body" style={{ padding: 20 }}>
               <div className="p2p-price-block">
                 <span>Bir martalik to‘lov</span>
-                <strong>{Number(selectedTest.price || 4990).toLocaleString('uz-UZ')} so‘m</strong>
+                <strong>{Number(selectedTest.price || DEFAULT_PREMIUM_PRICE).toLocaleString('uz-UZ')} so‘m</strong>
                 <p>To‘lov tasdiqlangach aynan shu premium test ochiladi.</p>
               </div>
 
@@ -532,7 +535,7 @@ export default function TestHeader() {
                       <div className="p2p-explanation">
                         <strong>Qanday to‘lanadi?</strong>
                         <ol>
-                          <li><span>1</span><p>Kartaga <b>{Number(selectedTest.price || 4990).toLocaleString('uz-UZ')} so‘m</b> o‘tkazing.</p></li>
+                          <li><span>1</span><p>Kartaga <b>{Number(selectedTest.price || DEFAULT_PREMIUM_PRICE).toLocaleString('uz-UZ')} so‘m</b> o‘tkazing.</p></li>
                           <li><span>2</span><p>To‘lov chekini adminga Telegramda yuboring: <b>{telegramHandle}</b>. Xabarda <b>{user?.email || 'akkaunt emailingiz'}</b> va <b>{selectedTest.title}</b> nomini yozing.</p></li>
                           <li><span>3</span><p>Admin chekni tekshirib tasdiqlaydi va premium test avtomatik ochiladi.</p></li>
                         </ol>

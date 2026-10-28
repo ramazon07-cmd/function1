@@ -199,6 +199,11 @@ class PremiumAccessSerializer(serializers.ModelSerializer):
         fields = ('id', 'subject', 'test', 'amount', 'status', 'created_at')
 
 
+class AdminGrantAccessSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    test_id = serializers.IntegerField()
+
+
 class PaymentRequestCreateSerializer(serializers.Serializer):
     test_id = serializers.IntegerField()
     transaction_id = serializers.CharField(max_length=120, required=False, allow_blank=True)

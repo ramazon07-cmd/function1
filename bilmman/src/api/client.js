@@ -236,6 +236,12 @@ export const api = {
     return apiFetch(`/admin/payments/${qs ? `?${qs}` : ""}`);
   },
 
+  adminGrantAccess: ({ email, test_id }) =>
+    apiFetch("/admin/grant-access/", {
+      method: "POST",
+      body: JSON.stringify({ email, test_id }),
+    }),
+
   adminPaymentDecision: (id, { action, admin_note = "" }) =>
     apiFetch(`/admin/payments/${id}/decision/`, {
       method: "POST",

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/kirish.css'
 import BackButton from './BackButton'
+import PasswordInput from './PasswordInput'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 
@@ -62,8 +63,7 @@ function Kirish() {
                             autoComplete="email"
                         />
 
-                        <input
-                            type="password"
+                        <PasswordInput
                             placeholder='Parol'
                             value={password}
                             onChange={(event) => setPassword(event.target.value)}

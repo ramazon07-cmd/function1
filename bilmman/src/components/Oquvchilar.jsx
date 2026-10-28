@@ -36,6 +36,21 @@ const fallbackFeedbacks = [
   },
 ];
 
+// Uploaded files can disappear from the server's disk, so a failed load falls back to initials.
+function FeedbackAvatar({ name, url }) {
+  const [broken, setBroken] = useState(false);
+  const showImage = Boolean(url) && !broken;
+  return (
+    <div className={`imgBox ${showImage ? "has-image" : "has-initials"}`}>
+      {showImage ? (
+        <img src={url} alt="" onError={() => setBroken(true)} />
+      ) : (
+        <span>{initials(name)}</span>
+      )}
+    </div>
+  );
+}
+
 function initials(name = "") {
   return name
     .split(/\s+/)
@@ -227,13 +242,7 @@ function Oquvchilar() {
             <SwiperSlide key={item.id}>
               <div className="student_card" data-aos="zoom-in">
                 <div className="student_top">
-                  <div className={`imgBox ${item.profile_image_url ? "has-image" : "has-initials"}`}>
-                    {item.profile_image_url ? (
-                      <img src={item.profile_image_url} alt={`${item.name} portfolio`} />
-                    ) : (
-                      <span>{initials(item.name)}</span>
-                    )}
-                  </div>
+                  <FeedbackAvatar name={item.name} url={item.profile_image_url} />
                   <div>
                     <h3>{item.name}</h3>
                     <span>{item.direction || "Function foydalanuvchisi"}</span>

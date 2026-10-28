@@ -73,3 +73,17 @@
 .function1-admin-forbidden p { color:#64748b; }
 @media(max-width:900px){.function1-admin-grid{grid-template-columns:1fr}.function1-admin-header{flex-direction:column}.function1-admin-side{align-items:stretch;width:100%}.function1-admin-home{justify-content:center}.function1-admin-user{width:100%;box-sizing:border-box}}
 @media(max-width:560px){.function1-admin-shell{padding:26px 12px 50px}.function1-payment-card{padding:16px;border-radius:18px}.function1-payment-meta{grid-template-columns:1fr}.function1-payment-actions{grid-template-columns:1fr}.function1-receipt-box img{height:210px}}
+
+.function1-grant { max-width:1440px; margin:0 auto 22px; padding:18px 20px; background:#fff; border:1px solid #e7eaf1; border-radius:18px; display:grid; gap:12px; }
+.function1-grant-head { display:flex; flex-direction:column; gap:2px; }
+.function1-grant-head strong { font-size:15px; }
+.function1-grant-head span { color:#64748b; font-size:13px; }
+.function1-grant-fields { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1.4fr) auto; gap:10px; }
+.function1-grant-fields input,.function1-grant-fields select { min-height:46px; padding:0 14px; border:1px solid #dfe5ef; border-radius:12px; background:#f8fafc; font:inherit; font-size:14px; color:#0f172a; min-width:0; }
+.function1-grant-fields input:focus,.function1-grant-fields select:focus { outline:3px solid #bfdbfe; border-color:#2563eb; background:#fff; }
+.function1-grant-fields button { min-height:46px; padding:0 20px; border:0; border-radius:12px; background:#2563eb; color:#fff; font:inherit; font-size:14px; font-weight:800; cursor:pointer; }
+.function1-grant-fields button:disabled { opacity:.5; cursor:not-allowed; }
+.function1-grant-result { margin:0; padding:10px 12px; border-radius:10px; font-size:14px; }
+.function1-grant-result.is-ok { background:#ecfdf5; color:#047857; }
+.function1-grant-result.is-error { background:#fff1f2; color:#be123c; }
+@media(max-width:700px){ .function1-grant-fields { grid-template-columns:1fr; } }

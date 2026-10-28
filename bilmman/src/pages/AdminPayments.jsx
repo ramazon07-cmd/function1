@@ -35,6 +35,11 @@ function AdminPayments() {
   const [error, setError] = useState("");
   const [busyId, setBusyId] = useState(null);
   const [notes, setNotes] = useState({});
+  const [premiumTests, setPremiumTests] = useState([]);
+  const [grantEmail, setGrantEmail] = useState("");
+  const [grantTestId, setGrantTestId] = useState("");
+  const [granting, setGranting] = useState(false);
+  const [grantResult, setGrantResult] = useState(null);
 
   // One unfiltered fetch feeds every tab and its counter; shortcut: no server paging, fine until payments reach the thousands.
   const loadPayments = useCallback(async ({ silent = false } = {}) => {
@@ -58,6 +63,29 @@ function AdminPayments() {
     }, REFRESH_MS);
     return () => window.clearInterval(timer);
   }, [loadPayments]);
+
+  useEffect(() => {
+    if (!user?.is_staff) return;
+    api.tests({ premium: "true" })
+      .then((data) => setPremiumTests(Array.isArray(data) ? data : []))
+      .catch(() => setPremiumTests([]));
+  }, [user?.is_staff]);
+
+  const grantAccess = async (event) => {
+    event.preventDefault();
+    setGranting(true);
+    setGrantResult(null);
+    try {
+      const result = await api.adminGrantAccess({ email: grantEmail.trim(), test_id: Number(grantTestId) });
+      setGrantResult({ ok: true, text: result.message });
+      setGrantEmail("");
+      await loadPayments({ silent: true });
+    } catch (err) {
+      setGrantResult({ ok: false, text: err?.message || "Access berib bo‘lmadi." });
+    } finally {
+      setGranting(false);
+    }
+  };
 
   const counts = useMemo(() => {
     const byStatus = { pending: 0, approved: 0, rejected: 0 };
@@ -118,6 +146,35 @@ function AdminPayments() {
           </div>
         </div>
       </header>
+
+      <form className="function1-grant" onSubmit={grantAccess}>
+        <div className="function1-grant-head">
+          <strong>Foydalanuvchiga qo‘lda access berish</strong>
+          <span>To‘lov so‘rovisiz, aynan bitta foydalanuvchiga bitta premium testni ochadi.</span>
+        </div>
+        <div className="function1-grant-fields">
+          <input
+            type="email"
+            required
+            placeholder="Foydalanuvchi emaili"
+            value={grantEmail}
+            onChange={(e) => setGrantEmail(e.target.value)}
+            autoComplete="off"
+          />
+          <select required value={grantTestId} onChange={(e) => setGrantTestId(e.target.value)}>
+            <option value="" disabled>Premium testni tanlang</option>
+            {premiumTests.map((test) => (
+              <option key={test.id} value={test.id}>{test.subject?.name} — {test.title}</option>
+            ))}
+          </select>
+          <button type="submit" disabled={granting || !grantEmail || !grantTestId}>
+            {granting ? "Berilmoqda..." : "Access berish"}
+          </button>
+        </div>
+        {grantResult && (
+          <p role="status" className={`function1-grant-result ${grantResult.ok ? "is-ok" : "is-error"}`}>{grantResult.text}</p>
+        )}
+      </form>
 
       <section className="function1-admin-toolbar">
         <div className="function1-admin-tabs">

@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.contrib.auth import get_user_model
 from django.db import IntegrityError, transaction
 from django.db.models import Q
 from django.utils import timezone
@@ -31,6 +32,7 @@ from .serializers import (
     PaymentRequestSerializer,
     FeedbackSerializer,
     AdminPaymentRequestSerializer,
+    AdminGrantAccessSerializer,
 )
 
 from .local_question_bank import get_local_test_bank_entry
@@ -82,6 +84,8 @@ class CourseListAPIView(generics.ListAPIView):
 class TestListAPIView(generics.ListAPIView):
     serializer_class = TestListSerializer
     permission_classes = [permissions.AllowAny]
+    # The catalog is small and the UI renders it whole; paging cut "Barchasi" off at 20 tests.
+    pagination_class = None
 
     def get_queryset(self):
         qs = Test.objects.select_related('subject').filter(is_active=True)
@@ -489,4 +493,44 @@ class AdminPaymentRequestDecisionAPIView(APIView):
             'message': 'To‘lov rad etildi.',
             'premium_active': False,
             'payment': AdminPaymentRequestSerializer(payment, context={'request': request}).data,
+        })
+
+
+class AdminGrantAccessAPIView(APIView):
+    """Staff gives one user access to one premium test without waiting for a payment request."""
+
+    permission_classes = [permissions.IsAdminUser]
+
+    @transaction.atomic
+    def post(self, request):
+        serializer = AdminGrantAccessSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        email = serializer.validated_data['email']
+
+        user = get_user_model().objects.filter(email__iexact=email).first()
+        if user is None:
+            return Response({'detail': 'Bu email bilan foydalanuvchi topilmadi.'}, status=status.HTTP_404_NOT_FOUND)
+        test = generics.get_object_or_404(Test, pk=serializer.validated_data['test_id'], is_active=True)
+        if not test.is_premium:
+            return Response({'detail': 'Bu test bepul, access kerak emas.'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # A waiting payment request for the same user and test is closed as approved, so it leaves the queue.
+        pending = PaymentRequest.objects.select_for_update(of=('self',)).filter(
+            user=user, test=test, status=PaymentRequest.STATUS_PENDING,
+        ).first()
+        if pending:
+            pending.admin_note = 'Admin access berdi.'
+            pending.save(update_fields=['admin_note', 'updated_at'])
+            pending.approve(reviewed_by=request.user)
+        else:
+            access = PremiumAccess.objects.filter(user=user, test=test).first()
+            if access is None:
+                access = PremiumAccess(user=user, test=test)
+            access.amount = test.price
+            access.status = PremiumAccess.STATUS_PAID
+            access.save()
+
+        return Response({
+            'message': f'{user.email} uchun «{test.title}» ochildi.',
+            'premium_active': has_test_access(user, test),
         })

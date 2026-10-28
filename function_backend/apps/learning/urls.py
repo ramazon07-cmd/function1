@@ -14,6 +14,7 @@ from .views import (
     FeedbackCreateAPIView,
     AdminPaymentRequestListAPIView,
     AdminPaymentRequestDecisionAPIView,
+    AdminGrantAccessAPIView,
 )
 
 urlpatterns = [
@@ -30,6 +31,7 @@ urlpatterns = [
     path('payments/mine/', MyPaymentRequestListAPIView.as_view(), name='my_payment_requests'),
     path('admin/payments/', AdminPaymentRequestListAPIView.as_view(), name='admin_payment_requests'),
     path('admin/payments/<int:pk>/decision/', AdminPaymentRequestDecisionAPIView.as_view(), name='admin_payment_decision'),
+    path('admin/grant-access/', AdminGrantAccessAPIView.as_view(), name='admin_grant_access'),
 ]
 
 # FUNCTION1_RESULTS_SAVE_V13

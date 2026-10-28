@@ -126,4 +126,4 @@ This backend is intentionally simple. It does not process real card data. For pr
 
 ## Manual payment settings
 
-Set `PAYMENT_CARD_NUMBER`, `PAYMENT_CARD_HOLDER`, and `PAYMENT_TELEGRAM_URL` in the backend environment. Premium seed price is 4,990 so‘m. Users send the receipt to the configured Telegram profile and then submit a verification request.
+Set `PAYMENT_CARD_NUMBER`, `PAYMENT_CARD_HOLDER`, and `PAYMENT_TELEGRAM_URL` in the backend environment. Premium seed price is 2,990 so‘m. Users send the receipt to the configured Telegram profile and then submit a verification request.
