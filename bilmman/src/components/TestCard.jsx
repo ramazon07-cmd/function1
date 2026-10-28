@@ -5,6 +5,7 @@ import nuqta from "../images/nomi.png"
 import { InlineMath } from "react-katex";
 import "katex/dist/katex.min.css";
 import { api } from "../api/client";
+import TestState from "./TestState";
 import { useAuth } from "../context/AuthContext";
 
 // Rasmlarni import qilish
@@ -4948,6 +4949,22 @@ export default function TestCard() {
   }, [routePremiumFlag]);
   const recordedRef = useRef(false);
 
+  // The detail endpoint is the server-side premium gate (403 = not paid) and also supplies
+  // the category/title needed when the page is opened without router state (refresh, direct link).
+  useEffect(() => {
+    if (!testId || !isAuthenticated) return undefined;
+    let active = true;
+    api.testDetail(testId)
+      .then((data) => { if (active) setBackendTestMeta(data); })
+      .catch((error) => {
+        if (!active) return;
+        if (error.status === 403) setAccessDenied(true);
+        else setAccessError(error.message || "Server bilan aloqa o'rnatilmadi.");
+      })
+      .finally(() => { if (active) setAccessChecking(false); });
+    return () => { active = false; };
+  }, [testId, isAuthenticated]);
+
   // FUNCTION1_RESULTS_SAVE_V13: server-verified save, variable question counts supported.
   const recordResult = useCallback(async (finalAnswers = []) => {
     if (recordedRef.current || !testId) return;
@@ -5058,46 +5075,52 @@ const handleBack = () => {
     return `${min}:${sec < 10 ? "0" : ""}${sec}`;
   };
 
-  if (authLoading || !isAuthenticated) {
+  if (authLoading) {
+    return <TestState variant="loading" title="Yuklanmoqda..." />;
+  }
+  if (!isAuthenticated) {
     return null;
   }
 
+  const backToTests = () => navigate("/test");
+
   if (accessChecking && routePremiumFlag !== false) {
-    return (
-      <div className="test-container">
-        <p>Premium access tekshirilmoqda...</p>
-      </div>
-    );
+    return <TestState variant="loading" title="Test tayyorlanmoqda" text="Premium access tekshirilmoqda..." />;
   }
 
   if (accessDenied && routePremiumFlag !== false) {
     return (
-      <div className="test-container">
-        <h2>Premium test yopiq</h2>
-        <p>Bu testni boshlash uchun avval to'lovingiz admin tomonidan tasdiqlanishi kerak.</p>
-        <button className="next-btn" onClick={() => navigate("/test")}>Testlarga qaytish</button>
-      </div>
+      <TestState
+        variant="locked"
+        title="Premium test yopiq"
+        text="Bu testni boshlash uchun avval to'lovingiz admin tomonidan tasdiqlanishi kerak."
+        actionLabel="Testlarga qaytish"
+        onAction={backToTests}
+      />
     );
   }
 
   if (accessError && routePremiumFlag !== false) {
     return (
-      <div className="test-container">
-        <h2>Testni ochib bo'lmadi</h2>
-        <p>{accessError}</p>
-        <button className="next-btn" onClick={() => navigate("/test")}>Testlarga qaytish</button>
-      </div>
+      <TestState
+        variant="error"
+        title="Testni ochib bo'lmadi"
+        text={accessError}
+        actionLabel="Testlarga qaytish"
+        onAction={backToTests}
+      />
     );
   }
 
   if (!category || !topic || filteredQuestions.length === 0) {
     return (
-      <div className="test-container">
-        <p>Category yoki mavzu topilmadi.</p>
-        <button className="next-btn" onClick={() => navigate("/test")}>
-          Chiqish
-        </button>
-      </div>
+      <TestState
+        variant="missing"
+        title="Test topilmadi"
+        text="Bu test uchun savollar hali tayyor emas yoki havola eskirgan."
+        actionLabel="Testlarga qaytish"
+        onAction={backToTests}
+      />
     );
   }
 

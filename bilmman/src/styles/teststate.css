@@ -1,0 +1,52 @@
+.test-state {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+  background: #f6f8fc;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+.test-state__card {
+  width: min(440px, 100%);
+  padding: 36px 28px 30px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e7eaf1;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(25, 42, 90, .08);
+}
+.test-state__icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #1e3a8a;
+}
+.test-state__card--locked .test-state__icon { background: #fffbeb; color: #b45309; }
+.test-state__card--error .test-state__icon { background: #fff1f2; color: #be123c; }
+.test-state__card--missing .test-state__icon { background: #f1f5f9; color: #475569; }
+.test-state__card h1 { margin: 0; font-size: 22px; line-height: 1.25; font-weight: 800; letter-spacing: -.01em; color: #0f172a; }
+.test-state__card p { margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #64748b; }
+.test-state__card button {
+  margin-top: 24px;
+  width: 100%;
+  min-height: 50px;
+  border: 0;
+  border-radius: 14px;
+  background: #0f172a;
+  color: #fff;
+  font: 800 15px 'Inter', 'Segoe UI', system-ui, sans-serif;
+  cursor: pointer;
+  transition: transform .16s ease, background .16s ease;
+}
+.test-state__card button:hover { background: #1e293b; transform: translateY(-1px); }
+.test-state__card button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+.test-state__spin { animation: test-state-spin 1s linear infinite; }
+@keyframes test-state-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .test-state__spin { animation-duration: 2.4s; }
+  .test-state__card button { transition: none; }
+}
