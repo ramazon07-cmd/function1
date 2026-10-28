@@ -1,4 +1,5 @@
 from django.core.management.base import BaseCommand
+from apps.learning.local_question_bank import get_local_test_bank_entry
 from apps.learning.models import Subject, Course, Test, Question, Option
 
 
@@ -38,7 +39,7 @@ TEST_TOPICS = {
     ],
     'geo': [
         "Nuqta va to'g'ri chiziq", 'Burchaklar', 'Uchburchaklar',
-        'Parallelogramma', 'Aylana va doira',
+        'Parallelogramma', 'Aylana va doira', 'Koordinata tekisligi',
     ],
     'logic': [
         'Mantiqiy savollar', 'IQ testlari', 'Sonlar ketma-ketligi', 'Topishmoqlar',
@@ -129,9 +130,14 @@ class Command(BaseCommand):
 
                 # Existing questions and user answer history are preserved on re-seed.
                 if created or not test.questions.exists():
-                    base_questions = SAMPLE_QUESTIONS[slug]
-                    for q_index in range(15):
-                        q_text, question_options, correct = base_questions[q_index % len(base_questions)]
+                    # Tests that already have a real question bank get those questions; others get samples.
+                    _, bank_entry = get_local_test_bank_entry(slug, topic)
+                    if bank_entry:
+                        rows = [(q['question'], q['options'], q['answer'].strip()) for q in bank_entry['questions']]
+                    else:
+                        base_questions = SAMPLE_QUESTIONS[slug]
+                        rows = [base_questions[i % len(base_questions)] for i in range(15)]
+                    for q_index, (q_text, question_options, correct) in enumerate(rows):
                         question = Question.objects.create(
                             test=test,
                             text=q_text,
@@ -142,7 +148,7 @@ class Command(BaseCommand):
                             Option.objects.create(
                                 question=question,
                                 text=option_text,
-                                is_correct=(option_text == correct),
+                                is_correct=(option_text.strip() == correct.strip()),
                                 order=o_index,
                             )
 

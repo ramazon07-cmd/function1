@@ -2078,6 +2078,83 @@ const questionSets = [
 
 
   {
+    category: "geo",
+    topic: "Koordinata tekisligi",
+    questions: [
+      {
+        id: 1,
+        question: "A(2; 3), B(−4; 1), C(2; −5) nuqtalar uchun ABC uchburchak yuzini toping.",
+        options: ["18", "24", "30", "36"],
+        answer: "24",
+        questionImage: kordinata1
+      },
+      {
+        id: 2,
+        question: "M(−3; 4) nuqtaning ordinata o'qiga nisbatan simmetrik nuqtasini toping.",
+        options: ["(3; 4)", "(−3; −4)", "(3; −4)", "(4; −3)"],
+        answer: "(3; 4)",
+        questionImage: kordinata2
+      },
+      {
+        id: 3,
+        question: "To'g'ri chiziq tenglamasidagi k ni toping: y = kx + 2 chiziq A(1; 5) nuqtadan o'tadi.",
+        options: ["2", "3", "4", "5"],
+        answer: "3",
+        questionImage: kordinata3
+      },
+      {
+        id: 4,
+        question: "A(−2; 3) va B(4; −1) nuqtalardan o'tuvchi to'g'ri chiziqning tenglamasini yozing.",
+        options: ["2x + 3y = 5", "3x + 2y = 5", "2x − 3y = 5", "3x + 2y = −5"],
+        answer: "2x + 3y = 5",
+        questionImage: kordinata4
+      },
+      {
+        id: 5,
+        question: "P(3; −2) nuqtadan y o'qiga bo'lgan masofani toping.",
+        options: ["2", "3", "5", "√13"],
+        answer: "3",
+        questionImage: kordinata5
+      },
+      {
+        id: 6,
+        question: "Quyidagi nuqtalardan qaysi biri II chorakda joylashgan?",
+        options: ["(3; 2)", "(−4; 1)", "(−2; −3)", "(5; −1)"],
+        answer: "(−4; 1)",
+        questionImage: kordinata6
+      },
+      {
+        id: 7,
+        question: "A(5; −1) va B(−1; 5) nuqtalar orasidagi masofani toping.",
+        options: ["6", "6√2", "8", "12"],
+        answer: "6√2",
+        questionImage: kordinata7
+      },
+      {
+        id: 8,
+        question: "To'g'ri chiziq tenglamasidagi b ni toping: y = 3x + b chiziq (2; −1) nuqtadan o'tadi.",
+        options: ["−7", "−5", "5", "7"],
+        answer: "−7",
+        questionImage: kordinata8
+      },
+      {
+        id: 9,
+        question: "A(−1; 2) va B(5; y) nuqtalar orasidagi masofa 10 ga teng. y ning qiymatini toping.",
+        options: ["10", "−6", "10 yoki −6", "6 yoki −10"],
+        answer: "10 yoki −6",
+        questionImage: kordinata9
+      },
+      {
+        id: 10,
+        question: "To'g'ri chiziq x o'qini (4; 0), y o'qini (0; −6) nuqtalarda kesadi. Uning tenglamasini yozing.",
+        options: ["y = 1,5x − 6", "y = −1,5x − 6", "y = 1,5x + 6", "y = 0,5x − 6"],
+        answer: "y = 1,5x − 6",
+        questionImage: kordinata10
+      }
+    ]
+  },
+
+  {
     category: "logic",
     topic: "Mantiqiy savollar",
     questions: [

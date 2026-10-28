@@ -1,10 +1,11 @@
 {
-  "version": "69c0c00f13ef2a48868af7026f7c0aa9da55895c6ff453feec6c434e1957e1d3",
-  "set_count": 40,
-  "question_count": 593,
+  "version": "e4cec84aaa17d0c3094b193eab5792ac8feb417c971d4d0d569f6b81753cc232",
+  "set_count": 41,
+  "question_count": 603,
   "question_count_distribution": {
-    "8": 1,
-    "15": 39
+    "15": 39,
+    "10": 1,
+    "8": 1
   },
   "sets": [
     {
@@ -3081,6 +3082,122 @@
             "2 sm",
             "3 sm",
             "4"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Koordinata tekisligi",
+      "questions": [
+        {
+          "index": 0,
+          "question": "A(2; 3), B(−4; 1), C(2; −5) nuqtalar uchun ABC uchburchak yuzini toping.",
+          "answer": "24",
+          "options": [
+            "18",
+            "24",
+            "30",
+            "36"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "M(−3; 4) nuqtaning ordinata o'qiga nisbatan simmetrik nuqtasini toping.",
+          "answer": "(3; 4)",
+          "options": [
+            "(3; 4)",
+            "(−3; −4)",
+            "(3; −4)",
+            "(4; −3)"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "To'g'ri chiziq tenglamasidagi k ni toping: y = kx + 2 chiziq A(1; 5) nuqtadan o'tadi.",
+          "answer": "3",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "A(−2; 3) va B(4; −1) nuqtalardan o'tuvchi to'g'ri chiziqning tenglamasini yozing.",
+          "answer": "2x + 3y = 5",
+          "options": [
+            "2x + 3y = 5",
+            "3x + 2y = 5",
+            "2x − 3y = 5",
+            "3x + 2y = −5"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "P(3; −2) nuqtadan y o'qiga bo'lgan masofani toping.",
+          "answer": "3",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "√13"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Quyidagi nuqtalardan qaysi biri II chorakda joylashgan?",
+          "answer": "(−4; 1)",
+          "options": [
+            "(3; 2)",
+            "(−4; 1)",
+            "(−2; −3)",
+            "(5; −1)"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "A(5; −1) va B(−1; 5) nuqtalar orasidagi masofani toping.",
+          "answer": "6√2",
+          "options": [
+            "6",
+            "6√2",
+            "8",
+            "12"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "To'g'ri chiziq tenglamasidagi b ni toping: y = 3x + b chiziq (2; −1) nuqtadan o'tadi.",
+          "answer": "−7",
+          "options": [
+            "−7",
+            "−5",
+            "5",
+            "7"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "A(−1; 2) va B(5; y) nuqtalar orasidagi masofa 10 ga teng. y ning qiymatini toping.",
+          "answer": "10 yoki −6",
+          "options": [
+            "10",
+            "−6",
+            "10 yoki −6",
+            "6 yoki −10"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "To'g'ri chiziq x o'qini (4; 0), y o'qini (0; −6) nuqtalarda kesadi. Uning tenglamasini yozing.",
+          "answer": "y = 1,5x − 6",
+          "options": [
+            "y = 1,5x − 6",
+            "y = −1,5x − 6",
+            "y = 1,5x + 6",
+            "y = 0,5x − 6"
           ]
         }
       ]
