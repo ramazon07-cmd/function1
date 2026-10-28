@@ -1,10 +1,10 @@
 {
-  "version": "69c0c00f13ef2a48868af7026f7c0aa9da55895c6ff453feec6c434e1957e1d3",
-  "set_count": 40,
-  "question_count": 593,
+  "version": "da01d01901679ddfa837159c8ccd4c308a1c59e2ce0c57dbe158f57aa73b140d",
+  "set_count": 45,
+  "question_count": 668,
   "question_count_distribution": {
     "8": 1,
-    "15": 39
+    "15": 44
   },
   "sets": [
     {
@@ -6766,6 +6766,861 @@
             "11",
             "12",
             "13"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Koordinata tekisligi",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Yuzalar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "To'rtburchaklar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Ko'pburchaklar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "geo",
+      "topic": "Hajmlar",
+      "questions": [
+        {
+          "index": 0,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 1,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 2,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 3,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 4,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 5,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 6,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 7,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 8,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 9,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
+          ]
+        },
+        {
+          "index": 10,
+          "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+          "answer": "180°",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ]
+        },
+        {
+          "index": 11,
+          "question": "Radius 7 bo‘lsa, diametr nechaga teng?",
+          "answer": "14",
+          "options": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ]
+        },
+        {
+          "index": 12,
+          "question": "Parallelogrammada qarama-qarshi tomonlar qanday bo‘ladi?",
+          "answer": "teng va parallel",
+          "options": [
+            "teng va parallel",
+            "kesishuvchi",
+            "perpendikulyar",
+            "egri"
+          ]
+        },
+        {
+          "index": 13,
+          "question": "Kvadrat yuzi formulasi qaysi?",
+          "answer": "a²",
+          "options": [
+            "a + a",
+            "4a",
+            "a²",
+            "2a"
+          ]
+        },
+        {
+          "index": 14,
+          "question": "Doira yuzi qaysi formulaga teng?",
+          "answer": "πr²",
+          "options": [
+            "2πr",
+            "πr²",
+            "πd",
+            "r²/2"
           ]
         }
       ]

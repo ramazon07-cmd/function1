@@ -39,6 +39,8 @@ TEST_TOPICS = {
     'geo': [
         "Nuqta va to'g'ri chiziq", 'Burchaklar', 'Uchburchaklar',
         'Parallelogramma', 'Aylana va doira',
+        'Koordinata tekisligi', 'Yuzalar', "To'rtburchaklar",
+        "Ko'pburchaklar", 'Hajmlar',
     ],
     'logic': [
         'Mantiqiy savollar', 'IQ testlari', 'Sonlar ketma-ketligi', 'Topishmoqlar',

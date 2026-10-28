@@ -7,6 +7,7 @@ import "katex/dist/katex.min.css";
 import { api } from "../api/client";
 import TestState from "./TestState";
 import { useAuth } from "../context/AuthContext";
+import freeGeometryTests from "../data/freeGeometryTests.json";
 
 // Rasmlarni import qilish
 import miran1 from "../images/test1.png";
@@ -114,6 +115,7 @@ import kordinata10 from "../images/ko10.png";
 
 import { recordVerifiedLocalAttemptV13 } from "../api/client";
 const questionSets = [
+  ...freeGeometryTests,
   {
     category: "math",
     topic: "Natural sonlar va amallar",
